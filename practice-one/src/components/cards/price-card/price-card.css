@@ -1,0 +1,84 @@
+@import url(../../../styles/variable.css);
+
+.card-standard {
+  background-color: var(--sub-color);
+  border-radius: 8px;
+  border: 1px solid var(--sub-color);
+}
+
+.card__box {
+  border-radius: 8px;
+}
+
+.price-card {
+  width: 320px;
+}
+
+.btn-standard {
+  background-color: var(--main-color);
+  color: var(--sub-color);
+}
+
+.btn-order {
+  padding: 11px 19px;
+  margin-top: 38px;
+  margin-bottom: 32px;
+  border-radius: 8px;
+}
+
+.price-cards {
+  margin-top: 65px;
+}
+
+.money {
+  font-size: 76px;
+  font-weight: bold;
+  color: var(--sub-color);
+  margin-right: 8px;
+}
+
+.money-icon {
+  color: var(--sub-color);
+  font-size: var(--size-s);
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.money-per-month {
+  color: #afafaf;
+  font-size: var(--size-xxs);
+}
+
+.card-standard .money {
+  color: var(--main-color);
+}
+
+.card-standard .money-icon {
+  color: var(--main-color);
+}
+
+.price-cards .card-title,
+.card-text {
+  color: #22343d;
+  margin: 16px 0px;
+}
+
+.card-standard .card-title {
+  color: var(--main-color);
+}
+
+.card-standard .card-text {
+  color: var(--main-color);
+}
+
+.card-title {
+  font-size: var(--size-s);
+  font-weight: bold;
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+
+.card-text {
+  font-size: var(--size-xxs);
+  font-weight: 500;
+}

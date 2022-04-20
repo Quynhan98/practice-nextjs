@@ -1,0 +1,28 @@
+@import url(../../../styles/variable.css);
+
+.main-content .product-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.product-card .card {
+  background-color: var(--primary-background);
+  color: var(--main-color);
+  border: none;
+}
+
+.product-card .card-title {
+  font-size: var(--size-xs);
+  font-weight: bold;
+}
+
+.product-card .card-text {
+  font-size: var(--size-xxs);
+  color: var(--main-color);
+  line-height: 26px;
+  margin-top: 13px;
+}
+
+.container-product .main-content__heading {
+  font-size: var(--size-l);
+}
