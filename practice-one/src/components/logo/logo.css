@@ -1,0 +1,27 @@
+@import url(../../styles/variable.css);
+
+.header-logo {
+  width: 40px;
+  height: 36px;
+  margin-right: 16px;
+}
+
+.footer-logo {
+  width: 32px;
+  height: 29px;
+  margin-right: 16px;
+}
+
+.product__logo {
+  color: var(--main-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header-logo__text {
+  font-size: var(--size-m);
+}
+
+.footer-logo__text {
+  font-size: var(--size-xs);
+}
