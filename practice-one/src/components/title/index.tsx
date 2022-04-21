@@ -3,7 +3,7 @@ import './title.css';
 
 export interface HeadingProp {
   tag: 'h1' | 'h2' | 'h3' | 'h4';
-  extraClass: string;
+  extraClass?: string;
   children: string | ReactNode;
 }
 
