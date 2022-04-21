@@ -1,0 +1,108 @@
+@import url(./reset.css);
+@import url(./font.css);
+@import url(./variable.css);
+
+html {
+  font-family: "roboto", sans-serif;
+}
+
+body {
+  background-color: var(--primary-background);
+}
+
+/* Header*/
+.page-header .navbar {
+  background-color: var(--primary-background);
+}
+
+.page-header .navbar .nav-list {
+  color: var(--main-color);
+  font-size: var(--size-xxs);
+  margin-left: auto;
+  color: var(--main-color);
+  display: flex;
+  align-items: center;
+}
+
+.nav-collapse {
+  flex-grow: unset;
+}
+
+.page-header .navbar .nav-list:hover {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  margin-bottom: 20px;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url('../assets/images/icon-menu.svg');
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Button*/
+
+.btn-menu .btn {
+  margin-left: 30px;
+}
+
+/* Mobile screen*/
+
+@media only screen and (max-width: 576px) {
+
+}
+
+/* Tablet*/
+
+@media only screen and (max-width: 768px) {
+  .page-header {
+    padding: 21px 0px;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  .container-work {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/* Desktop screen*/
+
+@media only screen and (max-width: 992px) {
+  .btn-menu .btn-outline-primary {
+    margin-left: 0px;
+  }
+
+  .btn-menu .btn-secondary {
+    margin-left: 10px;
+  }
+
+  .btn-menu .btn {
+    margin-top: 15px;
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .page-header {
+    padding: 23px 0px 29px 0px;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .page-header {
+    padding: 23px 0px 29px 0px;
+  }
+}

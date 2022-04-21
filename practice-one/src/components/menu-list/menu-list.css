@@ -1,0 +1,12 @@
+@import url(../../styles/variable.css);
+
+.nav-list {
+  font-size: var(--size-xxs);
+  margin-left: auto;
+  color: var(--main-color);
+}
+
+.navbar-nav .nav-list:hover {
+  color: var(--main-color);
+  font-weight: bold;
+}
