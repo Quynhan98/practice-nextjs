@@ -190,6 +190,110 @@ body {
   max-width: 250px;
 }
 
+.btn-content {
+  padding: 15px 50px;
+}
+
+/* Work-section*/
+
+.work-image {
+  display: flex;
+  align-items: center;
+}
+
+.work-heading {
+  padding-top: 130px;
+}
+
+.main-content__heading {
+  font-size: var(--size-xxxl);
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.main-content__link {
+  display: flex;
+}
+
+.btn-work {
+  margin: 45px 0px;
+  padding: 15px 40px;
+}
+
+.work__link {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  font-size: var(--size-xxs);
+  color: var(--sub-color);
+}
+
+.work__link .work__icon {
+  font-size: 23px;
+  margin-right: 8px;
+}
+
+.work__link:hover {
+  color: var(--sub-color);
+  font-weight: bold;
+}
+
+.work__link:hover {
+  color: var(--sub-color);
+  font-weight: bold;
+}
+
+.main-content__description {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 20px;
+  color: var(--main-color);
+}
+
+.product-title {
+  text-align: center;
+}
+
+.container-product .card-title {
+  font-size: var(--size-xs);
+  display: flex;
+  justify-content: flex-start;
+  line-height: 33px;
+}
+
+.container-product .card-body {
+  padding: 0 0;
+}
+
+.product-card {
+  margin-top: 40px;
+}
+
+.product-card .card {
+  max-width: 250px;
+}
+
+/* Management-section*/
+
+.container-management .main-content .main-sub-content {
+  font-size: var(--size-xxs);
+  color: var(--main-color);
+  line-height: 26px;
+}
+
+.main-content .main-content__heading {
+  font-size: var(--size-l);
+}
+
+.container-management .main-content__description {
+  line-height: 26px;
+}
+
+.management-image {
+  display: flex;
+  align-items: center;
+}
+
 /* Mobile screen*/
 
 @media only screen and (max-width: 576px) {
@@ -215,6 +319,20 @@ body {
     margin-top: 15px;
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .container-management .management-image {
+    margin-top: 30px;
+  }
+
+  .container-management {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+
+  .management {
+    margin-top: 20px;
   }
 }
 
@@ -242,6 +360,11 @@ body {
   .main-content__heading,
   .main-content__description {
     text-align: center;
+  }
+
+  .container-management .main-content__heading,
+  .main-content__description {
+    text-align: left;
   }
 
   .main-content__heading {
@@ -287,6 +410,10 @@ body {
   .product-card .card {
     margin: 0 0;
   }
+
+  .container-management {
+    margin-top: 140px;
+  }
 }
 
 @media only screen and (min-width: 1441px) {
@@ -304,5 +431,9 @@ body {
 
   .product-card .card {
     margin: 0 0;
+  }
+
+  .container-management {
+    margin-top: 140px;
   }
 }
