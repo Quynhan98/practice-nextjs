@@ -1,5 +1,6 @@
 import { Header } from '@components/header';
 import { ManagementSection } from '@components/management-section';
+import { PriceSection } from '@components/price-section';
 import { ProductSection } from '@components/product-section';
 import { WorkSection } from '@components/work-section';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -12,6 +13,7 @@ function App() {
       <WorkSection />
       <ProductSection />
       <ManagementSection />
+      <PriceSection />
     </div>
   );
 }

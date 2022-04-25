@@ -7,13 +7,13 @@ export interface PriceProp {
   title: string;
   price: number;
   operators: string;
-  extraClass?: string;
+  cardType?: 'card-standard' | 'card-normal';
   children?: ReactNode;
 }
 
 export const PriceCard = (props: PriceProp): JSX.Element => {
   return (
-    <div className={`card__box card col-lg-12 col-xl-4 price-card mt-5 ${props.extraClass}`}>
+    <div className={`card__box card col-lg-12 col-xl-4 price-card mt-5 ${props.cardType}`}>
       <div className={`card-body text-center`}>
         <Heading tag="h3" extraClass="card-title">
           {props.title}

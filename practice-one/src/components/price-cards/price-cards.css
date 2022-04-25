@@ -1,0 +1,14 @@
+@import url(../../styles/variable.css);
+
+.price-cards .card-title {
+  font-size: var(--size-s);
+  line-height: 40px;
+}
+
+@media only screen and (max-width: 992px) {
+  .price-cards {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
