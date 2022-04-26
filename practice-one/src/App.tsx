@@ -1,3 +1,4 @@
+import { Footer } from '@components/footer';
 import { Header } from '@components/header';
 import { ManagementSection } from '@components/management-section';
 import { PriceSection } from '@components/price-section';
@@ -14,6 +15,7 @@ function App() {
       <ProductSection />
       <ManagementSection />
       <PriceSection />
+      <Footer />
     </div>
   );
 }

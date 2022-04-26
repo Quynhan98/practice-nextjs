@@ -1,0 +1,46 @@
+@import url(../../styles/variable.css);
+
+.icon__link {
+  width: 40px;
+  height: 41px;
+  margin-right: 16px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--main-color);
+  width: 100%;
+}
+
+.container-footer {
+  margin-top: 137px;
+}
+
+@media only screen and (max-width: 992px) {
+  .container-footer {
+    margin-top: 80px;
+  }
+
+  .footer-logo {
+    height: 100%;
+  }
+
+  .container .footer-logo,
+  .footer-info {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+
+  .container .container-footer {
+    height: 100%;
+    margin-bottom: 60px;
+  }
+
+  .container-footer .footer-icon {
+    padding-bottom: 0px;
+  }
+}
