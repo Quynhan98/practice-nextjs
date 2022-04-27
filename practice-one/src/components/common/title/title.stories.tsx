@@ -1,4 +1,4 @@
-import { Heading, HeadingProp } from '@components/title/index';
+import { Heading, HeadingProp } from '@components/common/title/index';
 import { Story } from '@storybook/react';
 
 export default {

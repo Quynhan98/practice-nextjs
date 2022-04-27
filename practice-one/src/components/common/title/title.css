@@ -1,5 +1,3 @@
-@import url(../../styles/variable.css);
-
 .main-content__heading {
   color: var(--main-color);
 }

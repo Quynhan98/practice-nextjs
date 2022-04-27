@@ -1,5 +1,4 @@
-import { Heading } from '@components/title';
-import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { Heading } from '@components/common/title';
 import './product-card.css';
 
 export interface ProductProp {
@@ -14,7 +13,7 @@ export const ProductCard = (props: ProductProp): JSX.Element => {
       <div className="card">
         <div className="card-body">
           <img src={props.img} className="product-icon" alt="icon click" />
-          <Heading tag="h3" extraClass="card-title mt-4">
+          <Heading tag="h3" extraClass="card-title">
             {props.title}
           </Heading>
           <p className="card-text mt-3">{props.desc}</p>

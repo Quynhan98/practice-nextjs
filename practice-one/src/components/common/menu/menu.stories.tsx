@@ -1,4 +1,4 @@
-import { MenuProp, NavMenu } from '@components/menu-list/index';
+import { MenuProp, NavMenu } from '@components/common/menu/index';
 import { menuList } from '@data/header';
 import { Story } from '@storybook/react';
 

@@ -1,5 +1,3 @@
-@import url(../../styles/variable.css);
-
 .button-primary {
   font-size: var(--size-xxs);
   color: var(--main-color);
@@ -48,4 +46,25 @@
   background-color: var(--main-color);
   color: var(--sub-color);
   padding: 11px 19px;
+}
+
+@media only screen and (max-width: 992px) {
+  .btn-menu .btn-outline-primary {
+    margin-left: 0px;
+  }
+
+  .btn-menu .btn-secondary {
+    margin-left: 10px;
+  }
+
+  .btn-menu .btn {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .btn-work {
+    margin: 45px 0px;
+    padding: 15px 24px;
+  }
 }

@@ -1,4 +1,4 @@
-import './menu-list.css';
+import './menu.css';
 
 export interface MenuProp {
   menuItem: string[];

@@ -1,0 +1,10 @@
+.footer-icon {
+  padding: 18px 0px 35px 0px;
+}
+
+@media only screen and (max-width: 992px) {
+ .footer-icon {
+    justify-content: center;
+    text-align: center;
+  }
+}
