@@ -1,4 +1,4 @@
-import { Logo, LogoProp } from '@components/logo/index';
+import { Logo, LogoProp } from '@components/common/logo/index';
 import { Story } from '@storybook/react';
 import ImageLogo from '@assets/images/logo-product.svg';
 

@@ -1,7 +1,6 @@
-import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './price-card.css';
 import { ReactNode } from 'react';
-import { Heading } from '@components/title';
+import { Heading } from '@components/common/title';
 
 export interface PriceProp {
   title: string;

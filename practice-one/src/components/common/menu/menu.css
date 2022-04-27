@@ -1,5 +1,3 @@
-@import url(../../styles/variable.css);
-
 .nav-list {
   font-size: var(--size-xxs);
   margin-left: auto;

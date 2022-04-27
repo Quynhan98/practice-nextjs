@@ -1,16 +1,11 @@
-import { Button } from '@components/buttons';
-import { PriceCard, PriceProp } from '@components/cards/price-card/index';
+import { Button } from '@components/common/button';
+import { PriceCard } from '@components/common/cards/price-card/index';
+import { prices } from '@data/prices';
 
 export default {
   title: 'Components/Cards',
   component: PriceCard,
 };
-
-const prices: PriceProp[] = [
-  { title: 'Free', price: 0, operators: 'Only 2' },
-  { title: 'Standard', price: 5, operators: '5', extraClass: 'card-standard' },
-  { title: 'Premium', price: 10, operators: '10' },
-];
 
 const Template = (): JSX.Element => {
   return (

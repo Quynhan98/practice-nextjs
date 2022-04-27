@@ -1,4 +1,4 @@
-import { Heading } from '@components/title';
+import { Heading } from '@components/common/title';
 import './logo.css';
 
 export interface LogoProp {
