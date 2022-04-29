@@ -1,0 +1,35 @@
+.container-product .product-title {
+  text-align: center;
+  line-height: 48px;
+}
+
+.container-product .card-title {
+  font-size: var(--size-xs);
+  display: flex;
+  justify-content: flex-start;
+  line-height: 33px;
+}
+
+.product-card {
+  margin-top: 40px;
+}
+
+.product-card .card {
+  max-width: 250px;
+}
+
+.container-product {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 576px) {
+  .container-product {
+    text-align: center;
+  }
+
+  .container-product .card-title {
+    display: flex;
+    justify-content: center;
+  }
+}

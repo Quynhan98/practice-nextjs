@@ -1,11 +1,11 @@
-import { PriceCards } from '@components/price-cards';
-import { Heading } from '@components/title';
-import { prices } from '@data/prices';
+import { PriceCards } from '@components/main-service/price-section/price-cards';
+import { Heading } from '@components/common/title';
+import { prices } from '@constant/data/prices';
 import './price-section.css';
 
 export const PriceSection = (): JSX.Element => {
   return (
-    <section className="container-price mt-5">
+    <section className="container-price">
       <Heading tag="h2" extraClass="price-title">
         Price Table
       </Heading>

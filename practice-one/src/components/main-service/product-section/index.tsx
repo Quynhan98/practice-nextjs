@@ -1,6 +1,8 @@
-import { Heading } from '@components/title';
-import { Button } from '@components/buttons';
-import { ProductCards } from '@components/product-cards';
+import { Heading } from '@components/common/title';
+import { Button } from '@components/common/button';
+import { ProductCards } from '@components/main-service/product-section/product-cards';
+import './product-section.css';
+import { products } from '@constant/data/products';
 
 export const ProductSection = (): JSX.Element => {
   return (
@@ -8,7 +10,7 @@ export const ProductSection = (): JSX.Element => {
       <Heading tag="h2" extraClass="product-title">
         Product was Built Specifically for You
       </Heading>
-      <ProductCards />
+      <ProductCards products={products} />
       <div className="product-btn main-content__button d-flex justify-content-center mt-5">
         <Button color="secondary" type="button" extraClass="btn-content text-uppercase">
           SIGN UP NOW

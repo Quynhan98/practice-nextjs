@@ -1,5 +1,6 @@
-import { Heading } from '@components/title';
+import { Heading } from '@components/common/title';
 import photoManagement from '@assets/images/photo-management.svg';
+import './management-section.css';
 
 export const ManagementSection = (): JSX.Element => {
   return (

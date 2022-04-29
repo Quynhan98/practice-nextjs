@@ -1,6 +1,6 @@
-import './price-card.css';
 import { ReactNode } from 'react';
 import { Heading } from '@components/common/title';
+import './price-card.css';
 
 export interface PriceProp {
   title: string;

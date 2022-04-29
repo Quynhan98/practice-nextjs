@@ -1,7 +1,8 @@
-import { Button } from '@components/buttons';
-import photoExperience from '@assets//images/photo-experience.svg';
-import playIcon from '@assets//images/icon-triangle.svg';
-import { Heading } from '@components/title';
+import { Button } from '@components/common/button';
+import photoExperience from '@assets/images/photo-experience.svg';
+import playIcon from '@assets/images/icon-triangle.svg';
+import { Heading } from '@components/common/title';
+import './work-section.css';
 
 export const WorkSection = (): JSX.Element => {
   return (
@@ -14,12 +15,9 @@ export const WorkSection = (): JSX.Element => {
             way to imagine your next user experience.
           </p>
           <div className="main-content__link">
-            <Button
-              color="secondary"
-              children="Get started"
-              type="button"
-              extraClass="btn btn-secondary btn-work"
-            />
+            <Button color="secondary" type="button" extraClass="btn btn-secondary btn-work">
+              Get started
+            </Button>
             <a className="work__link" href="#">
               <img src={playIcon} className="work__icon" alt="icon play" />
               Watch the Video

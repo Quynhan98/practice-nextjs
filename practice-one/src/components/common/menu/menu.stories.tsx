@@ -1,5 +1,4 @@
 import { MenuProp, NavMenu } from '@components/common/menu/index';
-import { menuList } from '@data/header';
 import { Story } from '@storybook/react';
 
 export default {
@@ -9,7 +8,7 @@ export default {
 
 const Template: Story<MenuProp> = (args): JSX.Element => <NavMenu {...args} />;
 
-export const MenuList = Template.bind({});
-MenuList.args = {
-  menuItem: menuList,
+export const Menu = Template.bind({});
+Menu.args = {
+  menuItem: ['Product', 'Customers', 'Pricing', 'Resources'],
 };

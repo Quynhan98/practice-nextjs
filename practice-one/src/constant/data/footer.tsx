@@ -1,7 +1,7 @@
 import iconInstagram from '@assets/images/icon-instagram.svg';
 import iconFacebook from '@assets/images/icon-facebook.svg';
 import iconTwitter from '@assets/images/icon-twitter.svg';
-import { Social } from '@components/social-icon';
+import { Social } from '@components/common/social-icon';
 
 export const SocialData: Social[] = [
   {

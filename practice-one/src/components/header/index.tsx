@@ -1,9 +1,10 @@
-import { Logo } from '@components/logo';
+import { Logo } from '@components/common/logo';
 import LogoImage from '@assets/images/logo-product.svg';
-import { Button } from '@components/buttons';
+import { Button } from '@components/common/button';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { NavMenu } from '@components/menu-list';
-import { menuList } from '@data/header';
+import { NavMenu } from '@components/common/menu';
+import { menu } from '@constant/data/header';
+import './header.css';
 
 export const Header = (): JSX.Element => {
   return (
@@ -16,20 +17,14 @@ export const Header = (): JSX.Element => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="nav-collapse" id="basic-navbar-nav">
             <Nav className="me-auto">
-              <NavMenu menuItem={menuList} />
+              <NavMenu menuItem={menu} />
               <div className="btn-menu">
-                <Button
-                  color="primary"
-                  children="Sign In"
-                  type="button"
-                  extraClass="btn btn-outline-primary"
-                />
-                <Button
-                  color="secondary"
-                  children="Sign Up"
-                  type="button"
-                  extraClass="btn btn-secondary"
-                />
+                <Button color="primary" type="button" extraClass="btn btn-outline-primary">
+                  Sign In
+                </Button>
+                <Button color="secondary" type="button" extraClass="btn btn-secondary">
+                  Sign Up
+                </Button>
               </div>
             </Nav>
           </Navbar.Collapse>

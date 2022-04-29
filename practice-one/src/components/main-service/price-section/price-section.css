@@ -1,0 +1,13 @@
+.container-price .price-title {
+  font-size: var(--size-xl);
+  text-align: center;
+}
+.container-price {
+  padding-bottom: 65px;
+}
+
+@media only screen and (max-width: 992px) {
+  .container-price {
+    margin-top: 40px;
+  }
+}

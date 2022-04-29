@@ -1,0 +1,5 @@
+@media only screen and (max-width: 992px) {
+  .card-group .product-card .card {
+    margin: 0 auto;
+  }
+}

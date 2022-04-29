@@ -1,5 +1,3 @@
-@import url(../../styles/variable.css);
-
 .icon__link {
   width: 40px;
   height: 41px;
@@ -15,32 +13,28 @@
 }
 
 .container-footer {
-  margin-top: 137px;
+  padding-top: 68px;
+  padding-bottom: 56px;
 }
 
 @media only screen and (max-width: 992px) {
   .container-footer {
-    margin-top: 80px;
+    padding-top: 10px;
   }
 
   .footer-logo {
     height: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .container .footer-logo,
+  .footer-logo .product__logo {
+    gap: 16px;
+  }
+
+  .container-footer .product__logo,
   .footer-info {
-    display: grid;
+    display: flex;
     justify-content: center;
-    align-content: center;
-    width: 100%;
-  }
-
-  .container .container-footer {
-    height: 100%;
-    margin-bottom: 60px;
-  }
-
-  .container-footer .footer-icon {
-    padding-bottom: 0px;
   }
 }
