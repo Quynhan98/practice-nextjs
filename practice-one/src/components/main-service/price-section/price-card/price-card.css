@@ -51,7 +51,7 @@
   color: var(--main-color);
 }
 
-.price-cards .card-title,
+.card-normal .card-title,
 .card-text {
   color: #22343d;
   margin: 16px 0px;

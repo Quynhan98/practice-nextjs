@@ -1,20 +1,14 @@
-import { Footer } from '@components/footer';
-import { Header } from '@components/header';
-import { ManagementSection } from '@components/management-section';
-import { PriceSection } from '@components/price-section';
-import { ProductSection } from '@components/product-section';
-import { WorkSection } from '@components/work-section';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './styles/main.css';
+import { Header } from '@components/header';
+import { MainService } from '@components/main-service';
+import { Footer } from '@components/footer';
 
 function App() {
   return (
-    <div className="App container">
+    <div className="App">
       <Header />
-      <WorkSection />
-      <ProductSection />
-      <ManagementSection />
-      <PriceSection />
+      <MainService />
       <Footer />
     </div>
   );

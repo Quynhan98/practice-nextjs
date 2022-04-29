@@ -1,5 +1,3 @@
-@import url(../../styles/variable.css);
-
 .price-cards .card-title {
   font-size: var(--size-s);
   line-height: 40px;

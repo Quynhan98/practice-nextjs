@@ -1,6 +1,0 @@
-@import url(../../styles/variable.css);
-
-.container-price .price-title {
-  font-size: var(--size-xl);
-  text-align: center;
-}
