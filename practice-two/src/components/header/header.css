@@ -1,0 +1,12 @@
+.heading {
+  color: var(--color-dark);
+  font-size: var(--size-xl);
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
