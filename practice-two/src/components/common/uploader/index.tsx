@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent } from 'react';
+import { ChangeEvent } from 'react';
 import './uploader.css';
 
 export type UploaderProp = {
@@ -7,24 +7,17 @@ export type UploaderProp = {
   name: string;
   baseImage: string;
   handleChange?: (e: ChangeEvent<HTMLInputElement>) => void;
-  onHandleBlur?: (e: FormEvent) => void;
 };
 
 export const Uploader = (props: UploaderProp) => {
-  const { label, messageErr, name, baseImage, handleChange, onHandleBlur } = props;
+  const { label, messageErr, name, baseImage, handleChange } = props;
 
   return (
     <div className="uploader">
       <label className="uploader-title">
         {label}
         <div className="uploader-input">
-          <input
-            onBlur={onHandleBlur}
-            name={name}
-            onChange={handleChange}
-            className="input-content"
-            type="file"
-          />
+          <input name={name} onChange={handleChange} className="input-content" type="file" />
           {baseImage && <img src={baseImage} className="uploader-image" />}
         </div>
       </label>
