@@ -1,0 +1,18 @@
+.book-form {
+  display: grid;
+  place-items: center;
+  padding-top: 40px;
+}
+
+.group-btn {
+  display: flex;
+  margin-top: 20px;
+  column-gap: 20px;
+}
+
+.form-heading {
+  font-size: var(--size-l);
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-primary);
+}
