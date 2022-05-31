@@ -1,3 +1,4 @@
+import { Error } from '@components/common/error';
 import { Popup } from '@components/common/popup';
 import { Form } from '@components/form';
 import { Header } from '@components/header';
@@ -5,23 +6,15 @@ import { Books } from '@components/list-book';
 import { SERVER_MESSAGES } from '@constant/messages';
 import URL_PAGE from '@constant/url';
 import { formValidate, ValidationResult } from '@helpers/validation-form';
+import useGetData from '@hooks/useGetData';
 import { Book } from '@interface/book';
 import { postData } from '@services/fetch-api';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './styles/main.css';
 
 const App = (): JSX.Element => {
-  const [books, setBooks] = useState<Book[]>([]);
   const [isOpen, setIsOpen] = useState(false);
-  const [isError, setIsError] = useState('');
-
-  useEffect(() => {
-    if (isError) {
-      setTimeout(() => {
-        setIsError('');
-      }, 3000);
-    }
-  }, [isError]);
+  const { data, error, setData, setError } = useGetData<Book>(URL_PAGE);
 
   const handelToggleForm = (): void => {
     setIsOpen(!isOpen);
@@ -34,26 +27,29 @@ const App = (): JSX.Element => {
       if (validateFormCreate.isValid) {
         await postData(book, URL_PAGE);
 
-        setBooks([...books, book]);
+        setData([...data, book]);
         handelToggleForm();
       }
     } catch (error) {
-      setIsError(SERVER_MESSAGES.SERVER_RESPONSE_ERROR);
-      console.error(error);
+      setError(SERVER_MESSAGES.SERVER_RESPONSE_ERROR);
       handelToggleForm();
     }
+  };
+
+  const closeError = (): void => {
+    setError('');
   };
 
   return (
     <div className="container">
       <Header toggleForm={handelToggleForm} />
-      <Books />
+      <Books books={data} />
       {isOpen && (
         <Popup handleClose={handelToggleForm}>
           <Form onCreate={handleCreate} onHandleClose={handelToggleForm} />
         </Popup>
       )}
-      {isError && <span className="notification-error">{isError}</span>}
+      {error && <Error onHandleClick={closeError}>{error}</Error>}
     </div>
   );
 };

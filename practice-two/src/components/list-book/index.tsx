@@ -1,8 +1,14 @@
-import { books } from '@constant/data/books';
-import { Card } from './card';
+import { Book } from '@interface/book';
+import Card from './card';
 import './list-book.css';
 
-export const Books = (): JSX.Element => {
+type ListBookProp = {
+  books: Book[];
+};
+
+export const Books = (props: ListBookProp): JSX.Element => {
+  const { books } = props;
+
   return (
     <div className="book-list">
       <div className="card-group">

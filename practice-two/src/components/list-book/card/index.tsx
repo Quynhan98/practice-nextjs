@@ -1,4 +1,5 @@
 import { Button } from '@components/common/button';
+import { memo } from 'react';
 import './card.css';
 
 export type CardProp = {
@@ -9,7 +10,7 @@ export type CardProp = {
   image?: string;
 };
 
-export const Card = (props: CardProp): JSX.Element => {
+const Card = (props: CardProp): JSX.Element => {
   const { title, author, price, desc, image } = props;
 
   return (
@@ -32,3 +33,5 @@ export const Card = (props: CardProp): JSX.Element => {
     </div>
   );
 };
+
+export default memo(Card);

@@ -1,3 +1,4 @@
+import { SERVER_MESSAGES } from '@constant/messages';
 export const postData = async <T>(requestData: T, url: string): Promise<T> => {
   const config = {
     method: 'POST',
@@ -9,5 +10,19 @@ export const postData = async <T>(requestData: T, url: string): Promise<T> => {
 
   const response = await fetch(url, config);
 
-  return response.json();
+  if (response.ok) {
+    return response.json();
+  }
+
+  throw new Error(SERVER_MESSAGES.SERVER_RESPONSE_ERROR);
+};
+
+export const getData = async <T>(url: string): Promise<T> => {
+  const response = await fetch(url);
+
+  if (response.ok) {
+    return response.json();
+  }
+
+  throw new Error(SERVER_MESSAGES.SERVER_GET_ERROR);
 };
