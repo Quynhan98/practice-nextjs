@@ -1,5 +1,5 @@
-import { VALIDATE_MESSAGES } from "@constant/messages";
-import { Book } from "@interface/book";
+import { VALIDATE_MESSAGES } from '@constant/messages';
+import { Book } from '@interface/book';
 
 export interface ValidationResult {
   isValid: boolean;
@@ -19,7 +19,7 @@ export interface ValidationResult {
  */
 const isEmpty = (value: string | number): boolean => {
   return !!value;
-}
+};
 
 /**
  * validate for form
@@ -27,7 +27,7 @@ const isEmpty = (value: string | number): boolean => {
  * @returns ValidationResult
  */
 export const formValidate = (book: Book) => {
-  let result: ValidationResult = { isValid: true };
+  const result: ValidationResult = { isValid: true };
 
   result.errors = {
     title: '',
@@ -61,7 +61,7 @@ export const formValidate = (book: Book) => {
     result.errors.desc = VALIDATE_MESSAGES.DESC_REQUIRED;
   }
 
-  //Image
+  // Image
   if (!isEmpty(book.image)) {
     result.errors.img = VALIDATE_MESSAGES.IMAGE_REQUIRED;
   }
@@ -74,4 +74,4 @@ export const formValidate = (book: Book) => {
   }
 
   return result;
-}
+};

@@ -4,16 +4,17 @@ import './list-book.css';
 
 type ListBookProp = {
   books: Book[];
+  handleRemove: (id: number) => void;
 };
 
 export const Books = (props: ListBookProp): JSX.Element => {
-  const { books } = props;
+  const { books, handleRemove } = props;
 
   return (
     <div className="book-list">
       <div className="card-group">
         {books.map((item) => (
-          <Card key={item.id} {...item} />
+          <Card onDelete={handleRemove} key={item.id} {...item} />
         ))}
       </div>
     </div>
