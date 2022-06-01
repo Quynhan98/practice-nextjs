@@ -5,4 +5,4 @@ export interface Book {
   price: number;
   desc: string;
   image: string;
-};
+}

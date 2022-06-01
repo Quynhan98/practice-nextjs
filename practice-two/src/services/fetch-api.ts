@@ -26,3 +26,17 @@ export const getData = async <T>(url: string): Promise<T> => {
 
   throw new Error(SERVER_MESSAGES.SERVER_GET_ERROR);
 };
+
+export const deleteData = async <T>(id: number, url: string): Promise<T> => {
+  const config = {
+    method: 'DELETE'
+  };
+
+  const response = await fetch(`${url}/${id}`, config);
+
+  if (response.ok) {
+    return response.json();
+  }
+
+  throw new Error(SERVER_MESSAGES.SERVER_DELETE_ERROR);
+};

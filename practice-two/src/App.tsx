@@ -8,8 +8,8 @@ import URL_PAGE from '@constant/url';
 import { formValidate, ValidationResult } from '@helpers/validation-form';
 import useGetData from '@hooks/useGetData';
 import { Book } from '@interface/book';
-import { postData } from '@services/fetch-api';
-import { useState } from 'react';
+import { deleteData, postData } from '@services/fetch-api';
+import { useCallback, useState } from 'react';
 import './styles/main.css';
 
 const App = (): JSX.Element => {
@@ -36,6 +36,20 @@ const App = (): JSX.Element => {
     }
   };
 
+  const handleDelete = useCallback(
+    async (id: number): Promise<void> => {
+      try {
+        await deleteData(id, URL_PAGE);
+        const bookArr: Book[] = data.filter((item) => item.id !== id);
+
+        setData(bookArr);
+      } catch (error) {
+        setError(SERVER_MESSAGES.SERVER_DELETE_ERROR);
+      }
+    },
+    [data, setData, setError]
+  );
+
   const closeError = (): void => {
     setError('');
   };
@@ -43,7 +57,7 @@ const App = (): JSX.Element => {
   return (
     <div className="container">
       <Header toggleForm={handelToggleForm} />
-      <Books books={data} />
+      <Books handleRemove={handleDelete} books={data} />
       {isOpen && (
         <Popup handleClose={handelToggleForm}>
           <Form onCreate={handleCreate} onHandleClose={handelToggleForm} />

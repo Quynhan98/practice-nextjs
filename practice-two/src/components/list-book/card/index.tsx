@@ -1,17 +1,23 @@
 import { Button } from '@components/common/button';
-import { memo } from 'react';
+import { memo, useCallback } from 'react';
 import './card.css';
 
 export type CardProp = {
   title: string;
   author: string;
   price: number;
-  desc?: string;
-  image?: string;
+  desc: string;
+  image: string;
+  id: number;
+  onDelete: (id: number) => void;
 };
 
 const Card = (props: CardProp): JSX.Element => {
-  const { title, author, price, desc, image } = props;
+  const { title, author, price, desc, image, id, onDelete } = props;
+
+  const handleDelete = useCallback((): void => {
+    onDelete(id);
+  }, [id, onDelete]);
 
   return (
     <div className="card">
@@ -25,7 +31,12 @@ const Card = (props: CardProp): JSX.Element => {
           <Button color="btn-secondary" typeButton="button" size="btn-small">
             Edit
           </Button>
-          <Button color="btn-warning" typeButton="button" size="btn-small">
+          <Button
+            handleClick={handleDelete}
+            color="btn-warning"
+            typeButton="button"
+            size="btn-small"
+          >
             Delete
           </Button>
         </div>

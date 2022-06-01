@@ -18,7 +18,7 @@ const useGetData = <T>(url: string) => {
     };
 
     getList();
-  }, []);
+  }, [url]);
 
   return {
     data,
@@ -26,6 +26,6 @@ const useGetData = <T>(url: string) => {
     setData,
     setError
   };
-}
+};
 
 export default useGetData;
