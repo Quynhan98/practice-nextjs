@@ -1,5 +1,6 @@
 import { Error } from '@components/common/error';
 import { Popup } from '@components/common/popup';
+import Search from '@components/common/search';
 import { Form } from '@components/form';
 import { Header } from '@components/header';
 import { Books } from '@components/list-book';
@@ -9,12 +10,13 @@ import { formValidate, ValidationResult } from '@helpers/validation-form';
 import useGetData from '@hooks/useGetData';
 import { Book } from '@interface/book';
 import { deleteData, postData, updateData } from '@services/fetch-api';
-import { useCallback, useState } from 'react';
+import { ChangeEvent, useCallback, useState } from 'react';
 import './styles/main.css';
 
 const App = (): JSX.Element => {
   const [book, setBook] = useState<Book | undefined>();
   const [isOpen, setIsOpen] = useState(false);
+  const [search, setSearch] = useState('');
   const { data, error, setData, setError } = useGetData<Book>(URL_PAGE);
 
   const handelToggleForm = (): void => {
@@ -87,10 +89,21 @@ const App = (): JSX.Element => {
     setError('');
   };
 
+  const handleChangeSearch = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+    const newValueSearch = e.target.value;
+
+    setSearch(newValueSearch);
+  }, []);
+
+  const filterBooks = data.filter((book) =>
+    Object.values(book).join('').toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <div className="container">
       <Header toggleForm={handelToggleForm} />
-      <Books onClickButtonEdit={clickButtonEdit} handleRemove={handleDelete} books={data} />
+      <Search onChange={handleChangeSearch} />
+      <Books onClickButtonEdit={clickButtonEdit} handleRemove={handleDelete} books={filterBooks} />
       {isOpen && (
         <Popup handleClose={handelToggleForm}>
           <Form
