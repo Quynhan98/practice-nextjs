@@ -10,5 +10,6 @@ export const VALIDATE_MESSAGES = {
 export const SERVER_MESSAGES = {
   SERVER_RESPONSE_ERROR: 'The server is not responding. Please try again!',
   SERVER_GET_ERROR: 'The server does not respond. Retrieving data failed!',
-  SERVER_DELETE_ERROR: 'Delete failed. Please try again!'
-};
+  SERVER_DELETE_ERROR: 'Delete failed. Please try again!',
+  SERVER_EDIT_ERROR: 'Edit failed. Please try again!',
+}

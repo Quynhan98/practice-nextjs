@@ -10,10 +10,11 @@ export type CardProp = {
   image: string;
   id: number;
   onDelete: (id: number) => void;
+  onEdit: () => void;
 };
 
 const Card = (props: CardProp): JSX.Element => {
-  const { title, author, price, desc, image, id, onDelete } = props;
+  const { title, author, price, desc, image, id, onDelete, onEdit } = props;
 
   const handleDelete = useCallback((): void => {
     onDelete(id);
@@ -28,7 +29,7 @@ const Card = (props: CardProp): JSX.Element => {
         <span className="card-price">Price: {price} USD</span>
         <p className="card-desc">{desc}</p>
         <div className="button-group">
-          <Button color="btn-secondary" typeButton="button" size="btn-small">
+          <Button handleClick={onEdit} color="btn-secondary" typeButton="button" size="btn-small">
             Edit
           </Button>
           <Button
