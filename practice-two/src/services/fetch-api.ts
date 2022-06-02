@@ -40,3 +40,19 @@ export const deleteData = async <T>(id: number, url: string): Promise<T> => {
 
   throw new Error(SERVER_MESSAGES.SERVER_DELETE_ERROR);
 };
+
+export const updateData = async <T>(id: number, url: string, data: T): Promise<T> => {
+  const response = await fetch(`${url}/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+
+  if (response.ok) {
+    return response.json();
+  }
+
+  throw new Error(SERVER_MESSAGES.SERVER_EDIT_ERROR);
+};

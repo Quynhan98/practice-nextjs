@@ -11,7 +11,7 @@ type FormProp = {
   selectedBook?: Book;
   onHandleClose?: () => void;
   onCreate: (book: Book) => void;
-  handleEdit?: () => void;
+  onHandleEdit: (book: Book) => void;
 };
 
 type MessagesErr = {
@@ -40,7 +40,7 @@ const initialErrorMsgs: MessagesErr = {
 };
 
 export const Form = (props: FormProp): JSX.Element => {
-  const { selectedBook, onHandleClose, onCreate, handleEdit } = props;
+  const { selectedBook, onHandleClose, onCreate, onHandleEdit } = props;
   const [book, setBook] = useState<Book>(selectedBook || initialBook);
   const [msgError, setMsgError] = useState(initialErrorMsgs);
 
@@ -76,6 +76,10 @@ export const Form = (props: FormProp): JSX.Element => {
     const newBook: Book = { ...book, id: Date.now() };
 
     onCreate(newBook);
+  };
+
+  const handleEdit = (): void => {
+    onHandleEdit(book);
   };
 
   return (
@@ -128,7 +132,7 @@ export const Form = (props: FormProp): JSX.Element => {
         />
         <div className="group-btn">
           <Button
-            handleClick={!selectedBook ? handleCreate : handleEdit}
+            handleClick={selectedBook ? handleEdit : handleCreate}
             typeButton="button"
             size="btn-small"
             color="btn-secondary"
