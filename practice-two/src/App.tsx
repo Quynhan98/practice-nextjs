@@ -7,7 +7,8 @@ import { Books } from '@components/list-book';
 import { SERVER_MESSAGES } from '@constant/messages';
 import URL_PAGE from '@constant/url';
 import { formValidate, ValidationResult } from '@helpers/validation-form';
-import useGetData from '@hooks/useGetData';
+import { useDebounce } from '@hooks/use-debounce';
+import useGetData from '@hooks/use-get-data';
 import { Book } from '@interface/book';
 import { deleteData, postData, updateData } from '@services/fetch-api';
 import { ChangeEvent, useCallback, useState } from 'react';
@@ -17,7 +18,8 @@ const App = (): JSX.Element => {
   const [book, setBook] = useState<Book | undefined>();
   const [isOpen, setIsOpen] = useState(false);
   const [search, setSearch] = useState('');
-  const { data, error, setData, setError } = useGetData<Book>(URL_PAGE);
+  const searchValue = useDebounce(search, 500);
+  const { data, error, setData, setError } = useGetData<Book>(`${URL_PAGE}${searchValue}`);
 
   const handelToggleForm = (): void => {
     setIsOpen(!isOpen);
@@ -89,21 +91,17 @@ const App = (): JSX.Element => {
     setError('');
   };
 
-  const handleChangeSearch = useCallback((e: ChangeEvent<HTMLInputElement>) => {
-    const newValueSearch = e.target.value;
+  const handleChangeSearch = (e: ChangeEvent<HTMLInputElement>) => {
+    const searchTerm: string = e.target.value;
 
-    setSearch(newValueSearch);
-  }, []);
-
-  const filterBooks = data.filter((book) =>
-    Object.values(book).join('').toLowerCase().includes(search.toLowerCase())
-  );
+    setSearch(`?title_like=${searchTerm}`);
+  };
 
   return (
     <div className="container">
       <Header toggleForm={handelToggleForm} />
       <Search onChange={handleChangeSearch} />
-      <Books onClickButtonEdit={clickButtonEdit} handleRemove={handleDelete} books={filterBooks} />
+      <Books onClickButtonEdit={clickButtonEdit} handleRemove={handleDelete} books={data} />
       {isOpen && (
         <Popup handleClose={handelToggleForm}>
           <Form
