@@ -1,0 +1,6 @@
+.textarea-content {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: var(--size-s);
+}

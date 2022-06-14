@@ -1,10 +1,10 @@
+import { useState } from 'react';
+import { Book } from '@interface/book';
+import { formValidate, ValidationResult } from '@helpers/validation-form';
 import { Button } from '@components/common/button';
 import { Textbox } from '@components/common/textbox';
 import { Uploader } from '@components/common/uploader';
-import { convertBase64 } from '@helpers/encode';
-import { formValidate, ValidationResult } from '@helpers/validation-form';
-import { Book } from '@interface/book';
-import { ChangeEvent, useState } from 'react';
+import { Textarea } from '@components/common/textarea';
 import './form.css';
 
 type FormProp = {
@@ -12,6 +12,15 @@ type FormProp = {
   onHandleClose?: () => void;
   onCreate: (book: Book) => void;
   onHandleEdit: (book: Book) => void;
+};
+
+export type InputProp = {
+  title?: string;
+  author?: string;
+  price?: number;
+  desc?: string;
+  image?: string;
+  id?: number;
 };
 
 type MessagesErr = {
@@ -44,20 +53,12 @@ export const Form = (props: FormProp): JSX.Element => {
   const [book, setBook] = useState<Book>(selectedBook || initialBook);
   const [msgError, setMsgError] = useState(initialErrorMsgs);
 
-  const uploadImage = async (e: any): Promise<void> => {
-    const file = e.target.files[0];
-    const srcImage = (await convertBase64(file)) as string;
-
-    setBook({ ...book, image: srcImage });
+  const uploadImage = (img: string) => {
+    setBook({ ...book, image: img });
   };
 
-  const handleFieldChange = (e: ChangeEvent<HTMLInputElement>): void => {
-    const { name, value } = e.target;
-
-    setBook({
-      ...book,
-      [name]: value,
-    });
+  const handleInputValue = (value: InputProp) => {
+    setBook({ ...book, ...value });
   };
 
   const handleBlur = (): void => {
@@ -88,7 +89,7 @@ export const Form = (props: FormProp): JSX.Element => {
       <form className="book-form">
         <Textbox
           onHandleBlur={handleBlur}
-          handleChange={handleFieldChange}
+          handleInput={handleInputValue}
           label="Title"
           inputType="text"
           name="title"
@@ -97,7 +98,7 @@ export const Form = (props: FormProp): JSX.Element => {
         />
         <Textbox
           onHandleBlur={handleBlur}
-          handleChange={handleFieldChange}
+          handleInput={handleInputValue}
           label="Author"
           inputType="text"
           name="author"
@@ -106,18 +107,18 @@ export const Form = (props: FormProp): JSX.Element => {
         />
         <Textbox
           onHandleBlur={handleBlur}
-          handleChange={handleFieldChange}
+          handleInput={handleInputValue}
           label="Price"
-          inputType="number"
+          inputType="text"
           name="price"
           value={book.price}
           messageErr={msgError.price}
         />
-        <Textbox
+        <Textarea
           onHandleBlur={handleBlur}
-          handleChange={handleFieldChange}
+          rows={3}
+          handleInput={handleInputValue}
           label="Description"
-          inputType="text"
           name="desc"
           value={book.desc}
           messageErr={msgError.desc}
@@ -125,9 +126,9 @@ export const Form = (props: FormProp): JSX.Element => {
         <Uploader
           onHandleBlur={handleBlur}
           handleChange={uploadImage}
+          baseImage={book.image}
           label="Image"
           name="image"
-          baseImage={book.image}
           messageErr={msgError.img}
         />
         <div className="group-btn">

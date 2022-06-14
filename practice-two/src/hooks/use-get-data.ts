@@ -2,6 +2,11 @@ import { SERVER_MESSAGES } from '@constant/messages';
 import { getData } from '@services/fetch-api';
 import { useState, useEffect } from 'react';
 
+/**
+ * Get data from json server
+ * @param url url json server
+ * @returns data, error, setData, setError
+ */
 const useGetData = <T>(url: string) => {
   const [data, setData] = useState<T[]>([]);
   const [error, setError] = useState('');

@@ -1,21 +1,22 @@
 import { ChangeEvent, FormEvent, MutableRefObject, useRef } from 'react';
-import './textbox.css';
+import './textarea.css';
 
-export type TextboxProp = {
+export type TextareaProp = {
+  rows?: number;
+  cols?: number;
   label: string;
   messageErr?: string;
-  inputType: 'text' | 'number';
   name: string;
-  value: string | number;
+  value: string;
   handleInput: (input: { [key: string]: string }) => void;
   onHandleBlur?: (e: FormEvent) => void;
 };
 
-export const Textbox = (props: TextboxProp) => {
-  const { label, messageErr, inputType, name, value, handleInput, onHandleBlur } = props;
-  const inputRef = useRef() as MutableRefObject<HTMLInputElement>;
+export const Textarea = (props: TextareaProp): JSX.Element => {
+  const { label, messageErr, name, rows, cols, value, handleInput, onHandleBlur } = props;
+  const inputRef = useRef() as MutableRefObject<HTMLTextAreaElement>;
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
     const inputValue = { [e.target.name]: inputRef.current.value };
 
     handleInput(inputValue);
@@ -25,13 +26,15 @@ export const Textbox = (props: TextboxProp) => {
     <div className="input">
       <label className="input-title">
         {label}
-        <input
+        <textarea
           ref={inputRef}
-          name={name}
           value={value}
+          id={name}
+          rows={rows}
+          cols={cols}
+          name={name}
           onChange={handleChange}
-          className="input-content"
-          type={inputType}
+          className="textarea-content"
           onBlur={onHandleBlur}
         />
       </label>
