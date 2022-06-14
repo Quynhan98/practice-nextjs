@@ -1,6 +1,6 @@
 import { Story } from '@storybook/react';
 import frankensteinImg from '@assets/images/frankenstein-img.jpg';
-import { Card, CardProp } from '@components/list-book/card';
+import Card, { CardProp } from '@components/list-book/card';
 
 export default {
   title: 'Components/Card',

@@ -1,13 +1,12 @@
 .book-form {
-  display: grid;
-  place-items: center;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .group-btn {
   display: flex;
   margin-top: 20px;
   column-gap: 20px;
+  justify-content: center;
 }
 
 .form-heading {

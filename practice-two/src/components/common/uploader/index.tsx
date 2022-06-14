@@ -1,4 +1,5 @@
-import { ChangeEvent, FormEvent } from 'react';
+import { convertBase64 } from '@helpers/encode';
+import { FormEvent, useState } from 'react';
 import './uploader.css';
 
 export type UploaderProp = {
@@ -6,12 +7,22 @@ export type UploaderProp = {
   messageErr?: string;
   name: string;
   baseImage: string;
-  handleChange?: (e: ChangeEvent<HTMLInputElement>) => void;
+  handleChange: (img: string) => void;
   onHandleBlur?: (e: FormEvent) => void;
 };
 
 export const Uploader = (props: UploaderProp) => {
   const { label, messageErr, name, baseImage, handleChange, onHandleBlur } = props;
+  const [image, setImage] = useState(baseImage);
+
+  const uploadImage = async (e: any) => {
+    const file = e.target.files[0];
+
+    const srcImage = (await convertBase64(file)) as string;
+
+    setImage(srcImage);
+    handleChange(srcImage);
+  };
 
   return (
     <div className="uploader">
@@ -21,11 +32,11 @@ export const Uploader = (props: UploaderProp) => {
           <input
             onBlur={onHandleBlur}
             name={name}
-            onChange={handleChange}
-            className="input-content"
+            onChange={uploadImage}
+            className="uploader-content"
             type="file"
           />
-          {baseImage && <img src={baseImage} className="uploader-image" />}
+          {image && <img src={image} className="uploader-image" />}
         </div>
       </label>
       {messageErr && <span className="input-error">{messageErr}</span>}

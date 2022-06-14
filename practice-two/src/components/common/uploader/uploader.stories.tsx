@@ -9,8 +9,8 @@ export default {
 const Template: Story<UploaderProp> = (args) => <Uploader {...args} />;
 
 export const TextboxInput = Template.bind({});
+
 TextboxInput.args = {
   label: 'Title',
   name: 'image',
-  messageErr: 'Message error',
 };

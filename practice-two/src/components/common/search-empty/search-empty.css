@@ -1,0 +1,22 @@
+.search-empty {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.search-empty_icon {
+  width: 200px;
+}
+
+.search-empty_title {
+  font-size: var(--size-m);
+  color: var(--color-dark);
+}
+
+.search-empty_hint {
+  padding-top: 15px;
+  font-size: var(--size-m);
+  color: var(--color-outline);
+}

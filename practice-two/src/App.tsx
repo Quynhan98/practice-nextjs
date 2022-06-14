@@ -1,18 +1,19 @@
+import './styles/main.css';
+import { ChangeEvent, useCallback, useState } from 'react';
+import { SERVER_MESSAGES } from '@constant/messages';
+import URL_PAGE from '@constant/url';
+import { formValidate, ValidationResult } from '@helpers/validation-form';
+import { deleteData, postData, updateData } from '@services/fetch-api';
+import useGetData from '@hooks/use-get-data';
+import { useDebounce } from '@hooks/use-debounce';
+import { Book } from '@interface/book';
 import { Error } from '@components/common/error';
 import { Popup } from '@components/common/popup';
 import Search from '@components/common/search';
 import { Form } from '@components/form';
 import { Header } from '@components/header';
 import { Books } from '@components/list-book';
-import { SERVER_MESSAGES } from '@constant/messages';
-import URL_PAGE from '@constant/url';
-import { formValidate, ValidationResult } from '@helpers/validation-form';
-import { useDebounce } from '@hooks/use-debounce';
-import useGetData from '@hooks/use-get-data';
-import { Book } from '@interface/book';
-import { deleteData, postData, updateData } from '@services/fetch-api';
-import { ChangeEvent, useCallback, useState } from 'react';
-import './styles/main.css';
+import { SearchEmptyResult } from '@components/common/search-empty';
 
 const App = (): JSX.Element => {
   const [book, setBook] = useState<Book | undefined>();
@@ -26,6 +27,9 @@ const App = (): JSX.Element => {
 
     if (isOpen) {
       setBook(undefined);
+      document.body.style.overflow = '';
+    } else {
+      document.body.style.overflow = 'hidden';
     }
   };
 
@@ -36,7 +40,7 @@ const App = (): JSX.Element => {
       if (validateFormCreate.isValid) {
         await postData(book, URL_PAGE);
 
-        setData([...data, book]);
+        setData([book, ...data]);
         handelToggleForm();
       }
     } catch (error) {
@@ -101,7 +105,11 @@ const App = (): JSX.Element => {
     <div className="container">
       <Header toggleForm={handelToggleForm} />
       <Search onChange={handleChangeSearch} />
-      <Books onClickButtonEdit={clickButtonEdit} handleRemove={handleDelete} books={data} />
+      {searchValue && data.length === 0 ? (
+        <SearchEmptyResult />
+      ) : (
+        <Books onClickButtonEdit={clickButtonEdit} handleRemove={handleDelete} books={data} />
+      )}
       {isOpen && (
         <Popup handleClose={handelToggleForm}>
           <Form
