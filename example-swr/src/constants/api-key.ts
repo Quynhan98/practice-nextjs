@@ -1,0 +1,5 @@
+export const API = {
+  API_KEY: '774dadd71369f920d925c1ad58e2bbbe',
+  SESSION_ID: `a72879695f7356a93490e98d3746229087aebc1c`,
+  ACCOUNT_ID: '12410501',
+}

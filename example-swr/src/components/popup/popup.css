@@ -1,0 +1,26 @@
+.group {
+  padding: 10px 20px;
+  display: flex;
+  cursor: pointer;
+}
+
+.group i {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  padding-top: 2px;
+}
+
+.group:hover {
+  color: white;
+}
+
+.group .group_content:hover {
+  filter: invert(51%) sepia(41%) saturate(2511%) hue-rotate(289deg) brightness(92%)
+    contrast(87%);
+}
+
+.pink {
+  filter: invert(51%) sepia(41%) saturate(2511%) hue-rotate(289deg) brightness(92%)
+    contrast(87%);
+}

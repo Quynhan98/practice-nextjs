@@ -1,0 +1,56 @@
+.card {
+  max-width: 220px;
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 30px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.card .content {
+  width: 100%;
+  padding: 26px 10px 12px 10px;
+  position: relative;
+  white-space: normal;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.hover {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  z-index: 5;
+  transition: linear 0.1s;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.on {
+  visibility: visible;
+  opacity: 1;
+}
+
+.option_content {
+  align-self: center;
+  padding: 2px;
+  background: white;
+  border-radius: 5px;
+}
+
+.option_content :hover {
+  background: rgb(3, 37, 65);
+}

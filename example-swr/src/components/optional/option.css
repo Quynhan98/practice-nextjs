@@ -1,0 +1,44 @@
+.option {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 25px;
+  min-height: 25px;
+  width: 25px;
+  height: 25px;
+  line-height: inherit;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: inherit;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.option span {
+  background-image: url('https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg');
+  font-size: 1.6em;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  min-width: 25px;
+  min-height: 25px;
+  width: 25px;
+  height: 25px;
+  line-height: inherit;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+.option span:hover {
+  filter: brightness(0) saturate(100%) invert(53%) sepia(33%) saturate(3054%)
+    hue-rotate(156deg) brightness(98%) contrast(99%);
+}

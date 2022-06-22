@@ -1,0 +1,21 @@
+.inner {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.poster_movie {
+  border: 1px #5250506b solid;
+  border-radius: 10px;
+  min-width: 300px;
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.poster_movie .image_movie {
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+}
