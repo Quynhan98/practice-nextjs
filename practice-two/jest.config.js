@@ -9,6 +9,12 @@ module.exports = {
   ],
   testEnvironment: 'jsdom',
   moduleNameMapper: {
+    '^@components(.*)$': '<rootDir>/src/components$1',
+    '^@hooks(.*)$': '<rootDir>/src/hooks$1',
+    '^@constant(.*)$': '<rootDir>/src/constant$1',
+    '^@helpers(.*)$': '<rootDir>/src/helpers$1',
+    '^@assets(.*)$': '<rootDir>/src/assets$1',
+    '^@root(.*)$': '<rootDir>/src$1',
     '.*\\.(css|styl|scss|sass)$': 'identity-obj-proxy',
     '^((?!vars\\.less).)*\\.less': 'identity-obj-proxy',
     '.*\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
