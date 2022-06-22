@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test header snap 1`] = `
+<header>
+  <h2
+    className="logo"
+  >
+    <img
+      alt=""
+      src="IMAGE_MOCK"
+    />
+  </h2>
+</header>
+`;
