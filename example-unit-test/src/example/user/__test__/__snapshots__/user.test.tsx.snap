@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test User component Snapshot 1`] = `
+<div>
+  <div>
+    Welcome 
+  </div>
+  <input
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+</div>
+`;
