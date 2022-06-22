@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-image: radial-gradient(at 30% top, #031d33 0%, rgba(3, 37, 65, 1) 70%);
+  height: 64px;
+  width: 100%;
+  z-index: 10;
+  transition: top 0.2s linear;
+}
+
+.logo {
+  margin-right: 16px;
+  width: 154px;
+  height: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
