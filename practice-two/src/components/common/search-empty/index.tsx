@@ -1,4 +1,4 @@
-import searchEmpty from '@assets/images/search-empty.png';
+import searchEmpty from 'assets/images/search-empty.png';
 import './search-empty.css';
 
 export const SearchEmptyResult = (): JSX.Element => {

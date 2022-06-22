@@ -10,11 +10,11 @@ export const Popup = (props: PopupProp): JSX.Element => {
   const { children, handleClose } = props;
 
   return (
-    <div className="popup">
+    <div data-testid="popup" className="popup">
       <div className="popup-container">
-        <span className="close-icon" onClick={handleClose}>
+        <button className="close-icon" onClick={handleClose}>
           &#10008;
-        </span>
+        </button>
         {children}
       </div>
     </div>
