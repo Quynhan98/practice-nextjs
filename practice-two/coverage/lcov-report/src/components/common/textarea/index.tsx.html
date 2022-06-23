@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/7</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/7</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -107,7 +107,11 @@
 <a name='L42'></a><a href='#L42'>42</a>
 <a name='L43'></a><a href='#L43'>43</a>
 <a name='L44'></a><a href='#L44'>44</a>
-<a name='L45'></a><a href='#L45'>45</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -121,17 +125,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -160,22 +168,22 @@ export type TextareaProp = {
   label: string;
   messageErr?: string;
   name: string;
-  value: string;
+  value?: string;
   handleInput: (input: { [key: string]: string }) =&gt; void;
   onHandleBlur?: (e: FormEvent) =&gt; void;
 };
 &nbsp;
-export const Textarea = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(p</span>rops: TextareaProp): JSX.Element =&gt; {</span>
-  const { label, messageErr, name, rows, cols, value, handleInput, onHandleBlur } = <span class="cstat-no" title="statement not covered" >props;</span>
-  const inputRef = <span class="cstat-no" title="statement not covered" >useRef() as MutableRefObject&lt;HTMLTextAreaElement&gt;;</span>
+export const Textarea = (props: TextareaProp): JSX.Element =&gt; {
+  const { label, messageErr, name, rows, cols, value, handleInput, onHandleBlur } = props;
+  const inputRef = useRef() as MutableRefObject&lt;HTMLTextAreaElement&gt;;
 &nbsp;
-  const handleChange = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(e</span>: ChangeEvent&lt;HTMLTextAreaElement&gt;) =&gt; {</span>
-    const inputValue = <span class="cstat-no" title="statement not covered" >{ [e.target.name]: inputRef.current.value };</span>
+  const handleChange = (e: ChangeEvent&lt;HTMLTextAreaElement&gt;) =&gt; {
+    const inputValue = { [e.target.name]: inputRef.current.value };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    handleInput(inputValue);</span>
+    handleInput(inputValue);
   };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return (</span>
+  return (
     &lt;div className="input"&gt;
       &lt;label className="input-title"&gt;
         {label}
@@ -191,7 +199,11 @@ export const Textarea = <span class="cstat-no" title="statement not covered" ><s
           onBlur={onHandleBlur}
         /&gt;
       &lt;/label&gt;
-      {messageErr &amp;&amp; &lt;span className="input-error"&gt;{messageErr}&lt;/span&gt;}
+      {messageErr &amp;&amp; (
+        &lt;span className="input-error" data-testid="input-error"&gt;
+          {messageErr}
+        &lt;/span&gt;
+      )}
     &lt;/div&gt;
   );
 };
@@ -202,7 +214,7 @@ export const Textarea = <span class="cstat-no" title="statement not covered" ><s
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Wed Jun 22 2022 16:12:43 GMT+0700 (Indochina Time)
+                at Thu Jun 23 2022 17:48:26 GMT+0700 (Indochina Time)
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

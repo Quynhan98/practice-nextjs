@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { SearchEmptyResult } from '@components/common/search-empty';
 
 describe('Test SearchEmpty Component', () => {
@@ -6,5 +6,11 @@ describe('Test SearchEmpty Component', () => {
     const component = render(<SearchEmptyResult />);
 
     expect(component).toMatchSnapshot();
+  });
+
+  test('Component SearchEmpty should render correctly', () => {
+    render(<SearchEmptyResult />);
+
+    expect(screen.getByTestId('search-empty')).toBeTruthy();
   });
 });

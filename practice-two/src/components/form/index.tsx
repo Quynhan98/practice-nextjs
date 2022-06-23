@@ -7,7 +7,7 @@ import { Uploader } from '@components/common/uploader';
 import { Textarea } from '@components/common/textarea';
 import './form.css';
 
-type FormProp = {
+export type FormProp = {
   selectedBook?: Book;
   onHandleClose?: () => void;
   onCreate: (book: Book) => void;
@@ -131,7 +131,7 @@ export const Form = (props: FormProp): JSX.Element => {
           name="image"
           messageErr={msgError.img}
         />
-        <div className="group-btn">
+        <div className="group-btn" data-testid="btn-submit">
           <Button
             handleClick={selectedBook ? handleEdit : handleCreate}
             typeButton="button"

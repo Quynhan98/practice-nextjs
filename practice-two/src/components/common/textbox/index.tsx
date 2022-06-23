@@ -6,7 +6,7 @@ export type TextboxProp = {
   messageErr?: string;
   inputType: 'text' | 'number';
   name: string;
-  value: string | number;
+  value?: string | number;
   handleInput: (input: { [key: string]: string }) => void;
   onHandleBlur?: (e: FormEvent) => void;
 };
@@ -35,7 +35,11 @@ export const Textbox = (props: TextboxProp) => {
           onBlur={onHandleBlur}
         />
       </label>
-      {messageErr && <span className="input-error">{messageErr}</span>}
+      {messageErr && (
+        <span className="input-error" data-testid="input-error">
+          {messageErr}
+        </span>
+      )}
     </div>
   );
 };

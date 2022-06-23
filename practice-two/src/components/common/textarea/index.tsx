@@ -7,7 +7,7 @@ export type TextareaProp = {
   label: string;
   messageErr?: string;
   name: string;
-  value: string;
+  value?: string;
   handleInput: (input: { [key: string]: string }) => void;
   onHandleBlur?: (e: FormEvent) => void;
 };
@@ -38,7 +38,11 @@ export const Textarea = (props: TextareaProp): JSX.Element => {
           onBlur={onHandleBlur}
         />
       </label>
-      {messageErr && <span className="input-error">{messageErr}</span>}
+      {messageErr && (
+        <span className="input-error" data-testid="input-error">
+          {messageErr}
+        </span>
+      )}
     </div>
   );
 };

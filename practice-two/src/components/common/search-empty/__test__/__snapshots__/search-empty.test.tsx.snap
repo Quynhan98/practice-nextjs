@@ -7,6 +7,7 @@ Object {
     <div>
       <div
         class="search-empty"
+        data-testid="search-empty"
       >
         <img
           alt="search empty result"
@@ -29,6 +30,7 @@ Object {
   "container": <div>
     <div
       class="search-empty"
+      data-testid="search-empty"
     >
       <img
         alt="search empty result"
