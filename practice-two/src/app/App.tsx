@@ -1,4 +1,4 @@
-import './styles/main.css';
+import '../styles/main.css';
 import { ChangeEvent, useCallback, useState } from 'react';
 import { SERVER_MESSAGES } from '@constant/messages';
 import URL_PAGE from '@constant/url';
@@ -23,7 +23,7 @@ const App = (): JSX.Element => {
   const { data, error, setData, setError } = useGetData<Book>(`${URL_PAGE}${searchValue}`);
 
   const handelToggleForm = (): void => {
-    setIsOpen(!isOpen);
+    setIsOpen((prevIsOpen) => (prevIsOpen = !prevIsOpen));
 
     if (isOpen) {
       setBook(undefined);
@@ -102,7 +102,7 @@ const App = (): JSX.Element => {
   };
 
   return (
-    <div className="container">
+    <div className="container" data-testid="app">
       <Header toggleForm={handelToggleForm} />
       <Search onChange={handleChangeSearch} />
       {searchValue && data.length === 0 ? (

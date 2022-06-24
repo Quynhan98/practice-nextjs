@@ -2,7 +2,7 @@ import { Book } from '@interface/book';
 import Card from './card';
 import './list-book.css';
 
-type ListBookProp = {
+export type ListBookProp = {
   books: Book[];
   onClickButtonEdit: (item: Book) => void;
   handleRemove: (id: number) => void;

@@ -16,6 +16,7 @@ module.exports = {
     '^@assets(.*)$': '<rootDir>/src/assets$1',
     '^@interface(.*)$': '<rootDir>/src/interface$1',
     '^@services(.*)$': '<rootDir>/src/services$1',
+    '^@app(.*)$': '<rootDir>/src/app$1',
     '^@root(.*)$': '<rootDir>/src$1',
     '.*\\.(css|styl|scss|sass)$': 'identity-obj-proxy',
     '^((?!vars\\.less).)*\\.less': 'identity-obj-proxy',

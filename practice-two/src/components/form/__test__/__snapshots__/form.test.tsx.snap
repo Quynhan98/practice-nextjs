@@ -15,6 +15,7 @@ Object {
         </h2>
         <form
           class="book-form"
+          data-testid="form"
         >
           <div
             class="input"
@@ -57,7 +58,7 @@ Object {
                 class="input-content"
                 name="price"
                 type="text"
-                value="0"
+                value="1"
               />
             </label>
           </div>
@@ -103,7 +104,6 @@ Object {
           </div>
           <div
             class="group-btn"
-            data-testid="btn-submit"
           >
             <button
               class="button btn-secondary btn-small"
@@ -133,6 +133,7 @@ Object {
       </h2>
       <form
         class="book-form"
+        data-testid="form"
       >
         <div
           class="input"
@@ -175,7 +176,7 @@ Object {
               class="input-content"
               name="price"
               type="text"
-              value="0"
+              value="1"
             />
           </label>
         </div>
@@ -221,7 +222,6 @@ Object {
         </div>
         <div
           class="group-btn"
-          data-testid="btn-submit"
         >
           <button
             class="button btn-secondary btn-small"
@@ -308,6 +308,7 @@ Object {
         </h2>
         <form
           class="book-form"
+          data-testid="form"
         >
           <div
             class="input"
@@ -390,7 +391,6 @@ Object {
           </div>
           <div
             class="group-btn"
-            data-testid="btn-submit"
           >
             <button
               class="button btn-secondary btn-small"
@@ -420,6 +420,7 @@ Object {
       </h2>
       <form
         class="book-form"
+        data-testid="form"
       >
         <div
           class="input"
@@ -502,7 +503,6 @@ Object {
         </div>
         <div
           class="group-btn"
-          data-testid="btn-submit"
         >
           <button
             class="button btn-secondary btn-small"

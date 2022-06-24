@@ -86,7 +86,7 @@ export const Form = (props: FormProp): JSX.Element => {
   return (
     <div className="container">
       <h2 className="form-heading">{selectedBook ? 'Edit Book' : 'Create New Book'}</h2>
-      <form className="book-form">
+      <form data-testid="form" className="book-form">
         <Textbox
           onHandleBlur={handleBlur}
           handleInput={handleInputValue}
@@ -131,7 +131,7 @@ export const Form = (props: FormProp): JSX.Element => {
           name="image"
           messageErr={msgError.img}
         />
-        <div className="group-btn" data-testid="btn-submit">
+        <div className="group-btn">
           <Button
             handleClick={selectedBook ? handleEdit : handleCreate}
             typeButton="button"
