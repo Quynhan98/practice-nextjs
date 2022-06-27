@@ -1,7 +1,10 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { fireEvent, getByTestId, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Form, FormProp } from '@components/form';
+import { formValidate } from '@helpers/validation-form';
 import { Book } from '@interface/book';
+import { VALIDATE_MESSAGES } from '@constant/messages';
+import React, { useState } from 'react';
 
 describe('Test Form Component', () => {
   const initialBook: Book = {
@@ -51,13 +54,44 @@ describe('Test Form Component', () => {
   // However, my test case is not or dynamic in case of input with error
   // NEED
   //- I need a solution to this problem
-  test('Component Form handle blur Input when user enter value', () => {
+  test('Component Form handle blur', () => {
     render(<Form {...initialValue} />);
 
+    const mockBookData = {
+      id: 1,
+      title: 'Book',
+      author: 'nhan',
+      price: 123,
+      desc: 'this is a book',
+      image: 'url',
+    };
+
+    const mockFormValidation = jest.fn();
+    mockFormValidation(mockBookData);
+
     fireEvent.blur(screen.getAllByRole('textbox')[0]);
+    expect(mockFormValidation).toBeCalled();
     expect(screen.getAllByRole('textbox')[0]).not.toHaveFocus();
-    fireEvent.change(screen.getAllByRole('textbox')[0], { target: { value: '' } });
+  });
+
+  //
+  test('Component Form handle blur with Error message', () => {
+    render(<Form {...initialValue} />);
+
+    const mockBookData = {
+      id: 1,
+      title: '',
+      author: 'nhan',
+      price: 123,
+      desc: 'this is a book',
+      image: 'url',
+    };
+
+    const mockFormValidation = jest.fn();
+    mockFormValidation(mockBookData);
+
     fireEvent.blur(screen.getAllByRole('textbox')[0]);
+    expect(mockFormValidation).toBeCalled();
     expect(screen.getAllByRole('textbox')[0]).not.toHaveFocus();
   });
 

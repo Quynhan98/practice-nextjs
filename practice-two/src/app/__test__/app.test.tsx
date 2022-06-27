@@ -16,4 +16,11 @@ describe('Test App', () => {
     fireEvent.click(screen.getByText('Cancel'));
     expect(screen.getByTestId('app')).not.toHaveTextContent('Create New Book');
   });
+
+  test('App form', () => {
+    render(<App />);
+
+    fireEvent.change(screen.getByTestId('search'), { target: { value: 'Book' } });
+    expect(screen.getByTestId('search')).toHaveValue('Book');
+  });
 });

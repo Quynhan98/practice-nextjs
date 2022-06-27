@@ -23,7 +23,7 @@ export type InputProp = {
   id?: number;
 };
 
-type MessagesErr = {
+export type MessagesErr = {
   title: string;
   author: string;
   price: string;
