@@ -30,9 +30,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">47.61% </span>
+                <span class="strong">95.23% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>10/21</span>
+                <span class='fraction'>20/21</span>
             </div>
         
             
@@ -160,7 +160,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">25x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -169,53 +169,53 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { VALIDATE_MESSAGES } from '@constant/messages';
 import { Book } from '@interface/book';
@@ -257,17 +257,17 @@ export const formValidate = (book: Book) =&gt; {
   };
 &nbsp;
   // Title
-  <span class="missing-if-branch" title="else path not taken" >E</span>if (!isEmpty(book.title)) {
+  if (!isEmpty(book.title)) {
     result.errors.title = VALIDATE_MESSAGES.BOOK_TITLE_REQUIRED;
   }
 &nbsp;
   // Author
-  <span class="missing-if-branch" title="else path not taken" >E</span>if (!isEmpty(book.author)) {
+  if (!isEmpty(book.author)) {
     result.errors.author = VALIDATE_MESSAGES.AUTHOR_REQUIRED;
   }
 &nbsp;
   // Price
-  <span class="missing-if-branch" title="else path not taken" >E</span>if (!isEmpty(book.price)) {
+  if (!isEmpty(book.price)) {
     result.errors.price = VALIDATE_MESSAGES.PRICE_REQUIRED;
   }
 &nbsp;
@@ -276,19 +276,19 @@ export const formValidate = (book: Book) =&gt; {
   }
 &nbsp;
   // Desc
-  <span class="missing-if-branch" title="else path not taken" >E</span>if (!isEmpty(book.desc)) {
+  if (!isEmpty(book.desc)) {
     result.errors.desc = VALIDATE_MESSAGES.DESC_REQUIRED;
   }
 &nbsp;
   // Image
-  <span class="missing-if-branch" title="else path not taken" >E</span>if (!isEmpty(book.image)) {
+  if (!isEmpty(book.image)) {
     result.errors.img = VALIDATE_MESSAGES.IMAGE_REQUIRED;
   }
 &nbsp;
   // Result
   const validate = result.errors;
 &nbsp;
-  <span class="missing-if-branch" title="else path not taken" >E</span>if (validate.author || <span class="branch-1 cbranch-no" title="branch not covered" >validate.desc </span>|| <span class="branch-2 cbranch-no" title="branch not covered" >validate.img </span>|| <span class="branch-3 cbranch-no" title="branch not covered" >validate.price </span>|| <span class="branch-4 cbranch-no" title="branch not covered" >validate.title)</span> {
+  if (validate.author || validate.desc || validate.img || validate.price || validate.title) {
     result.isValid = false;
   }
 &nbsp;
@@ -301,7 +301,7 @@ export const formValidate = (book: Book) =&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Mon Jun 27 2022 16:26:52 GMT+0700 (Indochina Time)
+                at Mon Jun 27 2022 18:35:29 GMT+0700 (Indochina Time)
             </div>
         <script src="../../prettify.js"></script>
         <script>

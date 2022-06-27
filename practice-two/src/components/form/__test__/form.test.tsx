@@ -1,10 +1,7 @@
-import { fireEvent, getByTestId, render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
-import { Form, FormProp } from '@components/form';
+import { fireEvent, render, screen } from '@testing-library/react';
+import { Form, FormProp, MessagesErr } from '@components/form';
 import { formValidate } from '@helpers/validation-form';
 import { Book } from '@interface/book';
-import { VALIDATE_MESSAGES } from '@constant/messages';
-import React, { useState } from 'react';
 
 describe('Test Form Component', () => {
   const initialBook: Book = {
@@ -49,36 +46,28 @@ describe('Test Form Component', () => {
     expect(screen.getAllByRole('textbox')[0]).toHaveValue('Nhan');
   });
 
-  // TODO
-  // - I am writing test case for blur event.
-  // However, my test case is not or dynamic in case of input with error
-  // NEED
-  //- I need a solution to this problem
   test('Component Form handle blur', () => {
     render(<Form {...initialValue} />);
 
-    const mockBookData = {
+    const mockBookData: Book = {
       id: 1,
-      title: 'Book',
+      title: 'title',
       author: 'nhan',
       price: 123,
       desc: 'this is a book',
       image: 'url',
     };
 
-    const mockFormValidation = jest.fn();
-    mockFormValidation(mockBookData);
-
     fireEvent.blur(screen.getAllByRole('textbox')[0]);
-    expect(mockFormValidation).toBeCalled();
+    expect(formValidate(mockBookData).isValid).toEqual(true);
+    expect(formValidate(mockBookData).isValid);
     expect(screen.getAllByRole('textbox')[0]).not.toHaveFocus();
   });
 
-  //
-  test('Component Form handle blur with Error message', () => {
+  test('Component Form handle blur with error message', () => {
     render(<Form {...initialValue} />);
 
-    const mockBookData = {
+    const mockBookData: Book = {
       id: 1,
       title: '',
       author: 'nhan',
@@ -87,11 +76,8 @@ describe('Test Form Component', () => {
       image: 'url',
     };
 
-    const mockFormValidation = jest.fn();
-    mockFormValidation(mockBookData);
-
     fireEvent.blur(screen.getAllByRole('textbox')[0]);
-    expect(mockFormValidation).toBeCalled();
+    expect(formValidate(mockBookData).isValid).toEqual(false);
     expect(screen.getAllByRole('textbox')[0]).not.toHaveFocus();
   });
 
