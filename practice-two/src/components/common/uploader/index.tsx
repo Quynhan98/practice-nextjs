@@ -37,7 +37,7 @@ export const Uploader = (props: UploaderProp) => {
             className="uploader-content"
             type="file"
           />
-          {image && <img src={image} className="uploader-image" />}
+          {image && <img data-testid="image-input" src={image} className="uploader-image" />}
         </div>
       </label>
       {messageErr && (

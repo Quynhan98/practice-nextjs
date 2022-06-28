@@ -23,6 +23,7 @@ Object {
             />
             <img
               class="uploader-image"
+              data-testid="image-input"
               src="base_img"
             />
           </div>
@@ -49,6 +50,7 @@ Object {
           />
           <img
             class="uploader-image"
+            data-testid="image-input"
             src="base_img"
           />
         </div>
