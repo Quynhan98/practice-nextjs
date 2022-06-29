@@ -1,7 +1,14 @@
 module.exports = {
   verbose: true,
   roots: ['<rootDir>/src'],
-  collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!src/**/*.d.ts', '!**/*.stories.{js,ts,tsx}'],
+  collectCoverageFrom: [
+    'src/**/*.{js,jsx,ts,tsx}',
+    '!src/**/*.d.ts',
+    '!**/*.stories.{js,ts,tsx}',
+    '!src/interfaces/**/*.ts',
+    '!src/constant/**/*.ts',
+    '!src/main.tsx',
+  ],
   setupFilesAfterEnv: ['<rootDir>/test/setupTests.js'],
   testMatch: [
     '<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}',

@@ -1,31 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1656415833159" clover="3.2.0">
-  <project timestamp="1656415833159" name="All files">
-    <metrics statements="194" coveredstatements="156" conditionals="63" coveredconditionals="48" methods="51" coveredmethods="41" elements="308" coveredelements="245" complexity="0" loc="194" ncloc="194" packages="20" files="22" classes="22"/>
-    <package name="src">
-      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="main.tsx" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\main.tsx">
-        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="4" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.app">
-      <metrics statements="48" coveredstatements="21" conditionals="16" coveredconditionals="7" methods="11" coveredmethods="4"/>
+<coverage generated="1656501897300" clover="3.2.0">
+  <project timestamp="1656501897300" name="All files">
+    <metrics statements="193" coveredstatements="146" conditionals="63" coveredconditionals="49" methods="51" coveredmethods="39" elements="307" coveredelements="234" complexity="0" loc="193" ncloc="193" packages="19" files="21" classes="21"/>
+    <package name="app">
+      <metrics statements="48" coveredstatements="22" conditionals="16" coveredconditionals="8" methods="11" coveredmethods="5"/>
       <file name="App.tsx" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\app\App.tsx">
-        <metrics statements="48" coveredstatements="21" conditionals="16" coveredconditionals="7" methods="11" coveredmethods="4"/>
+        <metrics statements="48" coveredstatements="22" conditionals="16" coveredconditionals="8" methods="11" coveredmethods="5"/>
         <line num="18" count="1" type="stmt"/>
         <line num="19" count="8" type="stmt"/>
-        <line num="20" count="7" type="stmt"/>
-        <line num="21" count="7" type="stmt"/>
-        <line num="22" count="7" type="stmt"/>
-        <line num="23" count="7" type="stmt"/>
-        <line num="25" count="7" type="stmt"/>
+        <line num="20" count="8" type="stmt"/>
+        <line num="21" count="8" type="stmt"/>
+        <line num="22" count="8" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="25" count="8" type="stmt"/>
         <line num="26" count="2" type="stmt"/>
         <line num="28" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="29" count="1" type="stmt"/>
         <line num="30" count="1" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
-        <line num="36" count="7" type="stmt"/>
+        <line num="36" count="8" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
         <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -34,16 +27,16 @@
         <line num="44" count="0" type="stmt"/>
         <line num="47" count="0" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
-        <line num="52" count="7" type="stmt"/>
+        <line num="52" count="8" type="stmt"/>
         <line num="54" count="0" type="stmt"/>
         <line num="55" count="0" type="stmt"/>
         <line num="56" count="0" type="stmt"/>
         <line num="58" count="0" type="stmt"/>
         <line num="60" count="0" type="stmt"/>
-        <line num="66" count="7" type="stmt"/>
+        <line num="66" count="8" type="stmt"/>
         <line num="67" count="0" type="stmt"/>
         <line num="68" count="0" type="stmt"/>
-        <line num="71" count="7" type="stmt"/>
+        <line num="71" count="8" type="stmt"/>
         <line num="72" count="0" type="stmt"/>
         <line num="73" count="0" type="stmt"/>
         <line num="75" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -55,33 +48,33 @@
         <line num="86" count="0" type="stmt"/>
         <line num="87" count="0" type="stmt"/>
         <line num="90" count="0" type="stmt"/>
-        <line num="94" count="7" type="stmt"/>
-        <line num="95" count="0" type="stmt"/>
-        <line num="98" count="7" type="stmt"/>
+        <line num="94" count="8" type="stmt"/>
+        <line num="95" count="1" type="stmt"/>
+        <line num="98" count="8" type="stmt"/>
         <line num="99" count="1" type="stmt"/>
         <line num="101" count="1" type="stmt"/>
-        <line num="104" count="7" type="stmt"/>
+        <line num="104" count="8" type="stmt"/>
       </file>
     </package>
-    <package name="src.components.common.button">
+    <package name="components.common.button">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.tsx" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\components\common\button\index.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="12" count="6" type="stmt"/>
-        <line num="13" count="52" type="stmt"/>
-        <line num="15" count="52" type="stmt"/>
+        <line num="13" count="67" type="stmt"/>
+        <line num="15" count="67" type="stmt"/>
       </file>
     </package>
-    <package name="src.components.common.error">
+    <package name="components.common.error">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.tsx" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\components\common\error\index.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="8" count="2" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
+        <line num="9" count="11" type="stmt"/>
+        <line num="11" count="11" type="stmt"/>
       </file>
     </package>
-    <package name="src.components.common.popup">
+    <package name="components.common.popup">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.tsx" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\components\common\popup\index.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -90,16 +83,16 @@
         <line num="12" count="4" type="stmt"/>
       </file>
     </package>
-    <package name="src.components.common.search">
+    <package name="components.common.search">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.tsx" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\components\common\search\index.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="8" count="2" type="stmt"/>
-        <line num="9" count="9" type="stmt"/>
-        <line num="11" count="9" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="11" count="10" type="stmt"/>
       </file>
     </package>
-    <package name="src.components.common.search-empty">
+    <package name="components.common.search-empty">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.tsx" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\components\common\search-empty\index.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -107,7 +100,7 @@
         <line num="5" count="2" type="stmt"/>
       </file>
     </package>
-    <package name="src.components.common.textarea">
+    <package name="components.common.textarea">
       <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="index.tsx" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\components\common\textarea\index.tsx">
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
@@ -120,7 +113,7 @@
         <line num="25" count="17" type="stmt"/>
       </file>
     </package>
-    <package name="src.components.common.textbox">
+    <package name="components.common.textbox">
       <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="index.tsx" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\components\common\textbox\index.tsx">
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
@@ -133,7 +126,7 @@
         <line num="24" count="39" type="stmt"/>
       </file>
     </package>
-    <package name="src.components.common.uploader">
+    <package name="components.common.uploader">
       <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
       <file name="index.tsx" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\components\common\uploader\index.tsx">
         <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
@@ -148,7 +141,7 @@
         <line num="27" count="17" type="stmt"/>
       </file>
     </package>
-    <package name="src.components.form">
+    <package name="components.form">
       <metrics statements="22" coveredstatements="20" conditionals="10" coveredconditionals="9" methods="6" coveredmethods="5"/>
       <file name="index.tsx" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\components\form\index.tsx">
         <metrics statements="22" coveredstatements="20" conditionals="10" coveredconditionals="9" methods="6" coveredmethods="5"/>
@@ -176,38 +169,38 @@
         <line num="86" count="11" type="stmt"/>
       </file>
     </package>
-    <package name="src.components.header">
+    <package name="components.header">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.tsx" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\components\header\index.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="8" count="2" type="stmt"/>
-        <line num="9" count="9" type="stmt"/>
-        <line num="11" count="9" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="11" count="10" type="stmt"/>
       </file>
     </package>
-    <package name="src.components.list-book">
+    <package name="components.list-book">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="index.tsx" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\components\list-book\index.tsx">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="11" count="2" type="stmt"/>
         <line num="12" count="10" type="stmt"/>
         <line num="14" count="10" type="stmt"/>
-        <line num="18" count="5" type="stmt"/>
-        <line num="19" count="2" type="stmt"/>
+        <line num="18" count="12" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="src.components.list-book.card">
+    <package name="components.list-book.card">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="index.tsx" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\components\list-book\card\index.tsx">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="16" count="3" type="stmt"/>
-        <line num="17" count="9" type="stmt"/>
-        <line num="19" count="9" type="stmt"/>
+        <line num="17" count="16" type="stmt"/>
+        <line num="19" count="16" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
-        <line num="23" count="9" type="stmt"/>
+        <line num="23" count="16" type="stmt"/>
       </file>
     </package>
-    <package name="src.constant.messages">
+    <package name="constant.messages">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="index.ts" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\constant\messages\index.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -215,14 +208,14 @@
         <line num="10" count="3" type="stmt"/>
       </file>
     </package>
-    <package name="src.constant.url">
+    <package name="constant.url">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="index.ts" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\constant\url\index.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="src.helpers">
+    <package name="helpers">
       <metrics statements="28" coveredstatements="26" conditionals="21" coveredconditionals="20" methods="6" coveredmethods="5"/>
       <file name="encode.ts" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\helpers\encode.ts">
         <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
@@ -259,42 +252,42 @@
         <line num="76" count="5" type="stmt"/>
       </file>
     </package>
-    <package name="src.hooks">
-      <metrics statements="20" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="6"/>
+    <package name="hooks">
+      <metrics statements="20" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="3"/>
       <file name="use-debounce.ts" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\hooks\use-debounce.ts">
         <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
         <line num="9" count="1" type="stmt"/>
-        <line num="10" count="7" type="stmt"/>
-        <line num="12" count="7" type="stmt"/>
-        <line num="14" count="5" type="stmt"/>
+        <line num="10" count="8" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
-        <line num="18" count="5" type="stmt"/>
-        <line num="19" count="5" type="stmt"/>
-        <line num="25" count="7" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="25" count="8" type="stmt"/>
       </file>
       <file name="use-get-data.ts" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\hooks\use-get-data.ts">
-        <metrics statements="12" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="7" type="stmt"/>
-        <line num="12" count="7" type="stmt"/>
-        <line num="14" count="7" type="stmt"/>
-        <line num="15" count="4" type="stmt"/>
-        <line num="16" count="4" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
+        <metrics statements="12" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="20" count="4" type="stmt"/>
-        <line num="21" count="4" type="stmt"/>
-        <line num="25" count="4" type="stmt"/>
-        <line num="28" count="7" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.interface">
+    <package name="interface">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="book.ts" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\interface\book.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
-    <package name="src.services">
+    <package name="services">
       <metrics statements="22" coveredstatements="18" conditionals="8" coveredconditionals="4" methods="4" coveredmethods="4"/>
       <file name="fetch-api.ts" path="C:\Users\nhanle\Desktop\react\react-training\practice-two\src\services\fetch-api.ts">
         <metrics statements="22" coveredstatements="18" conditionals="8" coveredconditionals="4" methods="4" coveredmethods="4"/>
@@ -305,8 +298,8 @@
         <line num="14" count="1" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
-        <line num="21" count="6" type="stmt"/>
-        <line num="23" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="23" count="2" type="cond" truecount="1" falsecount="1"/>
         <line num="24" count="2" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="30" count="2" type="stmt"/>

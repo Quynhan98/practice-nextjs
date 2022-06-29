@@ -11,6 +11,7 @@ Object {
       >
         <button
           class="icon-close__error"
+          data-testid="btn-close-err"
         >
           x
         </button>
@@ -25,6 +26,7 @@ Object {
     >
       <button
         class="icon-close__error"
+        data-testid="btn-close-err"
       >
         x
       </button>

@@ -10,7 +10,7 @@ export const Error = (props: ErrorProp): JSX.Element => {
 
   return (
     <div data-testid="error" className="notification-error">
-      <button className="icon-close__error" onClick={onHandleClick}>
+      <button data-testid="btn-close-err" className="icon-close__error" onClick={onHandleClick}>
         x
       </button>
       {children}
