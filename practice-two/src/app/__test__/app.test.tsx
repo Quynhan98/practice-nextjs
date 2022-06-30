@@ -1,7 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import App from '@app/App';
 import useGetData from '@hooks/use-get-data';
-import { useState } from 'react';
 import * as React from 'react';
 
 jest.mock('@hooks/use-get-data', () => jest.fn());
@@ -62,18 +61,24 @@ describe('Test App', () => {
     expect(screen.getByTestId('search')).toHaveValue('Book');
   });
 
-  test('App call closeError', async () => {
+  test('App Click Edit toggle form', () => {
     render(<App />);
 
-    // fireEvent.click(screen.getByTestId('btn-close-err'));
-    // expect(screen.getByTestId('app')).not.toHaveTextContent('Error Message');
+    fireEvent.click(screen.getAllByText('Edit')[0]);
+    expect(screen.getByTestId('app')).toHaveTextContent('Edit Book');
   });
 
-  // ///
-  // test('App Delete', () => {
-  //   render(<App />);
+  test('App should call handle create', () => {
+    render(<App />);
 
-  //   fireEvent.click(screen.getAllByText('Delete')[0]);
-  //   // expect(screen.getByTestId('app')).not.toHaveTextContent('nhan');
-  // });
+    fireEvent.click(screen.getByText('Add New Book'));
+    expect(screen.getByText('Create New Book')).toHaveTextContent('Create New Book');
+    fireEvent.click(screen.getByText('Create'));
+  });
+
+  //
+  test('App handle edit', async () => {
+    render(<App />);
+    fireEvent.click(screen.getAllByRole('button', { name: /Edit/i })[0]);
+  });
 });

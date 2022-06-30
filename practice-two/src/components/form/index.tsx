@@ -138,7 +138,7 @@ export const Form = (props: FormProp): JSX.Element => {
             size="btn-small"
             color="btn-secondary"
           >
-            {selectedBook ? 'Edit' : 'Create'}
+            {selectedBook ? 'Update' : 'Create'}
           </Button>
           <Button
             handleClick={onHandleClose}

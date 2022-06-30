@@ -90,7 +90,8 @@ describe('Test Form Component', () => {
   test('Component Form has been selected calls handleChange function when user click', () => {
     render(<Form {...initialFormSelected} />);
 
-    fireEvent.click(screen.getByText('Edit'));
+    fireEvent.click(screen.getByText('Update'));
     expect(initialFormSelected.onHandleEdit).toBeCalled();
+    expect(screen.getAllByRole('textbox')[0]).toHaveValue('Book 1');
   });
 });

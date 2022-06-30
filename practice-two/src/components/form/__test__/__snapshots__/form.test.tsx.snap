@@ -110,7 +110,7 @@ Object {
               class="button btn-secondary btn-small"
               type="button"
             >
-              Edit
+              Update
             </button>
             <button
               class="button btn-warning btn-small"
@@ -229,7 +229,7 @@ Object {
             class="button btn-secondary btn-small"
             type="button"
           >
-            Edit
+            Update
           </button>
           <button
             class="button btn-warning btn-small"

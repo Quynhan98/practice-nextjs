@@ -110,6 +110,21 @@ Object {
           </button>
           Error Message
         </div>
+        <div>
+          <button>
+            Increment
+          </button>
+          <span
+            data-testid="debouncedValue"
+          >
+            0
+          </span>
+          <span
+            data-testid="value"
+          >
+            0
+          </span>
+        </div>
       </div>
     </div>
   </body>,
@@ -218,6 +233,21 @@ Object {
           x
         </button>
         Error Message
+      </div>
+      <div>
+        <button>
+          Increment
+        </button>
+        <span
+          data-testid="debouncedValue"
+        >
+          0
+        </span>
+        <span
+          data-testid="value"
+        >
+          0
+        </span>
       </div>
     </div>
   </div>,

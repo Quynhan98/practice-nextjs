@@ -15,6 +15,23 @@ import { Header } from '@components/header';
 import { Books } from '@components/list-book';
 import { SearchEmptyResult } from '@components/common/search-empty';
 
+export function TestComponent() {
+  const [value, setValue] = useState(0);
+
+  const inc = () => {
+    setValue(value + 1);
+  };
+
+  const debouncedValue = useDebounce(value, 1000);
+  return (
+    <div>
+      <button onClick={inc}>Increment</button>
+      <span data-testid="debouncedValue">{debouncedValue}</span>
+      <span data-testid="value">{value}</span>
+    </div>
+  );
+}
+
 const App = (): JSX.Element => {
   const [book, setBook] = useState<Book | undefined>();
   const [isOpen, setIsOpen] = useState(false);
@@ -121,6 +138,7 @@ const App = (): JSX.Element => {
         </Popup>
       )}
       {error && <Error onHandleClick={closeError}>{error}</Error>}
+      <TestComponent />
     </div>
   );
 };
