@@ -7,7 +7,7 @@ import { Uploader } from '@components/common/uploader';
 import { Textarea } from '@components/common/textarea';
 import './form.css';
 
-type FormProp = {
+export type FormProp = {
   selectedBook?: Book;
   onHandleClose?: () => void;
   onCreate: (book: Book) => void;
@@ -23,7 +23,7 @@ export type InputProp = {
   id?: number;
 };
 
-type MessagesErr = {
+export type MessagesErr = {
   title: string;
   author: string;
   price: string;
@@ -86,7 +86,7 @@ export const Form = (props: FormProp): JSX.Element => {
   return (
     <div className="container">
       <h2 className="form-heading">{selectedBook ? 'Edit Book' : 'Create New Book'}</h2>
-      <form className="book-form">
+      <form data-testid="form" className="book-form">
         <Textbox
           onHandleBlur={handleBlur}
           handleInput={handleInputValue}
@@ -138,7 +138,7 @@ export const Form = (props: FormProp): JSX.Element => {
             size="btn-small"
             color="btn-secondary"
           >
-            {selectedBook ? 'Edit' : 'Create'}
+            {selectedBook ? 'Update' : 'Create'}
           </Button>
           <Button
             handleClick={onHandleClose}

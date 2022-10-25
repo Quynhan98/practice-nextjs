@@ -1,4 +1,4 @@
-import './styles/main.css';
+import '../styles/main.css';
 import { ChangeEvent, useCallback, useState } from 'react';
 import { SERVER_MESSAGES } from '@constant/messages';
 import URL_PAGE from '@constant/url';
@@ -15,6 +15,23 @@ import { Header } from '@components/header';
 import { Books } from '@components/list-book';
 import { SearchEmptyResult } from '@components/common/search-empty';
 
+export function TestComponent() {
+  const [value, setValue] = useState(0);
+
+  const inc = () => {
+    setValue(value + 1);
+  };
+
+  const debouncedValue = useDebounce(value, 1000);
+  return (
+    <div>
+      <button onClick={inc}>Increment</button>
+      <span data-testid="debouncedValue">{debouncedValue}</span>
+      <span data-testid="value">{value}</span>
+    </div>
+  );
+}
+
 const App = (): JSX.Element => {
   const [book, setBook] = useState<Book | undefined>();
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +40,7 @@ const App = (): JSX.Element => {
   const { data, error, setData, setError } = useGetData<Book>(`${URL_PAGE}${searchValue}`);
 
   const handelToggleForm = (): void => {
-    setIsOpen(!isOpen);
+    setIsOpen((prevIsOpen) => (prevIsOpen = !prevIsOpen));
 
     if (isOpen) {
       setBook(undefined);
@@ -102,7 +119,7 @@ const App = (): JSX.Element => {
   };
 
   return (
-    <div className="container">
+    <div className="container" data-testid="app">
       <Header toggleForm={handelToggleForm} />
       <Search onChange={handleChangeSearch} />
       {searchValue && data.length === 0 ? (
@@ -121,6 +138,7 @@ const App = (): JSX.Element => {
         </Popup>
       )}
       {error && <Error onHandleClick={closeError}>{error}</Error>}
+      <TestComponent />
     </div>
   );
 };

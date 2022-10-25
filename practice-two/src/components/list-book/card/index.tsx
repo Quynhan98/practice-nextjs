@@ -26,10 +26,18 @@ const Card = (props: CardProp): JSX.Element => {
         <img src={image} alt={`image ${title}`} className="card-image" />
         <h3 className="card-title">{title}</h3>
         <span className="card-author">{author}</span>
-        <span className="card-price">Price: {price} USD</span>
+        <span className="card-price" data-testid="price">
+          Price: {price} USD
+        </span>
         <p className="card-desc">{desc}</p>
         <div className="button-group">
-          <Button handleClick={onEdit} color="btn-secondary" typeButton="button" size="btn-small">
+          <Button
+            data-testid="btnEdit"
+            handleClick={onEdit}
+            color="btn-secondary"
+            typeButton="button"
+            size="btn-small"
+          >
             Edit
           </Button>
           <Button

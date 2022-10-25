@@ -10,7 +10,13 @@ const Search = (props: SearchProps) => {
 
   return (
     <div className="filter-search">
-      <input type="search" placeholder="Search..." className="search-input" onChange={onChange} />
+      <input
+        data-testid="search"
+        type="search"
+        placeholder="Search..."
+        className="search-input"
+        onChange={onChange}
+      />
     </div>
   );
 };

@@ -17,7 +17,6 @@ const useGetData = <T>(url: string) => {
         const response: T[] = await getData(url);
         setData(response);
       } catch (error) {
-        console.error(error);
         setError(SERVER_MESSAGES.SERVER_GET_ERROR);
       }
     };

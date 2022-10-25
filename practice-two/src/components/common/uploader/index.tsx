@@ -30,16 +30,21 @@ export const Uploader = (props: UploaderProp) => {
         {label}
         <div className="uploader-input">
           <input
+            data-testid="uploader-img"
             onBlur={onHandleBlur}
             name={name}
             onChange={uploadImage}
             className="uploader-content"
             type="file"
           />
-          {image && <img src={image} className="uploader-image" />}
+          {image && <img data-testid="image-input" src={image} className="uploader-image" />}
         </div>
       </label>
-      {messageErr && <span className="input-error">{messageErr}</span>}
+      {messageErr && (
+        <span data-testid="img-error" className="input-error">
+          {messageErr}
+        </span>
+      )}
     </div>
   );
 };
