@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Detail Page should render Detail Page 1`] = `
+<div>
+  <div
+    class="main MuiBox-root css-ejp65w"
+  >
+    <h1
+      class="MuiTypography-root MuiTypography-h1 css-dl3eaz-MuiTypography-root"
+    >
+      Loading...
+    </h1>
+  </div>
+</div>
+`;

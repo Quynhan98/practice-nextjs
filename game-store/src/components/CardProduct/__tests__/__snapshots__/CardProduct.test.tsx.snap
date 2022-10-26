@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Product Component should render Card Product 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1rqr2o1-MuiPaper-root-MuiCard-root"
+  >
+    <a
+      href="/games/3498"
+    >
+      <img
+        alt="green iguana"
+        class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
+        height="140"
+        src="https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg"
+      />
+    </a>
+    <div
+      class="MuiCardContent-root css-1n6x7yt-MuiCardContent-root"
+    >
+      <div
+        class="MuiCardContent-root css-1xpvmq8-MuiCardContent-root"
+      >
+        <a
+          href="/login"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-t0gjje-MuiTypography-root"
+          >
+            Please login now.
+          </p>
+        </a>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-1rfn1w6-MuiTypography-root"
+        >
+          $
+          19.99
+        </p>
+      </div>
+      <a
+        href="/games/3498"
+      >
+        <h4
+          class="MuiTypography-root MuiTypography-h4 css-1dl0pq9-MuiTypography-root"
+        >
+          Grand Theft Auto V
+        </h4>
+      </a>
+      <div
+        class="MuiBox-root css-19n1w9z"
+      >
+        <div
+          class="MuiBox-root css-i5q2k0"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-216ivs-MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          />
+        </div>
+        <p
+          class="MuiTypography-root MuiTypography-body2 css-98hkvb-MuiTypography-root"
+        >
+          Released: 
+          9/17/2013
+        </p>
+        <p
+          class="MuiTypography-root MuiTypography-body2 css-98hkvb-MuiTypography-root"
+        >
+          Genres: 
+          Actions
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

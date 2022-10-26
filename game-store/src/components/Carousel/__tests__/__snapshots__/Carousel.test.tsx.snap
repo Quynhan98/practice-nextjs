@@ -1,0 +1,314 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousel component should render Card Detail 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-4493d5"
+  >
+    <div
+      class=" css-ohwg9z"
+    >
+      <div
+        class="css-1f8sh1y"
+      >
+        <div
+          class="css-1l7c0cy"
+        >
+          <div
+            draggable="false"
+            style="height: 100%; user-select: none; transform: translate3d(0px, 0px, 0) scale(NaN, NaN); transform-origin: 50% 50% 0;"
+          >
+            <div
+              style="position: relative; height: 100%; opacity: 0; z-index: 1; transform: none;"
+            >
+              <div>
+                <div
+                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+                >
+                  <img
+                    alt="green iguana"
+                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ajwyql-MuiCardMedia-root"
+                    src="https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="css-1l7c0cy"
+        >
+          <div
+            draggable="false"
+            style="height: 100%; user-select: none; transform: translate3d(0px, 0px, 0) scale(NaN, NaN); transform-origin: 50% 50% 0;"
+          >
+            <div
+              style="position: relative; height: 100%; opacity: 0; display: none; z-index: 0; transform: translateX(0%) translateZ(0); z-index: 0;"
+            >
+              <div>
+                <div
+                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+                >
+                  <img
+                    alt="green iguana"
+                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ajwyql-MuiCardMedia-root"
+                    src="https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="css-1l7c0cy"
+        >
+          <div
+            draggable="false"
+            style="height: 100%; user-select: none; transform: translate3d(0px, 0px, 0) scale(NaN, NaN); transform-origin: 50% 50% 0;"
+          >
+            <div
+              style="position: relative; height: 100%; opacity: 0; display: none; z-index: 0; transform: translateX(0%) translateZ(0); z-index: 0;"
+            >
+              <div>
+                <div
+                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+                >
+                  <img
+                    alt="green iguana"
+                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ajwyql-MuiCardMedia-root"
+                    src="https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="css-1l7c0cy"
+        >
+          <div
+            draggable="false"
+            style="height: 100%; user-select: none; transform: translate3d(0px, 0px, 0) scale(NaN, NaN); transform-origin: 50% 50% 0;"
+          >
+            <div
+              style="position: relative; height: 100%; opacity: 0; display: none; z-index: 0; transform: translateX(0%) translateZ(0); z-index: 0;"
+            >
+              <div>
+                <div
+                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+                >
+                  <img
+                    alt="green iguana"
+                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ajwyql-MuiCardMedia-root"
+                    src="https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="css-1l7c0cy"
+        >
+          <div
+            draggable="false"
+            style="height: 100%; user-select: none; transform: translate3d(0px, 0px, 0) scale(NaN, NaN); transform-origin: 50% 50% 0;"
+          >
+            <div
+              style="position: relative; height: 100%; opacity: 0; display: none; z-index: 0; transform: translateX(0%) translateZ(0); z-index: 0;"
+            >
+              <div>
+                <div
+                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+                >
+                  <img
+                    alt="green iguana"
+                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ajwyql-MuiCardMedia-root"
+                    src="https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class=" css-1abc02a"
+      >
+        <button
+          aria-label="Next"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium  css-1g04gm2-MuiButtonBase-root-MuiIconButton-root"
+          style="background-color: transparent; color: rgb(255, 255, 255); border-radius: 5px;"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="NavigateNextIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+      <div
+        class=" css-hn784z"
+      >
+        <button
+          aria-label="Previous"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium  css-1g04gm2-MuiButtonBase-root-MuiIconButton-root"
+          style="background-color: transparent; color: rgb(255, 255, 255); border-radius: 5px;"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="NavigateBeforeIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+      <div
+        class=" css-1m9128y"
+      >
+        <button
+          aria-label="carousel indicator 1"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium   css-8ucetn-MuiButtonBase-root-MuiIconButton-root"
+          style="padding: 5px; color: rgb(123, 31, 162); font-size: 20px;"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-aq8pb7-MuiSvgIcon-root"
+            data-testid="FiberManualRecordIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="8"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          aria-label="carousel indicator 2"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium  css-bbreus-MuiButtonBase-root-MuiIconButton-root"
+          style="padding: 5px;"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-aq8pb7-MuiSvgIcon-root"
+            data-testid="FiberManualRecordIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="8"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          aria-label="carousel indicator 3"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium  css-bbreus-MuiButtonBase-root-MuiIconButton-root"
+          style="padding: 5px;"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-aq8pb7-MuiSvgIcon-root"
+            data-testid="FiberManualRecordIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="8"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          aria-label="carousel indicator 4"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium  css-bbreus-MuiButtonBase-root-MuiIconButton-root"
+          style="padding: 5px;"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-aq8pb7-MuiSvgIcon-root"
+            data-testid="FiberManualRecordIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="8"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          aria-label="carousel indicator 5"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium  css-bbreus-MuiButtonBase-root-MuiIconButton-root"
+          style="padding: 5px;"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-aq8pb7-MuiSvgIcon-root"
+            data-testid="FiberManualRecordIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="8"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

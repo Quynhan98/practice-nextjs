@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component should render Input 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root css-1pcdsgt-MuiFormControl-root-MuiTextField-root"
+  >
+    <div
+      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary Mui-focused MuiInputBase-formControl css-1ptx2yq-MuiInputBase-root-MuiInput-root"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+        id=":r0:"
+        placeholder="Enter here"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;

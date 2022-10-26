@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Page should render Login Page 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-l2r8k4"
+  >
+    <form
+      class="MuiBox-root css-opvnev"
+    >
+      <h3
+        class="MuiTypography-root MuiTypography-h3 css-1nyssq8-MuiTypography-root"
+      >
+        Login
+      </h3>
+      <div
+        class="MuiFormControl-root MuiTextField-root css-1pcdsgt-MuiFormControl-root-MuiTextField-root"
+      >
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary Mui-focused MuiInputBase-formControl css-1ptx2yq-MuiInputBase-root-MuiInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+            id=":r0:"
+            name="email"
+            placeholder="Email"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        class="MuiFormControl-root MuiTextField-root css-1pcdsgt-MuiFormControl-root-MuiTextField-root"
+      >
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary Mui-focused MuiInputBase-formControl css-1ptx2yq-MuiInputBase-root-MuiInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+            id=":r1:"
+            name="password"
+            placeholder="Password"
+            type="password"
+            value=""
+          />
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-78dfj0-MuiButtonBase-root-MuiButton-root"
+        hovercolor="white"
+        mtop="50"
+        tabindex="0"
+        type="submit"
+        width="100%"
+      >
+        Login
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+      <div
+        class="MuiBox-root css-1xxl6si"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-b5y2m8-MuiTypography-root"
+        >
+          Don‘t have an account?
+        </p>
+        <a
+          href="/register"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-ai1txx-MuiTypography-root"
+          >
+            Register Now
+          </p>
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
+`;

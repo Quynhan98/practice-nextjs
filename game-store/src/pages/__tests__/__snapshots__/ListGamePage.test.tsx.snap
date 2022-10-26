@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Game Page should render CList Game Page 1`] = `
+<div>
+  <div
+    class="main MuiBox-root css-1n0bnyw"
+  >
+    <h1
+      class="MuiTypography-root MuiTypography-h1 css-1ybknf5-MuiTypography-root"
+    >
+      Best of All Time
+    </h1>
+    <div
+      class="infinite-scroll-component__outerdiv"
+    >
+      <div
+        class="infinite-scroll-component "
+        style="height: auto; overflow: auto;"
+      >
+        <div
+          class="MuiBox-root css-1ezr6d7"
+        />
+        <h1
+          class="MuiTypography-root MuiTypography-h1 css-dl3eaz-MuiTypography-root"
+        >
+          Loading...
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+`;
