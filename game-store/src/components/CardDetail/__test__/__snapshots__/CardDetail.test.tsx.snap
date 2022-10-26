@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Detail component should render Card Detail 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1on6vww-MuiPaper-root-MuiCard-root"
+  >
+    <div
+      class="MuiCardContent-root css-u9l2rr-MuiCardContent-root"
+    >
+      <h3
+        class="MuiTypography-root MuiTypography-h3 css-mpefaq-MuiTypography-root"
+      >
+        About
+      </h3>
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-k3bcd8-MuiTypography-root"
+      />
+    </div>
+    <div
+      class="MuiCardActions-root css-t35doo-MuiCardActions-root"
+    >
+      More
+      <button
+        aria-expanded="false"
+        aria-label="show more"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-16o0grm-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="ExpandMoreIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+          />
+        </svg>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

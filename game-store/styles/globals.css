@@ -1,0 +1,89 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: AdobeCleanRegular;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local('GT Walsheim Pro Light'), local('GTWalsheimPro-Light'),
+    url('../public/fonts/GTWalsheimPro/GTWalsheimPro-Light.woff2')
+      format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local('GT Walsheim Pro Regular'), local('GTWalsheimPro-Regular'),
+    url('../public/fonts/GTWalsheimPro/GTWalsheimPro-Regular.woff2')
+      format('woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local('GT Walsheim Pro Thin'), local('GTWalsheimPro-Thin'),
+    url('../public/fonts/GTWalsheimPro/GTWalsheimPro-Thin.woff2')
+      format('woff2');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro Ultra';
+  src: local('GT Walsheim Pro Ultra Bold'), local('GTWalsheimPro-UltraBold'),
+    url('../public/fonts/GTWalsheimPro/GTWalsheimPro-UltraBold.woff2')
+      format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local('GT Walsheim Pro Bold'), local('GTWalsheimPro-Bold'),
+    url('../public/fonts/GTWalsheimPro/GTWalsheimPro-Bold.woff2')
+      format('woff2');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local('GT Walsheim Pro Medium'), local('GTWalsheimPro-Medium'),
+    url('../public/fonts/GTWalsheimPro/GTWalsheimPro-Medium.woff2')
+      format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro Ultra';
+  src: local('GT Walsheim Pro Ultra Light'), local('GTWalsheimPro-UltraLight'),
+    url('../public/fonts/GTWalsheimPro/GTWalsheimPro-UltraLight.woff2')
+      format('woff2');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local('GT Walsheim Pro Black'), local('GTWalsheimPro-Black'),
+    url('../public/fonts/GTWalsheimPro/GTWalsheimPro-Black.woff2')
+      format('woff2');
+  font-weight: 900;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'GT Walsheim Pro';
+  background-color: #0f1011;
+  overflow-x: hidden;
+}
