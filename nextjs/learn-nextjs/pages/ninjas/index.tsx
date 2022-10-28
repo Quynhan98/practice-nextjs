@@ -12,8 +12,6 @@ export const getStaticProps = async () => {
 }
 
 const Ninjas = ({ ninjas }: { ninjas: INinjas[] }) => {
-  console.log(ninjas)
-
   return (
     <div>
       <h1>All Ninjas</h1>
