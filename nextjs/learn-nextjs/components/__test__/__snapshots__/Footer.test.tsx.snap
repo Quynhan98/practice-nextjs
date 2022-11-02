@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders Footer toMatchSnapshot 1`] = `
+<div>
+  <footer>
+    Copyright 2022 Ninja List
+  </footer>
+</div>
+`;
