@@ -32,6 +32,7 @@ module.exports = {
     '^@themes$': '<rootDir>/src/themes',
     '^@hooks/(.*)$': '<rootDir>/src/hooks/$1',
     '^@contexts/(.*)$': '<rootDir>/src/contexts/$1',
+    '^@mocks/(.*)$': '<rootDir>/src/__mocks__/$1',
   },
   // Add more setup options before each test is run
   testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
