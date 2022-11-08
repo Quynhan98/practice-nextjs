@@ -6,7 +6,7 @@ import { fireEvent, render, screen } from '@utils/testUtils'
 
 describe('Quantity render', () => {
   const mockProps = {
-    quality: 1,
+    quantity: 1,
     onIncreaseCartQuantity: jest.fn(),
     onDecrementCartQuantity: jest.fn(),
   }
@@ -17,7 +17,7 @@ describe('Quantity render', () => {
 
   it('Should simulate onIncrease Cart Quantity event and expect mock function', () => {
     render(<Quantity {...mockProps} />)
-    const increaseButton = screen.getAllByRole('button')[0]
+    const increaseButton = screen.getByTestId('increase-button')
     expect(increaseButton).toBeTruthy()
 
     fireEvent.click(increaseButton)
@@ -26,7 +26,7 @@ describe('Quantity render', () => {
 
   it('Should simulate onDecrease Cart Quantity event and expect mock function', () => {
     render(<Quantity {...mockProps} />)
-    const decreaseButton = screen.getAllByRole('button')[1]
+    const decreaseButton = screen.getByTestId('decrement-button')
     expect(decreaseButton).toBeTruthy()
 
     fireEvent.click(decreaseButton)

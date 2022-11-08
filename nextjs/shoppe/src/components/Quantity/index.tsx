@@ -3,13 +3,13 @@ import { Box, IconButton, Text } from '@chakra-ui/react'
 import { memo } from 'react'
 
 interface QuantityProps {
-  quality: number
+  quantity: number
   onIncreaseCartQuantity: () => void
   onDecrementCartQuantity: () => void
 }
 
 const Quantity = ({
-  quality,
+  quantity,
   onIncreaseCartQuantity,
   onDecrementCartQuantity,
 }: QuantityProps) => {
@@ -23,6 +23,7 @@ const Quantity = ({
       borderRadius="4px"
     >
       <IconButton
+        data-testid="increase-button"
         color="secondary"
         fontSize="x-small"
         onClick={onIncreaseCartQuantity}
@@ -31,9 +32,10 @@ const Quantity = ({
         icon={<AddIcon />}
       />
       <Text color="secondary" fontSize="16px">
-        {quality}
+        {quantity}
       </Text>
       <IconButton
+        data-testid="decrement-button"
         color="secondary"
         fontSize="x-small"
         onClick={onDecrementCartQuantity}

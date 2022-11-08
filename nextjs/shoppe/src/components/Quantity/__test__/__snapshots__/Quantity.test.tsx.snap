@@ -8,6 +8,7 @@ exports[`Quantity render Should show match Quantity DOM Snapshot 1`] = `
     <button
       aria-label="Search database"
       class="chakra-button css-rzypxw"
+      data-testid="increase-button"
       type="submit"
     >
       <svg
@@ -30,6 +31,7 @@ exports[`Quantity render Should show match Quantity DOM Snapshot 1`] = `
     <button
       aria-label="Search database"
       class="chakra-button css-rzypxw"
+      data-testid="decrement-button"
       type="submit"
     >
       <svg
