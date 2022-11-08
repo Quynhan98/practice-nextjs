@@ -2,9 +2,9 @@ import { ComponentStyleConfig } from '@chakra-ui/react'
 
 export const Button: ComponentStyleConfig = {
   sizes: {
-    full: {
+    small: {
       height: '53px',
-      width: '100%',
+      width: '53px',
     },
     default: {
       width: '353px',
@@ -21,9 +21,12 @@ export const Button: ComponentStyleConfig = {
       fontWeight: 'bold',
       fontSize: '16px',
     },
+    default: {
+      border: 'none',
+    },
   },
   defaultProps: {
-    variant: 'primary',
-    size: 'default',
+    variant: 'default',
+    size: 'small',
   },
 }
