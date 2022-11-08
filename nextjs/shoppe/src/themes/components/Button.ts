@@ -21,8 +21,9 @@ export const Button: ComponentStyleConfig = {
       fontWeight: 'bold',
       fontSize: '16px',
     },
-    default: {
-      padding: '16px 20px',
-    },
+  },
+  defaultProps: {
+    variant: 'primary',
+    size: 'default',
   },
 }
