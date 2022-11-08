@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': ^7.19.6
+  '@chakra-ui/icons': ^2.0.11
   '@chakra-ui/react': ^2.3.7
   '@chakra-ui/storybook-addon': ^4.0.12
   '@emotion/react': ^11.10.5
@@ -51,6 +52,7 @@ specifiers:
   typescript: 4.8.4
 
 dependencies:
+  '@chakra-ui/icons': 2.0.11_react@18.2.0
   '@chakra-ui/react': 2.3.7_jv7ytp3eoicvwawlynwdu2nyd4
   '@chakra-ui/storybook-addon': 4.0.12_xexr2lywkh2wg7oioknqt5rkeu
   '@emotion/react': 11.10.5_5ihuxrpe4zse4p4tf6ubxcyzuu
