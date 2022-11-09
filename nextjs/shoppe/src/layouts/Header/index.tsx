@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Text, Flex } from '@chakra-ui/react'
+import { Flex, Heading } from '@chakra-ui/react'
 
 // Components
 import Icon from '@components/Icon'
@@ -15,18 +15,16 @@ const Header = () => {
       alignItems="center"
       paddingBottom="5px"
     >
-      <Text as="h1">
-        <Link href="/" passHref>
-          <Text as="a">
-            <Image
-              width={125}
-              height={40}
-              src="/images/logo.png"
-              alt="Logo Shoppe"
-            />
-          </Text>
+      <Heading as="h1">
+        <Link href="/">
+          <Image
+            width={125}
+            height={40}
+            src="/images/logo.png"
+            alt="Logo Shoppe"
+          />
         </Link>
-      </Text>
+      </Heading>
       <Icon
         marginRight="60px"
         srcIcon="/images/shoppingCart.svg"

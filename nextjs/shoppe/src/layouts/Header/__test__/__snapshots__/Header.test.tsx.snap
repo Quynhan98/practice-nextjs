@@ -6,24 +6,19 @@ exports[`Header render Should Header match Snapshot 1`] = `
     class="css-13ughem"
   >
     <h1
-      class="chakra-text css-0"
+      class="chakra-heading css-1dklj6k"
     >
-      <a
-        class="chakra-text css-0"
-        href="/"
-      >
-        <img
-          alt="Logo Shoppe"
-          data-nimg="1"
-          decoding="async"
-          height="40"
-          loading="lazy"
-          src="/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75"
-          srcset="/_next/image?url=%2Fimages%2Flogo.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&w=256&q=75 2x"
-          style="color: transparent;"
-          width="125"
-        />
-      </a>
+      <img
+        alt="Logo Shoppe"
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75"
+        srcset="/_next/image?url=%2Fimages%2Flogo.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&w=256&q=75 2x"
+        style="color: transparent;"
+        width="125"
+      />
     </h1>
     <div
       class="css-1bdr409"
