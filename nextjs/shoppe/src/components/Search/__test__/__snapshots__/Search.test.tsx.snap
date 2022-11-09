@@ -12,7 +12,7 @@ exports[`Search component should render Search 1`] = `
     />
     <button
       aria-label="Search database"
-      class="chakra-button css-9up3g0"
+      class="chakra-button css-13ihlek"
       type="submit"
     >
       <svg
