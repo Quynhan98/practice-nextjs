@@ -25,7 +25,8 @@
       "@themes/*": ["themes/*"],
       "@utils/*": ["utils/*"],
       "@hooks/*": ["hooks/*"],
-      "@contexts/*": ["contexts/*"]
+      "@contexts/*": ["contexts/*"],
+      "@assets/*": ["assets/*"]
     },
     "incremental": true
   },

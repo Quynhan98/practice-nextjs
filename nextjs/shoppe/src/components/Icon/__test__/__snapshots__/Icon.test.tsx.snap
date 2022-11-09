@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon render Should show match Icon DOM Snapshot 1`] = `
+<div>
+  <div
+    class="css-1nylpq2"
+  >
+    <img
+      alt="facebook"
+      class="chakra-image css-0"
+      data-testid="image"
+      src="/images/facebook.svg"
+    />
+  </div>
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
+</div>
+`;
