@@ -5,3 +5,8 @@ export interface IProduct {
   price: number
   status?: string
 }
+
+export interface IProductDetail extends IProduct {
+  quantity: number
+  introduction: string
+}
