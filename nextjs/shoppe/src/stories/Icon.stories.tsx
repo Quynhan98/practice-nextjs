@@ -3,8 +3,8 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 // components
 import Icon from '@components/Icon'
 
-// Assets
-import { inIcon, facebook, instagram, twitter } from '@assets/index'
+// Public
+import { inIcon, facebook, instagram, twitter } from '../../public'
 
 export default {
   title: 'Component/Icon',

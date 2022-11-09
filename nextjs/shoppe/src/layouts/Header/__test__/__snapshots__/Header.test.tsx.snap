@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header render Should Header match Snapshot 1`] = `
+<div>
+  <header
+    class="css-13ughem"
+  >
+    <h1
+      class="chakra-text css-0"
+    >
+      <a
+        class="chakra-text css-0"
+        href="/"
+      >
+        <img
+          alt="Logo Shoppe"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75"
+          srcset="/_next/image?url=%2Fimages%2Flogo.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&w=256&q=75 2x"
+          style="color: transparent;"
+          width="125"
+        />
+      </a>
+    </h1>
+    <div
+      class="css-1bdr409"
+    >
+      <img
+        alt="Shopping Cart Icon"
+        class="chakra-image css-0"
+        data-testid="image"
+        src="/images/shoppingCart.svg"
+      />
+    </div>
+  </header>
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
+</div>
+`;
