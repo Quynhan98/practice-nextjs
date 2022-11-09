@@ -31,7 +31,7 @@ const Quantity = ({
         aria-label="Search database"
         icon={<AddIcon />}
       />
-      <Text color="secondary" fontSize="16px">
+      <Text color="secondary" fontSize="16px" data-testid="quantity">
         {quantity}
       </Text>
       <IconButton
