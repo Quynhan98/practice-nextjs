@@ -9,7 +9,7 @@ interface IconProps extends BoxProps {
 const Icon = ({ srcIcon, alt, ...rest }: IconProps) => {
   return (
     <Box display="flex" alignItems="flex-end" {...rest}>
-      <Image src={srcIcon} alt={alt} />
+      <Image src={srcIcon} alt={alt} data-testid="image" />
     </Box>
   )
 }
