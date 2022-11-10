@@ -9,7 +9,15 @@ import { NAV_LIST, SOCIAL_ICONS } from '@constants/index'
 
 const Footer = () => {
   return (
-    <Box as="footer" pt="37px" pb="40px" borderTop="1px">
+    <Box
+      as="footer"
+      pt="37px"
+      pb="108px"
+      borderTop="1px"
+      borderTopColor="lightSilver"
+      maxWidth="1248px"
+      margin="0 auto"
+    >
       <Flex justifyContent="space-between">
         <NavBar paddingTop="10px" navList={NAV_LIST} />
         <Flex
