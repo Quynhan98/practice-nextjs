@@ -32,7 +32,7 @@ exports[`PageLayout render Should PageLayout match Snapshot 1`] = `
     </div>
   </header>
   <main
-    class="css-5kcaq3"
+    class="css-qcp6ks"
   >
     Contents Page
   </main>
