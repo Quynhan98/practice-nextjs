@@ -31,7 +31,7 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
         class="css-11xbhwq"
       >
         <p
-          class="chakra-text css-qqsxr4"
+          class="chakra-text css-1h9x01k"
         >
           Give an email, get the newsletter.
         </p>
@@ -51,10 +51,10 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
       class="css-167212l"
     >
       <p
-        class="chakra-text css-1r4ljig"
+        class="chakra-text css-8w7kma"
       >
         <b
-          class="chakra-text css-oa1oqk"
+          class="chakra-text css-1sq7sr3"
         >
           © 2021 Shelly.
         </b>
@@ -62,7 +62,7 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
         Terms of use
          
         <b
-          class="chakra-text css-oa1oqk"
+          class="chakra-text css-1sq7sr3"
         >
           and
         </b>

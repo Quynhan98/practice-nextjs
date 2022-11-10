@@ -18,19 +18,19 @@ const Footer = () => {
           justifyContent="space-between"
           alignItems="center"
         >
-          <Text fontSize="16px" color="secondary" marginBottom="10px">
+          <Text fontSize="base" color="secondary" marginBottom="10px">
             Give an email, get the newsletter.
           </Text>
           <Icon alt="Right arrow" ml="128px" srcIcon="/images/iconRight.svg" />
         </Flex>
       </Flex>
       <Flex mt="48px" justifyContent="space-between" alignItems="center">
-        <Text fontWeight={400} fontSize="16px" color="secondary">
-          <Text as="b" fontWeight={500} color="dark">
+        <Text fontWeight="base" fontSize="base" color="secondary">
+          <Text as="b" fontWeight="medium" color="dark">
             © 2021 Shelly.
           </Text>{' '}
           Terms of use{' '}
-          <Text as="b" fontWeight={500} color="dark">
+          <Text as="b" fontWeight="medium" color="dark">
             and
           </Text>{' '}
           privacy policy
