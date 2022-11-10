@@ -1,0 +1,460 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App render Should show match App DOM Snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body
+    class="chakra-ui-light"
+  >
+    <div>
+      <header
+        class="css-n5jh5q"
+      >
+        <h1
+          class="chakra-heading css-1dklj6k"
+        >
+          <img
+            alt="Logo Shoppe"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75"
+            srcset="/_next/image?url=%2Fimages%2Flogo.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&w=256&q=75 2x"
+            style="color: transparent;"
+            width="125"
+          />
+        </h1>
+        <div
+          class="css-1bdr409"
+        >
+          <img
+            alt="Shopping Cart Icon"
+            class="chakra-image css-0"
+            data-testid="image"
+            src="/images/shoppingCart.svg"
+          />
+        </div>
+      </header>
+      <main
+        class="css-qcp6ks"
+      >
+        <div>
+          Mocked Test Component
+        </div>
+      </main>
+      <footer
+        class="css-xmbrgk"
+      >
+        <div
+          class="css-gg4vpm"
+        >
+          <nav
+            class="css-fd0xex"
+          >
+            <a
+              href="/contact"
+            >
+              Contact
+            </a>
+            <a
+              href="/terms-of-services"
+            >
+              Terms of services
+            </a>
+            <a
+              href="/shipping-and-return"
+            >
+              Shipping and Return
+            </a>
+          </nav>
+          <div
+            class="css-11xbhwq"
+          >
+            <p
+              class="chakra-text css-1h9x01k"
+            >
+              Give an email, get the newsletter.
+            </p>
+            <div
+              class="css-1ok46vh"
+            >
+              <img
+                alt="Right arrow"
+                class="chakra-image css-0"
+                data-testid="image"
+                src="/images/iconRight.svg"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="css-167212l"
+        >
+          <p
+            class="chakra-text css-8w7kma"
+          >
+            <b
+              class="chakra-text css-1sq7sr3"
+            >
+              © 2021 Shelly.
+            </b>
+             
+            Terms of use
+             
+            <b
+              class="chakra-text css-1sq7sr3"
+            >
+              and
+            </b>
+             
+            privacy policy
+          </p>
+          <div
+            class="css-st3z69"
+          >
+            <div
+              class="css-1nylpq2"
+            >
+              <img
+                alt="LinkIn Icon"
+                class="chakra-image css-0"
+                data-testid="image"
+                src="/images/inIcon.svg"
+              />
+            </div>
+            <div
+              class="css-1nylpq2"
+            >
+              <img
+                alt="Facebook icon"
+                class="chakra-image css-0"
+                data-testid="image"
+                src="/images/facebook.svg"
+              />
+            </div>
+            <div
+              class="css-1nylpq2"
+            >
+              <img
+                alt="Instagram icon"
+                class="chakra-image css-0"
+                data-testid="image"
+                src="/images/instagram.svg"
+              />
+            </div>
+            <div
+              class="css-1nylpq2"
+            >
+              <img
+                alt="Twitter icon"
+                class="chakra-image css-0"
+                data-testid="image"
+                src="/images/twitter.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+      <span
+        hidden=""
+        id="__chakra_env"
+      />
+      <span
+        hidden=""
+        id="__chakra_env"
+      />
+    </div>
+    <div
+      class="chakra-portal"
+    >
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-top"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-top-left"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-top-right"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-bottom-left"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-bottom"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-bottom-right"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+    </div>
+    <div
+      class="chakra-portal"
+    >
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-top"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-top-left"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-top-right"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-bottom-left"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-bottom"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-bottom-right"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="css-n5jh5q"
+    >
+      <h1
+        class="chakra-heading css-1dklj6k"
+      >
+        <img
+          alt="Logo Shoppe"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75"
+          srcset="/_next/image?url=%2Fimages%2Flogo.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&w=256&q=75 2x"
+          style="color: transparent;"
+          width="125"
+        />
+      </h1>
+      <div
+        class="css-1bdr409"
+      >
+        <img
+          alt="Shopping Cart Icon"
+          class="chakra-image css-0"
+          data-testid="image"
+          src="/images/shoppingCart.svg"
+        />
+      </div>
+    </header>
+    <main
+      class="css-qcp6ks"
+    >
+      <div>
+        Mocked Test Component
+      </div>
+    </main>
+    <footer
+      class="css-xmbrgk"
+    >
+      <div
+        class="css-gg4vpm"
+      >
+        <nav
+          class="css-fd0xex"
+        >
+          <a
+            href="/contact"
+          >
+            Contact
+          </a>
+          <a
+            href="/terms-of-services"
+          >
+            Terms of services
+          </a>
+          <a
+            href="/shipping-and-return"
+          >
+            Shipping and Return
+          </a>
+        </nav>
+        <div
+          class="css-11xbhwq"
+        >
+          <p
+            class="chakra-text css-1h9x01k"
+          >
+            Give an email, get the newsletter.
+          </p>
+          <div
+            class="css-1ok46vh"
+          >
+            <img
+              alt="Right arrow"
+              class="chakra-image css-0"
+              data-testid="image"
+              src="/images/iconRight.svg"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="css-167212l"
+      >
+        <p
+          class="chakra-text css-8w7kma"
+        >
+          <b
+            class="chakra-text css-1sq7sr3"
+          >
+            © 2021 Shelly.
+          </b>
+           
+          Terms of use
+           
+          <b
+            class="chakra-text css-1sq7sr3"
+          >
+            and
+          </b>
+           
+          privacy policy
+        </p>
+        <div
+          class="css-st3z69"
+        >
+          <div
+            class="css-1nylpq2"
+          >
+            <img
+              alt="LinkIn Icon"
+              class="chakra-image css-0"
+              data-testid="image"
+              src="/images/inIcon.svg"
+            />
+          </div>
+          <div
+            class="css-1nylpq2"
+          >
+            <img
+              alt="Facebook icon"
+              class="chakra-image css-0"
+              data-testid="image"
+              src="/images/facebook.svg"
+            />
+          </div>
+          <div
+            class="css-1nylpq2"
+          >
+            <img
+              alt="Instagram icon"
+              class="chakra-image css-0"
+              data-testid="image"
+              src="/images/instagram.svg"
+            />
+          </div>
+          <div
+            class="css-1nylpq2"
+          >
+            <img
+              alt="Twitter icon"
+              class="chakra-image css-0"
+              data-testid="image"
+              src="/images/twitter.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <span
+      hidden=""
+      id="__chakra_env"
+    />
+    <span
+      hidden=""
+      id="__chakra_env"
+    />
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
