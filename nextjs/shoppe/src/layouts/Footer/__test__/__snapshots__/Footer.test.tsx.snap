@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer render Should Footer match Snapshot 1`] = `
+<div>
+  <footer
+    class="css-1ee52bg"
+  >
+    <div
+      class="css-gg4vpm"
+    >
+      <nav
+        class="css-fd0xex"
+      >
+        <a
+          href="/contact"
+        >
+          Contact
+        </a>
+        <a
+          href="/terms-of-services"
+        >
+          Terms of services
+        </a>
+        <a
+          href="/shipping-and-return"
+        >
+          Shipping and Return
+        </a>
+      </nav>
+      <div
+        class="css-11xbhwq"
+      >
+        <p
+          class="chakra-text css-ozfm6u"
+        >
+          Give an email, get the newsletter.
+        </p>
+        <div
+          class="css-1ok46vh"
+        >
+          <img
+            alt="Right arrow"
+            class="chakra-image css-0"
+            data-testid="image"
+            src="/images/iconRight.svg"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-167212l"
+    >
+      <p
+        class="chakra-text css-tujbob"
+      >
+        <b
+          class="chakra-text css-lz4kvn"
+        >
+          © 2021 Shelly.
+        </b>
+         
+        Terms of use
+        <b
+          class="chakra-text css-lz4kvn"
+        >
+           
+          and
+        </b>
+         
+        privacy policy
+      </p>
+      <div
+        class="css-st3z69"
+      >
+        <div
+          class="css-1nylpq2"
+        >
+          <img
+            alt="LinkIn Icon"
+            class="chakra-image css-0"
+            data-testid="image"
+            src="/images/inIcon.svg"
+          />
+        </div>
+        <div
+          class="css-1nylpq2"
+        >
+          <img
+            alt="Facebook icon"
+            class="chakra-image css-0"
+            data-testid="image"
+            src="/images/facebook.svg"
+          />
+        </div>
+        <div
+          class="css-1nylpq2"
+        >
+          <img
+            alt="Instagram icon"
+            class="chakra-image css-0"
+            data-testid="image"
+            src="/images/instagram.svg"
+          />
+        </div>
+        <div
+          class="css-1nylpq2"
+        >
+          <img
+            alt="Twitter icon"
+            class="chakra-image css-0"
+            data-testid="image"
+            src="/images/twitter.svg"
+          />
+        </div>
+      </div>
+    </div>
+  </footer>
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
+</div>
+`;

@@ -24,7 +24,7 @@ exports[`Quantity render Should show match Quantity DOM Snapshot 1`] = `
       </svg>
     </button>
     <p
-      class="chakra-text css-2mer09"
+      class="chakra-text css-17i4smz"
       data-testid="quantity"
     >
       1
