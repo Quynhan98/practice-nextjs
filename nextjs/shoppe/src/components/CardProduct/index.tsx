@@ -17,36 +17,27 @@ const CardProduct = ({ product }: CardProductProps) => {
   const { imageUrl, status, name, price, id } = product
   return (
     <Box maxW="sm" borderRadius="lg" overflow="hidden" position="relative">
-      <Box
-        position="absolute"
-        top="16px"
-        left="16px"
-        background="beaver"
-        borderRadius="4px"
-        textAlign="center"
-        padding="3px 6px"
-      >
-        <Text fontSize="12px" textColor="light">
-          {status}
-        </Text>
-      </Box>
-      <Link href={`/products/${id}`} passHref key={id}>
-        <a>
-          <Image width={300} height={300} src={imageUrl} alt={name} />
-        </a>
-      </Link>
-      <Box pt="24px">
-        <Link href={`/products/${id}`} passHref>
-          <Text
-            as="a"
-            fontSize="20px"
-            textColor="dark"
-            data-testid={`link-to-detail-page/${id}`}
-          >
-            {name}
+      {status && (
+        <Box
+          position="absolute"
+          top="16px"
+          left="16px"
+          background="beaver"
+          borderRadius="4px"
+          textAlign="center"
+          padding="3px 6px"
+        >
+          <Text fontSize="12px" textColor="light">
+            {status}
           </Text>
-        </Link>
-        <Text fontSize="20px" mt="16px" textColor="beaver">
+        </Box>
+      )}
+      <Link href={`/products/${id}`} key={id}>
+        <Image width={300} height={300} src={imageUrl} alt={name} />
+      </Link>
+      <Box pt="24px" color="dark" fontSize="medium">
+        <Link href={`/products/${id}`}>{name}</Link>
+        <Text mt="16px" textColor="beaver">
           {currencyFormat(price)}
         </Text>
       </Box>

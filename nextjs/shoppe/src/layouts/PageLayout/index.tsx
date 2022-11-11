@@ -13,7 +13,7 @@ const PageLayout = ({ children }: PageLayoutProps) => {
       <Header />
       <Box
         as="main"
-        minHeight="90vh"
+        minHeight="100vh"
         maxWidth="1248px"
         width="100%"
         margin="0 auto"

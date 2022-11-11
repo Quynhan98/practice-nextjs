@@ -34,10 +34,12 @@ const Search = ({
         onKeyDown={onKeyDown}
       />
       <IconButton
+        size="small"
+        marginBottom="10px"
         type="submit"
         onClick={onClick}
         aria-label="Search database"
-        icon={<SearchIcon />}
+        icon={<SearchIcon boxSize={5} />}
       />
     </Box>
   )

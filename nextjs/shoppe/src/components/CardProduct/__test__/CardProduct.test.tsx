@@ -17,8 +17,9 @@ describe('CardProduct render', () => {
   it('Should navigate to product details page', () => {
     render(<CardProduct product={PRODUCT_ITEM} />)
 
-    const link = screen.getByTestId(`link-to-detail-page/${PRODUCT_ITEM.id}`)
+    const link = screen.getByRole('link')
 
     expect(link.getAttribute('href')).toEqual(`/products/${PRODUCT_ITEM.id}`)
+    expect(link.textContent).toBe(PRODUCT_ITEM.name)
   })
 })

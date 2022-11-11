@@ -7,7 +7,7 @@ import {
 interface ButtonProps extends ButtonPropsChakra {
   children: ReactNode
   variant: 'primary'
-  size: 'default'
+  size: 'default' | 'medium' | 'base' | 'small'
 }
 
 const Button = ({ children, variant, ...rest }: ButtonProps) => {
