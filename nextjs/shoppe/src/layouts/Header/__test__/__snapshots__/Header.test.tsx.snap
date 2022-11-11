@@ -3,7 +3,7 @@
 exports[`Header render Should Header match Snapshot 1`] = `
 <div>
   <header
-    class="css-13ughem"
+    class="css-n5jh5q"
   >
     <h1
       class="chakra-heading css-1dklj6k"

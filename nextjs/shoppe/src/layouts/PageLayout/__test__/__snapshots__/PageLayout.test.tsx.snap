@@ -1,7 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer render Should Footer match Snapshot 1`] = `
+exports[`PageLayout render Should PageLayout match Snapshot 1`] = `
 <div>
+  <header
+    class="css-n5jh5q"
+  >
+    <h1
+      class="chakra-heading css-1dklj6k"
+    >
+      <img
+        alt="Logo Shoppe"
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75"
+        srcset="/_next/image?url=%2Fimages%2Flogo.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&w=256&q=75 2x"
+        style="color: transparent;"
+        width="125"
+      />
+    </h1>
+    <div
+      class="css-1bdr409"
+    >
+      <img
+        alt="Shopping Cart Icon"
+        class="chakra-image css-0"
+        data-testid="image"
+        src="/images/shoppingCart.svg"
+      />
+    </div>
+  </header>
+  <main
+    class="css-5kcaq3"
+  >
+    Contents Page
+  </main>
   <footer
     class="css-xmbrgk"
   >
@@ -31,7 +65,7 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
         class="css-11xbhwq"
       >
         <p
-          class="chakra-text css-ozfm6u"
+          class="chakra-text css-1h9x01k"
         >
           Give an email, get the newsletter.
         </p>
@@ -51,19 +85,19 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
       class="css-167212l"
     >
       <p
-        class="chakra-text css-tujbob"
+        class="chakra-text css-8w7kma"
       >
         <b
-          class="chakra-text css-lz4kvn"
+          class="chakra-text css-1sq7sr3"
         >
           © 2021 Shelly.
         </b>
          
         Terms of use
+         
         <b
-          class="chakra-text css-lz4kvn"
+          class="chakra-text css-1sq7sr3"
         >
-           
           and
         </b>
          
