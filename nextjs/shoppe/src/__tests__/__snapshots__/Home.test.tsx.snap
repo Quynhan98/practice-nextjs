@@ -43,11 +43,19 @@ exports[`Home render Should show match Home DOM Snapshot 1`] = `
           </button>
         </div>
       </div>
-      <p
-        class="chakra-text css-1v5k8qn"
+      <div
+        class="css-aozu9f"
       >
-        Product Not Found
-      </p>
+        <div
+          class="chakra-spinner css-nkpswe"
+        >
+          <span
+            class="css-8b45rq"
+          >
+            Loading...
+          </span>
+        </div>
+      </div>
     </div>
   </div>
   <span

@@ -1,4 +1,6 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/react'
+import { ChangeEvent, useCallback, useMemo, useState } from 'react'
+import { useRouter } from 'next/router'
+import { Box, Flex, Heading, Spinner, Text } from '@chakra-ui/react'
 
 // Components
 import Button from '@components/Button'
@@ -10,30 +12,57 @@ import { IProduct } from '@self-types/index'
 
 // Hooks
 import { usePagination } from '@hooks/usePagination'
-import { useCallback, useMemo } from 'react'
+
+// Constants
 import { PRODUCT_NOT_FOUND, SERVER_ERROR } from '@constants/errorMessage'
 
 const Home = () => {
+  const router = useRouter()
+  const { search } = router.query as {
+    search: string
+  }
+
   const {
     paginatedData: products,
     size,
     setSize,
     error,
-  } = usePagination<IProduct[]>('/products')
+    isEmpty,
+    isLoadingMore,
+  } = usePagination<IProduct[]>(
+    search ? `/products?search=${search}&` : '/products?',
+  )
+
+  const [valueSearch, setValueSearch] = useState<string>('')
 
   // Handle change search
-  const handleOnChangeSearch = () => {
-    // Handle change
+  const handleOnChangeSearch = (e: ChangeEvent<HTMLInputElement>) => {
+    const searchValue = e.target.value
+    if (searchValue) {
+      setValueSearch(searchValue)
+    } else {
+      router.push('/')
+    }
   }
 
   // Handle search when user press enter
-  const handleKeyDown = () => {
-    // Handle search
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (valueSearch !== '' && valueSearch !== undefined) {
+      if (e.key === 'Enter') {
+        router.push(`?search=${valueSearch}`)
+      }
+    } else {
+      router.push('/')
+    }
   }
 
   // Handle search when user press submit button
   const handleSubmitSearch = () => {
-    // Handle search
+    if (valueSearch !== '' && valueSearch !== undefined) {
+      router.push(`?search=${valueSearch}`)
+    } else {
+      router.push('/')
+    }
   }
 
   // Handle load more
@@ -50,36 +79,38 @@ const Home = () => {
       )
     }
 
-    if (products) {
+    if (!products) {
+      return <Spinner />
+    }
+
+    if (isEmpty) {
       return (
-        <Flex
-          flexDirection="column"
-          justifyContent="center"
-          paddingBottom="50px"
-        >
-          <Flex flexWrap="wrap" gap="24px" paddingBottom="60px">
-            {products.map((product) => (
-              <CardProduct key={`product-${product.id}`} product={product} />
-            ))}
-          </Flex>
-          <Button
-            onClick={handleLoadMore}
-            margin="0 auto"
-            variant="primary"
-            size="medium"
-          >
-            Load More
-          </Button>
-        </Flex>
+        <Text variant="primary" size="heading">
+          {PRODUCT_NOT_FOUND}
+        </Text>
       )
     }
 
     return (
-      <Text variant="primary" size="heading">
-        {PRODUCT_NOT_FOUND}
-      </Text>
+      <>
+        <Flex flexWrap="wrap" gap="24px" paddingBottom="60px">
+          {products.map((product) => (
+            <CardProduct key={`product-${product.id}`} product={product} />
+          ))}
+        </Flex>
+        <Button
+          isDisabled={!!search}
+          isLoading={isLoadingMore}
+          onClick={handleLoadMore}
+          margin="0 auto"
+          variant="primary"
+          size="medium"
+        >
+          Load More
+        </Button>
+      </>
     )
-  }, [error, handleLoadMore, products])
+  }, [error, handleLoadMore, isEmpty, isLoadingMore, products, search])
 
   return (
     <Box pt="96px">
@@ -95,7 +126,14 @@ const Home = () => {
             placeholder="Search..."
           />
         </Box>
-        {renderContent}
+        <Flex
+          flexDirection="column"
+          justifyContent="center"
+          paddingBottom="50px"
+          margin="0 auto"
+        >
+          {renderContent}
+        </Flex>
       </Flex>
     </Box>
   )

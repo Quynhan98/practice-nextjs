@@ -2,7 +2,7 @@ import useSWRInfinite from 'swr/infinite'
 
 export const usePagination = <T>(url: string) => {
   const { data, error, mutate, size, setSize, isValidating } = useSWRInfinite(
-    (index) => `${url}?page=${index + 1}&limit=6`,
+    (index) => `${url}page=${index + 1}&limit=6`,
   )
 
   const paginatedData = data && (data.flat() as T)
