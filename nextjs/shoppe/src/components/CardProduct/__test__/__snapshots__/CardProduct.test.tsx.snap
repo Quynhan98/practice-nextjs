@@ -34,7 +34,7 @@ exports[`CardProduct render Should match data for card component 1`] = `
         Lira Earrings
       </a>
       <p
-        class="chakra-text css-k99oqg"
+        class="chakra-text css-1ovs4to"
       >
         $ 20.00
       </p>

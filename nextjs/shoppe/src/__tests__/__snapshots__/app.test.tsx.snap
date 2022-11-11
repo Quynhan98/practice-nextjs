@@ -72,7 +72,7 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
             class="css-11xbhwq"
           >
             <p
-              class="chakra-text css-1h9x01k"
+              class="chakra-text css-ozfm6u"
             >
               Give an email, get the newsletter.
             </p>
@@ -92,19 +92,19 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
           class="css-167212l"
         >
           <p
-            class="chakra-text css-8w7kma"
+            class="chakra-text css-tujbob"
           >
             <b
-              class="chakra-text css-1sq7sr3"
+              class="chakra-text css-lz4kvn"
             >
               © 2021 Shelly.
             </b>
              
             Terms of use
-             
             <b
-              class="chakra-text css-1sq7sr3"
+              class="chakra-text css-lz4kvn"
             >
+               
               and
             </b>
              
@@ -312,7 +312,7 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
           class="css-11xbhwq"
         >
           <p
-            class="chakra-text css-1h9x01k"
+            class="chakra-text css-ozfm6u"
           >
             Give an email, get the newsletter.
           </p>
@@ -332,19 +332,19 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
         class="css-167212l"
       >
         <p
-          class="chakra-text css-8w7kma"
+          class="chakra-text css-tujbob"
         >
           <b
-            class="chakra-text css-1sq7sr3"
+            class="chakra-text css-lz4kvn"
           >
             © 2021 Shelly.
           </b>
            
           Terms of use
-           
           <b
-            class="chakra-text css-1sq7sr3"
+            class="chakra-text css-lz4kvn"
           >
+             
             and
           </b>
            
