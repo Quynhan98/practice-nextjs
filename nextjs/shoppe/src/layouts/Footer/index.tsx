@@ -25,12 +25,13 @@ const Footer = () => {
         </Flex>
       </Flex>
       <Flex mt="48px" justifyContent="space-between" alignItems="center">
-        <Text fontWeight="base" fontSize="base" color="secondary">
-          <Text as="b" fontWeight="medium" color="dark">
+        <Text>
+          <Text as="b" variant="primary">
             © 2021 Shelly.
           </Text>{' '}
-          Terms of use{' '}
-          <Text as="b" fontWeight="medium" color="dark">
+          Terms of use
+          <Text as="b" variant="primary">
+            {' '}
             and
           </Text>{' '}
           privacy policy

@@ -9,7 +9,7 @@ exports[`CardProduct render Should match data for card component 1`] = `
       class="css-ervdjc"
     >
       <p
-        class="chakra-text css-ezfais"
+        class="chakra-text css-1ok93o9"
       >
         Sold out
       </p>
@@ -33,14 +33,14 @@ exports[`CardProduct render Should match data for card component 1`] = `
       class="css-19n8dai"
     >
       <a
-        class="chakra-text css-1iv4p6a"
+        class="chakra-text css-1spjgtb"
         data-testid="link-to-detail-page/1"
         href="/products/1"
       >
         Lira Earrings
       </a>
       <p
-        class="chakra-text css-1a3lfy8"
+        class="chakra-text css-21u1ah"
       >
         $ 20.00
       </p>

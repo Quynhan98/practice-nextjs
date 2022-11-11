@@ -23,19 +23,19 @@ exports[`CardDetail render Should match data for card component 1`] = `
         class="css-14sa009"
       >
         <h2
-          class="chakra-text css-1ugq2am"
+          class="chakra-text css-tq06qo"
           data-testid="link-to-detail-page/1"
           href="/products/1"
         >
           Lira Earrings
         </h2>
         <p
-          class="chakra-text css-56oxxb"
+          class="chakra-text css-1plr3rm"
         >
           $ 20.00
         </p>
         <p
-          class="chakra-text css-2cr8m4"
+          class="chakra-text css-ubux72"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. 
         </p>
@@ -64,7 +64,7 @@ exports[`CardDetail render Should match data for card component 1`] = `
               </svg>
             </button>
             <p
-              class="chakra-text css-2mer09"
+              class="chakra-text css-17i4smz"
               data-testid="quantity"
             >
               1
