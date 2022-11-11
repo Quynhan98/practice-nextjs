@@ -1,20 +1,25 @@
-import { Box, Flex, Heading } from '@chakra-ui/react'
+import { Box, Flex, Heading, Text } from '@chakra-ui/react'
 
 // Components
 import Button from '@components/Button'
 import CardProduct from '@components/CardProduct'
 import Search from '@components/Search'
 
-// Mocks
-import { LIST_PRODUCT } from '@mocks/mockData'
-
 // Types
 import { IProduct } from '@self-types/index'
 
+// Hooks
+import { usePagination } from '@hooks/usePagination'
+import { useCallback, useMemo } from 'react'
+import { PRODUCT_NOT_FOUND, SERVER_ERROR } from '@constants/errorMessage'
+
 const Home = () => {
-  // TODO:
-  // - Replace mocks data with fetched data, will be done in integration step
-  const products: IProduct[] = LIST_PRODUCT
+  const {
+    paginatedData: products,
+    size,
+    setSize,
+    error,
+  } = usePagination<IProduct[]>('/products')
 
   // Handle change search
   const handleOnChangeSearch = () => {
@@ -32,9 +37,49 @@ const Home = () => {
   }
 
   // Handle load more
-  const handleLoadMore = () => {
-    // Handle load
-  }
+  const handleLoadMore = useCallback(() => {
+    setSize(size + 1)
+  }, [setSize, size])
+
+  const renderContent = useMemo(() => {
+    if (error) {
+      return (
+        <Text variant="primary" size="heading">
+          {SERVER_ERROR}
+        </Text>
+      )
+    }
+
+    if (products) {
+      return (
+        <Flex
+          flexDirection="column"
+          justifyContent="center"
+          paddingBottom="50px"
+        >
+          <Flex flexWrap="wrap" gap="24px" paddingBottom="60px">
+            {products.map((product) => (
+              <CardProduct key={`product-${product.id}`} product={product} />
+            ))}
+          </Flex>
+          <Button
+            onClick={handleLoadMore}
+            margin="0 auto"
+            variant="primary"
+            size="medium"
+          >
+            Load More
+          </Button>
+        </Flex>
+      )
+    }
+
+    return (
+      <Text variant="primary" size="heading">
+        {PRODUCT_NOT_FOUND}
+      </Text>
+    )
+  }, [error, handleLoadMore, products])
 
   return (
     <Box pt="96px">
@@ -50,21 +95,7 @@ const Home = () => {
             placeholder="Search..."
           />
         </Box>
-        <Flex flexDirection="column" justifyContent="center">
-          <Flex flexWrap="wrap" gap="24px" paddingBottom="60px">
-            {products.map((product) => (
-              <CardProduct key={`product-${product.id}`} product={product} />
-            ))}
-          </Flex>
-          <Button
-            onClick={handleLoadMore}
-            margin="0 auto"
-            variant="primary"
-            size="medium"
-          >
-            Load More
-          </Button>
-        </Flex>
+        {renderContent}
       </Flex>
     </Box>
   )
