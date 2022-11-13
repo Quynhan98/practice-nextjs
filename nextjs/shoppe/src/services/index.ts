@@ -1,21 +1,11 @@
-import { BASE_URL, SERVER_ERROR } from '@constants/index'
-import axios from 'axios'
-
-// Create instance and define base url
-export const axiosInstance = axios.create({
-  baseURL: BASE_URL,
-  headers: {
-    Accept: 'application/json',
-    'Content-Type': 'application/json',
-  },
-})
+import { SERVER_ERROR } from '@constants/index'
 
 // Fetcher
 export const swrFetcher = async (url: string) => {
   try {
-    const response = await axiosInstance.get(url)
+    const response = await fetch(url)
 
-    return response.data
+    return response.json()
   } catch {
     throw SERVER_ERROR
   }

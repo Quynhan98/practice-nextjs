@@ -12,9 +12,10 @@ import { IProduct } from '@self-types/index'
 
 // Hooks
 import { usePagination } from '@hooks/usePagination'
+import { useDebounce } from '@hooks/useDebounce'
 
 // Constants
-import { PRODUCT_NOT_FOUND, SERVER_ERROR } from '@constants/errorMessage'
+import { BASE_URL, PRODUCT_NOT_FOUND, SERVER_ERROR } from '@constants/index'
 
 const Home = () => {
   const router = useRouter()
@@ -30,16 +31,18 @@ const Home = () => {
     isEmpty,
     isLoadingMore,
   } = usePagination<IProduct[]>(
-    search ? `/products?search=${search}&` : '/products?',
+    search ? `${BASE_URL}/products?search=${search}&` : `${BASE_URL}/products?`,
   )
 
-  const [valueSearch, setValueSearch] = useState<string>('')
+  const [searchValue, setSearchValue] = useState<string>('')
+
+  const searchTerm = useDebounce(searchValue, 500)
 
   // Handle change search
   const handleOnChangeSearch = (e: ChangeEvent<HTMLInputElement>) => {
-    const searchValue = e.target.value
-    if (searchValue) {
-      setValueSearch(searchValue)
+    const inputSearchValue = e.target.value
+    if (inputSearchValue) {
+      setSearchValue(inputSearchValue)
     } else {
       router.push('/')
     }
@@ -47,9 +50,9 @@ const Home = () => {
 
   // Handle search when user press enter
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (valueSearch !== '' && valueSearch !== undefined) {
+    if (searchTerm !== '' && searchTerm !== undefined) {
       if (e.key === 'Enter') {
-        router.push(`?search=${valueSearch}`)
+        router.push(`?search=${searchTerm}`)
       }
     } else {
       router.push('/')
@@ -58,8 +61,8 @@ const Home = () => {
 
   // Handle search when user press submit button
   const handleSubmitSearch = () => {
-    if (valueSearch !== '' && valueSearch !== undefined) {
-      router.push(`?search=${valueSearch}`)
+    if (searchTerm !== '' && searchTerm !== undefined) {
+      router.push(`?search=${searchTerm}`)
     } else {
       router.push('/')
     }
@@ -73,7 +76,7 @@ const Home = () => {
   const renderContent = useMemo(() => {
     if (error) {
       return (
-        <Text variant="primary" size="heading">
+        <Text variant="warning" size="heading">
           {SERVER_ERROR}
         </Text>
       )
