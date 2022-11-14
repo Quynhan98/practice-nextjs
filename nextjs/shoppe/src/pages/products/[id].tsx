@@ -11,7 +11,7 @@ import { BASE_URL } from '@constants/endPoints'
 import { ICart, IProductDetail } from '@self-types/index'
 
 // Services
-import { addToCart } from '@services/index'
+import { addToCart, fetcherApi } from '@services/index'
 
 export const getStaticPaths = async () => {
   const res = await fetch(`${BASE_URL}/products`)
@@ -27,10 +27,9 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context: { params: { id: string } }) => {
   const { id } = context.params
 
-  const res = await fetch(`${BASE_URL}/products/${id}`)
-  const data: IProductDetail = await res.json()
+  const product: IProductDetail = await fetcherApi(`/products/${id}`)
 
-  return { props: { product: data } }
+  return { props: { product } }
 }
 
 export interface DetailPageProps {
@@ -38,14 +37,14 @@ export interface DetailPageProps {
 }
 
 const DetailPage = ({ product }: DetailPageProps) => {
-  const { data: cartItem, mutate } = useSWR<ICart>(`${BASE_URL}/carts/1`)
+  const { data: cartItem, mutate } = useSWR<ICart>(`/carts/1`)
 
   // Handle add product into cart
   const handleAddCart = async (data: IProductDetail) => {
     if (cartItem) {
       const listProduct = [...cartItem.products, data]
 
-      await addToCart({ id: 1, products: listProduct }, `${BASE_URL}/carts/1`)
+      await addToCart({ id: 1, products: listProduct }, `/carts/1`)
 
       mutate(cartItem)
     }
@@ -54,7 +53,6 @@ const DetailPage = ({ product }: DetailPageProps) => {
   return (
     <Box pt="128px" pb="100px">
       <CardDetail productDetail={product} handleAddCart={handleAddCart} />
-
       <Box pt="123px">
         <Heading
           as="h3"

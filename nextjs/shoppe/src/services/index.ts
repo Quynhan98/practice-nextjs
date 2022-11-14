@@ -21,7 +21,7 @@ export const addToCart = async <T>(requestData: T, url: string): Promise<T> => {
   }
 
   try {
-    const response = await fetch(url, config)
+    const response = await fetch(`${BASE_URL}${url}`, config)
     return response.json()
   } catch (error) {
     throw SERVER_ERROR
