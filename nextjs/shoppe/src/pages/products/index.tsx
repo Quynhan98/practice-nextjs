@@ -1,3 +1,4 @@
+import { GetStaticProps } from 'next'
 import { ChangeEvent, useCallback, useMemo, useState } from 'react'
 import { useRouter } from 'next/router'
 import { Box, Flex, Heading, Spinner, Text } from '@chakra-ui/react'
@@ -15,26 +16,56 @@ import { usePagination } from '@hooks/usePagination'
 import { useDebounce } from '@hooks/useDebounce'
 
 // Constants
-import { BASE_URL, PRODUCT_NOT_FOUND, SERVER_ERROR } from '@constants/index'
+import { PRODUCT_NOT_FOUND, SERVER_ERROR } from '@constants/index'
 
-const Home = () => {
+// Services
+import { fetcherApi } from '@services/index'
+
+interface IHomeProps {
+  products: IProduct[]
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  try {
+    const products: IProduct[] = await fetcherApi(`/products?page=1&limit=6`)
+
+    return {
+      props: {
+        products,
+      },
+    }
+  } catch (error) {
+    return {
+      props: {
+        error: SERVER_ERROR,
+      },
+    }
+  }
+}
+
+const Home = ({ products }: IHomeProps) => {
   const router = useRouter()
   const { search } = router.query as {
     search: string
   }
 
   const {
-    paginatedData: products,
+    paginatedData,
     size,
     setSize,
     error,
     isEmpty,
     isLoadingMore,
+    isReachingEnd,
   } = usePagination<IProduct[]>(
-    search ? `${BASE_URL}/products?search=${search}&` : `${BASE_URL}/products?`,
+    search ? `/products?search=${search}&` : `/products?`,
   )
 
   const [searchValue, setSearchValue] = useState<string>('')
+
+  const listProduct = useMemo(() => {
+    return products.length === paginatedData?.length ? products : paginatedData
+  }, [paginatedData, products])
 
   const searchTerm = useDebounce(searchValue, 500)
 
@@ -82,7 +113,7 @@ const Home = () => {
       )
     }
 
-    if (!products) {
+    if (!listProduct) {
       return <Spinner />
     }
 
@@ -97,12 +128,12 @@ const Home = () => {
     return (
       <>
         <Flex flexWrap="wrap" gap="24px" paddingBottom="60px">
-          {products.map((product) => (
+          {listProduct.map((product) => (
             <CardProduct key={`product-${product.id}`} product={product} />
           ))}
         </Flex>
         <Button
-          isDisabled={!!search}
+          isDisabled={isReachingEnd}
           isLoading={isLoadingMore}
           onClick={handleLoadMore}
           margin="0 auto"
@@ -113,7 +144,14 @@ const Home = () => {
         </Button>
       </>
     )
-  }, [error, handleLoadMore, isEmpty, isLoadingMore, products, search])
+  }, [
+    error,
+    handleLoadMore,
+    isEmpty,
+    isLoadingMore,
+    isReachingEnd,
+    listProduct,
+  ])
 
   return (
     <Box pt="96px">

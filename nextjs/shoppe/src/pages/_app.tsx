@@ -12,13 +12,13 @@ import { customTheme } from '@themes/index'
 import PageLayout from '@layouts/PageLayout'
 
 // Services
-import { swrFetcher } from '@services/index'
+import { fetcherApi } from '@services/index'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <SWRConfig
       value={{
-        fetcher: swrFetcher,
+        fetcher: fetcherApi,
       }}
     >
       <ChakraProvider theme={customTheme}>

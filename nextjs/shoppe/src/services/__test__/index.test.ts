@@ -1,5 +1,5 @@
 // Services
-import { swrFetcher } from '@services/index'
+import { fetcherApi } from '@services/index'
 
 const unmockedFetch = global.fetch
 
@@ -14,7 +14,7 @@ afterAll(() => {
 
 describe('fetch user information correctly', () => {
   it('should call fetch', async () => {
-    const data = await swrFetcher('/products')
+    const data = await fetcherApi('/products')
 
     expect(Array.isArray(data)).toEqual(true)
     expect(data.length).toEqual(0)

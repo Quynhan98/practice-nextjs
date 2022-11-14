@@ -1,9 +1,9 @@
-import { SERVER_ERROR } from '@constants/index'
+import { BASE_URL, SERVER_ERROR } from '@constants/index'
 
 // Fetcher
-export const swrFetcher = async (url: string) => {
+export const fetcherApi = async (url: string) => {
   try {
-    const response = await fetch(url)
+    const response = await fetch(`${BASE_URL}${url}`)
 
     return response.json()
   } catch {

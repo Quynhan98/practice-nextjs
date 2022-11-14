@@ -11,6 +11,7 @@ export const usePagination = <T>(url: string) => {
     isLoadingInitialData ||
     (size > 0 && data && typeof data[size - 1] === 'undefined')
   const isEmpty = data?.[0]?.length === 0
+  const isReachingEnd = isEmpty || (data && data[data.length - 1]?.length < 6)
 
   return {
     paginatedData,
@@ -21,5 +22,6 @@ export const usePagination = <T>(url: string) => {
     setSize,
     mutate,
     isValidating,
+    isReachingEnd,
   }
 }
