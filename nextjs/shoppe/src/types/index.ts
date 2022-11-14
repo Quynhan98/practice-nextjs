@@ -8,6 +8,11 @@ export interface IProduct {
 
 export interface IProductDetail extends IProduct {
   quantity?: number
-  introduction: string
+  introduction?: string
   description?: string
+}
+
+export interface ICart {
+  id: number
+  products: IProductDetail[]
 }

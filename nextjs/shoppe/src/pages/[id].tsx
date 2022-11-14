@@ -1,3 +1,4 @@
+import useSWR from 'swr'
 import { Box, Heading, Text } from '@chakra-ui/react'
 
 // Components
@@ -7,7 +8,10 @@ import CardDetail from '@components/CardDetail'
 import { BASE_URL } from '@constants/endPoints'
 
 // Types
-import { IProductDetail } from '@self-types/index'
+import { ICart, IProductDetail } from '@self-types/index'
+
+// Services
+import { addToCart } from '@services/index'
 
 export const getStaticPaths = async () => {
   const res = await fetch(`${BASE_URL}/products`)
@@ -29,10 +33,22 @@ export const getStaticProps = async (context: { params: { id: string } }) => {
   return { props: { product: data } }
 }
 
-const Details = ({ product }: { product: IProductDetail }) => {
+export interface DetailPageProps {
+  product: IProductDetail
+}
+
+const DetailPage = ({ product }: DetailPageProps) => {
+  const { data: cartItem, mutate } = useSWR<ICart>(`${BASE_URL}/carts/1`)
+
   // Handle add product into cart
-  const handleAddCart = () => {
-    // Handle add
+  const handleAddCart = async (data: IProductDetail) => {
+    if (cartItem) {
+      const listProduct = [...cartItem.products, data]
+
+      await addToCart({ id: 1, products: listProduct }, `${BASE_URL}/carts/1`)
+
+      mutate(cartItem)
+    }
   }
 
   return (
@@ -58,4 +74,4 @@ const Details = ({ product }: { product: IProductDetail }) => {
   )
 }
 
-export default Details
+export default DetailPage
