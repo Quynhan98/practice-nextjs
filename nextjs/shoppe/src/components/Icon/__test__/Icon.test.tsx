@@ -22,6 +22,6 @@ describe('Icon render', () => {
 
     const image = screen.getByTestId('image')
 
-    expect(image.getAttribute('src')).toEqual(props.srcIcon)
+    expect(image.getAttribute('src')).toEqual(`${props.srcIcon}?w=3840&q=75`)
   })
 })

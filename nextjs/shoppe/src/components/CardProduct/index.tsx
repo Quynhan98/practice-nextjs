@@ -1,6 +1,6 @@
 import { memo } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
+import Image, { ImageLoader } from 'next/image'
 import { Box, Text } from '@chakra-ui/react'
 
 // Types
@@ -8,6 +8,9 @@ import { IProduct } from '@self-types/index'
 
 // Utils
 import { currencyFormat } from '@utils/index'
+
+// Services
+import myImageLoader from '@services/imageLoader'
 
 interface CardProductProps {
   product: IProduct
@@ -33,7 +36,13 @@ const CardProduct = ({ product }: CardProductProps) => {
         </Box>
       )}
       <Link href={`/products/${id}`} key={id}>
-        <Image width={300} height={300} src={imageUrl} alt={name} />
+        <Image
+          width={300}
+          height={300}
+          src={imageUrl}
+          alt={name}
+          loader={myImageLoader as ImageLoader}
+        />
       </Link>
       <Box pt="24px" color="dark" fontSize="medium">
         <Link href={`/products/${id}`}>{name}</Link>

@@ -12,6 +12,9 @@ const nextConfig = {
 
   swcMinify: true,
   images: {
+    loader: 'custom',
+    loaderFile: './src/services/imageLoader.ts',
+    minimumCacheTTL: 60,
     remotePatterns: [
       {
         protocol: 'https',

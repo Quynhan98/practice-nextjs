@@ -20,8 +20,8 @@ exports[`CardProduct render Should match data for card component 1`] = `
       decoding="async"
       height="300"
       loading="lazy"
-      src="/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Ftest-1-50371.appspot.com%2Fo%2Fshoppe-products%252FImg-04.png%3Falt%3Dmedia%26token%3D641c3cfe-cab6-4498-8632-eb511434e042&w=640&q=75"
-      srcset="/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Ftest-1-50371.appspot.com%2Fo%2Fshoppe-products%252FImg-04.png%3Falt%3Dmedia%26token%3D641c3cfe-cab6-4498-8632-eb511434e042&w=384&q=75 1x, /_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Ftest-1-50371.appspot.com%2Fo%2Fshoppe-products%252FImg-04.png%3Falt%3Dmedia%26token%3D641c3cfe-cab6-4498-8632-eb511434e042&w=640&q=75 2x"
+      src="https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=640&q=75"
+      srcset="https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=384&q=75 1x, https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=640&q=75 2x"
       style="color: transparent;"
       width="300"
     />

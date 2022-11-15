@@ -14,20 +14,25 @@ exports[`Header render Should Header match Snapshot 1`] = `
         decoding="async"
         height="40"
         loading="lazy"
-        src="/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75"
-        srcset="/_next/image?url=%2Fimages%2Flogo.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&w=256&q=75 2x"
+        src="/images/logo.png?w=256&q=75"
+        srcset="/images/logo.png?w=128&q=75 1x, /images/logo.png?w=256&q=75 2x"
         style="color: transparent;"
         width="125"
       />
     </h1>
     <div
-      class="css-1bdr409"
+      class="css-c3i4bm"
     >
       <img
         alt="Shopping Cart Icon"
-        class="chakra-image css-0"
+        data-nimg="fill"
         data-testid="image"
-        src="/images/shoppingCart.svg"
+        decoding="async"
+        loading="lazy"
+        sizes="100vw"
+        src="/images/shoppingCart.svg?w=3840&q=75"
+        srcset="/images/shoppingCart.svg?w=640&q=75 640w, /images/shoppingCart.svg?w=750&q=75 750w, /images/shoppingCart.svg?w=828&q=75 828w, /images/shoppingCart.svg?w=1080&q=75 1080w, /images/shoppingCart.svg?w=1200&q=75 1200w, /images/shoppingCart.svg?w=1920&q=75 1920w, /images/shoppingCart.svg?w=2048&q=75 2048w, /images/shoppingCart.svg?w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
       />
     </div>
   </header>

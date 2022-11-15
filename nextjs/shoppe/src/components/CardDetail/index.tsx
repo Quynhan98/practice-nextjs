@@ -1,5 +1,5 @@
 import { memo, useState } from 'react'
-import Image from 'next/image'
+import Image, { ImageLoader } from 'next/image'
 import Link from 'next/link'
 import { Box, Flex, Text } from '@chakra-ui/react'
 
@@ -12,6 +12,9 @@ import { IProductDetail } from '@self-types/index'
 // Components
 import Button from '@components/Button'
 import Quantity from '@components/Quantity'
+
+// Services
+import myImageLoader from '@services/imageLoader'
 
 interface CardDetailProps {
   productDetail: IProductDetail
@@ -50,7 +53,13 @@ const CardDetail = ({ productDetail, handleAddCart }: CardDetailProps) => {
       maxW="1248px"
     >
       <Box display="flex" gap="78px">
-        <Image width={560} height={600} src={imageUrl} alt={name} />
+        <Image
+          width={560}
+          height={600}
+          src={imageUrl}
+          alt={name}
+          loader={myImageLoader as ImageLoader}
+        />
         <Flex h="full" direction="column">
           <Link href={`/products/${id}`} passHref>
             <Text
