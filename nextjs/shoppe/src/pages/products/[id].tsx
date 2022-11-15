@@ -36,12 +36,7 @@ export const getStaticPaths = async () => {
       fallback: false,
     }
   } catch (error) {
-    if (error instanceof Error) {
-      return {
-        props: { error: error.message || SERVER_ERROR },
-      }
-    }
-    return { props: {} }
+    return { props: error }
   }
 }
 
@@ -56,12 +51,7 @@ export const getStaticProps = async (context: { params: { id: string } }) => {
 
     return { props: { product } }
   } catch (error) {
-    if (error instanceof Error) {
-      return {
-        props: { error: error.message || SERVER_ERROR },
-      }
-    }
-    return { props: {} }
+    return { props: error }
   }
 }
 
@@ -75,15 +65,15 @@ const DetailPage = ({ product, error }: DetailPageProps) => {
       if (cartItem) {
         const listProduct = [...cartItem.products, data]
 
-        const data1 = await addToCart(
+        const dataCart = await addToCart(
           { id: 1, products: listProduct },
-          `/carts/9 `,
+          `/carts/1 `,
         )
 
-        if (typeof data1 === 'string') {
+        if (typeof dataCart === 'string') {
           toast({
             title: 'Error',
-            description: data1,
+            description: dataCart,
             status: 'error',
             isClosable: true,
             position: 'bottom-left',
