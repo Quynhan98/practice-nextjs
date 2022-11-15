@@ -7,7 +7,7 @@ export interface IProduct {
 }
 
 export interface IProductDetail extends IProduct {
-  quantity?: number
+  quantity: number
   introduction?: string
   description?: string
 }

@@ -1,18 +1,18 @@
 import { useCallback, useMemo } from 'react'
-import useSWR from 'swr'
 import { Box, Heading, Spinner, Text, useToast } from '@chakra-ui/react'
 
 // Components
 import CardDetail from '@components/CardDetail'
 
 // Types
-import { ICart, IProductDetail } from '@self-types/index'
+import { IProductDetail } from '@self-types/index'
 
 // Services
-import { addToCart, fetcherApi } from '@services/index'
+import { fetcherApi } from '@services/index'
 
 // Constants
 import { SERVER_ERROR } from '@constants/errorMessage'
+import { useCartContext } from '@hooks/useCartContext'
 
 export interface DetailPageProps {
   product: IProductDetail
@@ -56,42 +56,35 @@ export const getStaticProps = async (context: { params: { id: string } }) => {
 }
 
 const DetailPage = ({ product, error }: DetailPageProps) => {
-  const { data: cartItem, mutate } = useSWR<ICart>(`/carts/1`)
   const toast = useToast()
+  const { listCart, addCart } = useCartContext()
 
   // Handle add product into cart
   const handleAddCart = useCallback(
     async (data: IProductDetail) => {
-      if (cartItem) {
-        const listProduct = [...cartItem.products, data]
+      const listProduct = [...listCart, data]
 
-        const dataCart = await addToCart(
-          { id: 1, products: listProduct },
-          `/carts/1 `,
-        )
+      const dataCart = await addCart(listProduct)
 
-        if (typeof dataCart === 'string') {
-          toast({
-            title: 'Error',
-            description: dataCart,
-            status: 'error',
-            isClosable: true,
-            position: 'bottom-left',
-          })
-        } else {
-          toast({
-            title: 'Success',
-            description: 'Product added successfully.',
-            status: 'success',
-            isClosable: true,
-            position: 'bottom-left',
-          })
-        }
+      if (typeof dataCart === 'string') {
+        toast({
+          title: 'Error',
+          description: dataCart,
+          status: 'error',
+          isClosable: true,
+          position: 'bottom-left',
+        })
+      } else {
+        toast({
+          title: 'Success',
+          description: 'Product added successfully.',
+          status: 'success',
+          isClosable: true,
+          position: 'bottom-left',
+        })
       }
-
-      mutate(cartItem)
     },
-    [cartItem, mutate, toast],
+    [listCart, toast],
   )
 
   const renderContent = useMemo(() => {
