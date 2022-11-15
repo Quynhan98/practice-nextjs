@@ -64,7 +64,10 @@ const Home = ({ products }: IHomeProps) => {
   const [searchValue, setSearchValue] = useState<string>('')
 
   const listProduct = useMemo(() => {
-    return products.length === paginatedData?.length ? products : paginatedData
+    if (paginatedData && paginatedData.length >= products.length) {
+      return paginatedData
+    }
+    return products
   }, [paginatedData, products])
 
   const searchTerm = useDebounce(searchValue, 500)
@@ -141,14 +144,7 @@ const Home = ({ products }: IHomeProps) => {
         </Button>
       </>
     )
-  }, [
-    error,
-    handleLoadMore,
-    isEmpty,
-    isLoadingMore,
-    isReachingEnd,
-    listProduct,
-  ])
+  }, [error, isEmpty, isLoadingMore, isReachingEnd, listProduct])
 
   return (
     <Box pt="96px">
