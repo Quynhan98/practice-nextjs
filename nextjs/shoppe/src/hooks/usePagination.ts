@@ -6,10 +6,9 @@ export const usePagination = <T>(url: string) => {
   )
 
   const paginatedData = data && (data.flat() as T)
-  const isLoadingInitialData = !data && !error
+  const isLoading = !data && !error
   const isLoadingMore =
-    isLoadingInitialData ||
-    (size > 0 && data && typeof data[size - 1] === 'undefined')
+    isLoading || (size > 0 && data && typeof data[size - 1] === 'undefined')
   const isEmpty = data?.[0]?.length === 0
   const isReachingEnd = isEmpty || (data && data[data.length - 1]?.length < 6)
 

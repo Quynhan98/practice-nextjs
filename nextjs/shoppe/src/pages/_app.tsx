@@ -14,6 +14,9 @@ import PageLayout from '@layouts/PageLayout'
 // Services
 import { fetcherApi } from '@services/index'
 
+// Components
+import { ErrorBoundary } from '@components/ErrorBoundary'
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <SWRConfig
@@ -22,9 +25,11 @@ export default function App({ Component, pageProps }: AppProps) {
       }}
     >
       <ChakraProvider theme={customTheme}>
-        <PageLayout>
-          <Component {...pageProps} />
-        </PageLayout>
+        <ErrorBoundary>
+          <PageLayout>
+            <Component {...pageProps} />
+          </PageLayout>
+        </ErrorBoundary>
       </ChakraProvider>
     </SWRConfig>
   )

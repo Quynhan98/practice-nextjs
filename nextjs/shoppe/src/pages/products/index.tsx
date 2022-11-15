@@ -72,11 +72,8 @@ const Home = ({ products }: IHomeProps) => {
   // Handle change search
   const handleOnChangeSearch = (e: ChangeEvent<HTMLInputElement>) => {
     const inputSearchValue = e.target.value
-    if (inputSearchValue) {
-      setSearchValue(inputSearchValue)
-    } else {
-      router.push('/')
-    }
+
+    setSearchValue(inputSearchValue)
   }
 
   // Handle search when user press enter
