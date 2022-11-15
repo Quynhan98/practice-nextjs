@@ -1,11 +1,9 @@
+import { useCallback, useMemo } from 'react'
 import useSWR from 'swr'
-import { Box, Heading, Text } from '@chakra-ui/react'
+import { Box, Heading, Spinner, Text, useToast } from '@chakra-ui/react'
 
 // Components
 import CardDetail from '@components/CardDetail'
-
-// Constants
-import { BASE_URL } from '@constants/endPoints'
 
 // Types
 import { ICart, IProductDetail } from '@self-types/index'
@@ -13,61 +11,137 @@ import { ICart, IProductDetail } from '@self-types/index'
 // Services
 import { addToCart, fetcherApi } from '@services/index'
 
+// Constants
+import { SERVER_ERROR } from '@constants/errorMessage'
+
+export interface DetailPageProps {
+  product: IProductDetail
+  error: string
+}
+
 export const getStaticPaths = async () => {
-  const res = await fetch(`${BASE_URL}/products`)
-  const data: IProductDetail[] = await res.json()
+  try {
+    const data: IProductDetail[] = await fetcherApi(`/products`)
 
-  const paths = data.map((product) => {
-    return { params: { id: product.id.toString() } }
-  })
+    const paths = data.map((product) => {
+      return { params: { id: product.id.toString() } }
+    })
 
-  return { paths, fallback: false }
+    if (!paths) {
+      return { props: { error: SERVER_ERROR } }
+    }
+
+    return {
+      paths,
+      fallback: false,
+    }
+  } catch (error) {
+    if (error instanceof Error) {
+      return {
+        props: { error: error.message || SERVER_ERROR },
+      }
+    }
+    return { props: {} }
+  }
 }
 
 export const getStaticProps = async (context: { params: { id: string } }) => {
   const { id } = context.params
 
-  const product: IProductDetail = await fetcherApi(`/products/${id}`)
+  try {
+    const product: IProductDetail = await fetcherApi(`/products/${id}`)
+    if (!product) {
+      return { props: { error: SERVER_ERROR } }
+    }
 
-  return { props: { product } }
+    return { props: { product } }
+  } catch (error) {
+    if (error instanceof Error) {
+      return {
+        props: { error: error.message || SERVER_ERROR },
+      }
+    }
+    return { props: {} }
+  }
 }
 
-export interface DetailPageProps {
-  product: IProductDetail
-}
-
-const DetailPage = ({ product }: DetailPageProps) => {
+const DetailPage = ({ product, error }: DetailPageProps) => {
   const { data: cartItem, mutate } = useSWR<ICart>(`/carts/1`)
+  const toast = useToast()
 
   // Handle add product into cart
-  const handleAddCart = async (data: IProductDetail) => {
-    if (cartItem) {
-      const listProduct = [...cartItem.products, data]
+  const handleAddCart = useCallback(
+    async (data: IProductDetail) => {
+      if (cartItem) {
+        const listProduct = [...cartItem.products, data]
 
-      await addToCart({ id: 1, products: listProduct }, `/carts/1`)
+        const data1 = await addToCart(
+          { id: 1, products: listProduct },
+          `/carts/9 `,
+        )
+
+        if (typeof data1 === 'string') {
+          toast({
+            title: 'Error',
+            description: data1,
+            status: 'error',
+            isClosable: true,
+            position: 'bottom-left',
+          })
+        } else {
+          toast({
+            title: 'Success',
+            description: 'Product added successfully.',
+            status: 'success',
+            isClosable: true,
+            position: 'bottom-left',
+          })
+        }
+      }
 
       mutate(cartItem)
+    },
+    [cartItem, mutate, toast],
+  )
+
+  const renderContent = useMemo(() => {
+    if (error) {
+      return (
+        <Text variant="warning" size="heading">
+          {error}
+        </Text>
+      )
     }
-  }
+
+    if (!product) {
+      return <Spinner />
+    }
+
+    return (
+      <>
+        <CardDetail productDetail={product} handleAddCart={handleAddCart} />
+        <Box pt="123px">
+          <Heading
+            as="h3"
+            pb="34px"
+            borderBottom="1px"
+            fontSize="medium"
+            fontWeight="base"
+            display="inline-block"
+          >
+            Description
+          </Heading>
+          <Text textAlign="initial" pt="40px">
+            {product.description}
+          </Text>
+        </Box>
+      </>
+    )
+  }, [error, handleAddCart, product])
 
   return (
     <Box pt="128px" pb="100px">
-      <CardDetail productDetail={product} handleAddCart={handleAddCart} />
-      <Box pt="123px">
-        <Heading
-          as="h3"
-          pb="34px"
-          borderBottom="1px"
-          fontSize="medium"
-          fontWeight="base"
-          display="inline-block"
-        >
-          Description
-        </Heading>
-        <Text textAlign="initial" pt="40px">
-          {product.description}
-        </Text>
-      </Box>
+      {renderContent}
     </Box>
   )
 }
