@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
+exports[`ProductsProps render should match data for ProductsProps component 1`] = `
 <div>
   <div
     class="css-butksl"
