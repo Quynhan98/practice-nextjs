@@ -1,12 +1,12 @@
 import { GetStaticProps } from 'next'
 import { ChangeEvent, useCallback, useMemo, useState } from 'react'
 import { useRouter } from 'next/router'
-import { Box, Flex, Heading, Spinner, Text } from '@chakra-ui/react'
+import { Flex, Spinner, Text } from '@chakra-ui/react'
 
 // Components
 import Button from '@components/Button'
 import CardProduct from '@components/CardProduct'
-import Search from '@components/Search'
+import BodyContent from '@components/BodyContent'
 
 // Types
 import { IProduct } from '@self-types/index'
@@ -149,29 +149,13 @@ const Home = ({ products, error }: IHomeProps) => {
   ])
 
   return (
-    <Box pt="96px">
-      <Heading as="h2" fontSize="large" fontWeight="medium">
-        Shop The Latest
-      </Heading>
-      <Flex pt="40px" gap="35px" justifyContent="space-between">
-        <Box minW="261px">
-          <Search
-            onChange={handleOnChangeSearch}
-            onKeyDown={handleKeyDown}
-            onClick={handleSubmitSearch}
-            placeholder="Search..."
-          />
-        </Box>
-        <Flex
-          flexDirection="column"
-          justifyContent="center"
-          paddingBottom="50px"
-          margin="0 auto"
-        >
-          {renderContent}
-        </Flex>
-      </Flex>
-    </Box>
+    <BodyContent
+      onChange={handleOnChangeSearch}
+      onKeyDown={handleKeyDown}
+      onClick={handleSubmitSearch}
+    >
+      {renderContent}
+    </BodyContent>
   )
 }
 

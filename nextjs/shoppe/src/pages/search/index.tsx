@@ -2,12 +2,12 @@ import { ChangeEvent, useMemo, useState } from 'react'
 import Link from 'next/link'
 import router from 'next/router'
 import { ArrowBackIcon } from '@chakra-ui/icons'
-import { Box, Flex, Heading, Text } from '@chakra-ui/react'
+import { Flex, Text } from '@chakra-ui/react'
 
 // Components
 import Button from '@components/Button'
 import CardProduct from '@components/CardProduct'
-import Search from '@components/Search'
+import BodyContent from '@components/BodyContent'
 
 // Constants
 import { PRODUCT_NOT_FOUND, SERVER_ERROR } from '@constants/index'
@@ -140,29 +140,13 @@ const SearchPage = ({ products, error }: SearchPageProps) => {
   }, [error, products])
 
   return (
-    <Box pt="96px">
-      <Heading as="h2" fontSize="large" fontWeight="medium">
-        Shop The Latest
-      </Heading>
-      <Flex pt="40px" gap="35px" justifyContent="space-between">
-        <Box minW="261px">
-          <Search
-            onChange={handleOnChangeSearch}
-            onKeyDown={handleKeyDown}
-            onClick={handleSubmitSearch}
-            placeholder="Search..."
-          />
-        </Box>
-        <Flex
-          flexDirection="column"
-          justifyContent="center"
-          paddingBottom="50px"
-          margin="0 auto"
-        >
-          {renderContent}
-        </Flex>
-      </Flex>
-    </Box>
+    <BodyContent
+      onChange={handleOnChangeSearch}
+      onKeyDown={handleKeyDown}
+      onClick={handleSubmitSearch}
+    >
+      {renderContent}
+    </BodyContent>
   )
 }
 

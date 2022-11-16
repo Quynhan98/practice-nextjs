@@ -11,7 +11,9 @@ export default {
   component: Icon,
 } as ComponentMeta<typeof Icon>
 
-const Template: ComponentStory<typeof Icon> = (args) => <Icon {...args} />
+const Template: ComponentStory<typeof Icon> = (args) => (
+  <Icon w="20px" h="20px" {...args} />
+)
 
 export const LinkIn = Template.bind({})
 LinkIn.args = {
@@ -22,17 +24,17 @@ LinkIn.args = {
 export const Facebook = Template.bind({})
 Facebook.args = {
   srcIcon: facebook.src,
-  alt: 'LinkIn',
+  alt: 'Facebook',
 }
 
 export const Instagram = Template.bind({})
 Instagram.args = {
   srcIcon: instagram.src,
-  alt: 'LinkIn',
+  alt: 'Instagram',
 }
 
 export const Twitter = Template.bind({})
 Twitter.args = {
   srcIcon: twitter.src,
-  alt: 'LinkIn',
+  alt: 'Twitter',
 }

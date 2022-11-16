@@ -33,8 +33,8 @@ const Footer = () => {
             alt="Right arrow"
             ml="128px"
             srcIcon="/images/iconRight.svg"
-            width="9px"
-            height="25px"
+            width="25px"
+            height="9px"
           />
         </Flex>
       </Flex>
