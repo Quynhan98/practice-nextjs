@@ -17,8 +17,8 @@ import { SERVER_ERROR, PRODUCT_NOT_FOUND } from '@constants/index'
 import { IProduct } from '@self-types/index'
 
 interface ProductsProps {
-  products: IProduct[]
-  error: string
+  products?: IProduct[]
+  error?: string
   paramSearch?: string
 }
 const Products = ({ products, error, paramSearch }: ProductsProps) => {
@@ -40,7 +40,7 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
   const listProduct = useMemo(() => {
     if (
       !paginatedData ||
-      (paginatedData && paginatedData.length === products.length)
+      (paginatedData && products && paginatedData.length === products.length)
     ) {
       return products
     }
@@ -61,7 +61,7 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
       )
     }
 
-    if (listProduct.length === 0) {
+    if (!listProduct || (listProduct && listProduct.length === 0)) {
       return (
         <Text variant="primary" size="heading">
           {PRODUCT_NOT_FOUND}

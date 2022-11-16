@@ -28,11 +28,15 @@ exports[`CardProduct render Should match data for card component 1`] = `
     <div
       class="css-1xzknfv"
     >
-      <a
-        href="/products/1"
+      <h3
+        class="chakra-heading css-7ex3dd"
       >
-        Lira Earrings
-      </a>
+        <a
+          href="/products/1"
+        >
+          Lira Earrings
+        </a>
+      </h3>
       <p
         class="chakra-text css-1ovs4to"
       >

@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import Link from 'next/link'
 import Image, { ImageLoader } from 'next/image'
-import { Box, Text } from '@chakra-ui/react'
+import { Box, Heading, Text } from '@chakra-ui/react'
 
 // Types
 import { IProduct } from '@self-types/index'
@@ -45,7 +45,9 @@ const CardProduct = ({ product }: CardProductProps) => {
         />
       </Link>
       <Box pt="24px" color="dark" fontSize="medium">
-        <Link href={`/products/${id}`}>{name}</Link>
+        <Heading as="h3" fontSize="medium" fontWeight="base" color="dark">
+          <Link href={`/products/${id}`}>{name}</Link>
+        </Heading>
         <Text mt="16px" textColor="beaver">
           {currencyFormat(price)}
         </Text>

@@ -75,11 +75,15 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
             <div
               class="css-1xzknfv"
             >
-              <a
-                href="/products/1"
+              <h3
+                class="chakra-heading css-7ex3dd"
               >
-                Lira Earrings
-              </a>
+                <a
+                  href="/products/1"
+                >
+                  Lira Earrings
+                </a>
+              </h3>
               <p
                 class="chakra-text css-1ovs4to"
               >
@@ -104,11 +108,15 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
             <div
               class="css-1xzknfv"
             >
-              <a
-                href="/products/2"
+              <h3
+                class="chakra-heading css-7ex3dd"
               >
-                Lira Earrings
-              </a>
+                <a
+                  href="/products/2"
+                >
+                  Lira Earrings
+                </a>
+              </h3>
               <p
                 class="chakra-text css-1ovs4to"
               >
@@ -133,11 +141,15 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
             <div
               class="css-1xzknfv"
             >
-              <a
-                href="/products/3"
+              <h3
+                class="chakra-heading css-7ex3dd"
               >
-                Kaede Hair Pin Set Of 3
-              </a>
+                <a
+                  href="/products/3"
+                >
+                  Kaede Hair Pin Set Of 3
+                </a>
+              </h3>
               <p
                 class="chakra-text css-1ovs4to"
               >
@@ -162,11 +174,15 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
             <div
               class="css-1xzknfv"
             >
-              <a
-                href="/products/4"
+              <h3
+                class="chakra-heading css-7ex3dd"
               >
-                Hair Pin Set of 3
-              </a>
+                <a
+                  href="/products/4"
+                >
+                  Hair Pin Set of 3
+                </a>
+              </h3>
               <p
                 class="chakra-text css-1ovs4to"
               >
@@ -200,11 +216,15 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
             <div
               class="css-1xzknfv"
             >
-              <a
-                href="/products/5"
+              <h3
+                class="chakra-heading css-7ex3dd"
               >
-                Plaine Necklace
-              </a>
+                <a
+                  href="/products/5"
+                >
+                  Plaine Necklace
+                </a>
+              </h3>
               <p
                 class="chakra-text css-1ovs4to"
               >
@@ -229,11 +249,15 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
             <div
               class="css-1xzknfv"
             >
-              <a
-                href="/products/6"
+              <h3
+                class="chakra-heading css-7ex3dd"
               >
-                Yuki Hair Pin Set of 3
-              </a>
+                <a
+                  href="/products/6"
+                >
+                  Yuki Hair Pin Set of 3
+                </a>
+              </h3>
               <p
                 class="chakra-text css-1ovs4to"
               >

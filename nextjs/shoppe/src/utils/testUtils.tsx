@@ -12,4 +12,5 @@ export const customRender = (component: ReactNode) => {
 }
 
 export * from '@testing-library/react'
+export * from '@testing-library/jest-dom'
 export { customRender as render }
