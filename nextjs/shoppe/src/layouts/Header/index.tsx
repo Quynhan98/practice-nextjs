@@ -1,6 +1,7 @@
+import { useMemo } from 'react'
 import Link from 'next/link'
 import Image, { ImageLoader } from 'next/image'
-import { Flex, Heading } from '@chakra-ui/react'
+import { Box, Flex, Heading, Text } from '@chakra-ui/react'
 
 // Components
 import Icon from '@components/Icon'
@@ -8,7 +9,23 @@ import Icon from '@components/Icon'
 // Services
 import myImageLoader from '@services/imageLoader'
 
+// Hooks
+import { useCartContext } from '@hooks/useCartContext'
+
+// Types
+import { IProductDetail } from '@self-types/index'
+
 const Header = () => {
+  const { listCart } = useCartContext()
+
+  const quantity = useMemo(
+    () =>
+      listCart.reduce((acc: number, obj: IProductDetail) => {
+        return acc + obj.quantity
+      }, 0),
+    [listCart],
+  )
+
   return (
     <Flex
       as="header"
@@ -32,13 +49,30 @@ const Header = () => {
           />
         </Link>
       </Heading>
-      <Icon
-        width="21px"
-        height="20px"
-        marginRight="60px"
-        srcIcon="/images/shoppingCart.svg"
-        alt="Shopping Cart Icon"
-      />
+      <Box position="relative">
+        <Icon
+          width="21px"
+          height="20px"
+          marginRight="60px"
+          srcIcon="/images/shoppingCart.svg"
+          alt="Shopping Cart Icon"
+        />
+        <Flex
+          bottom="14px"
+          left="15px"
+          w="20px"
+          height="20px"
+          position="absolute"
+          background="warning"
+          borderRadius="4px"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Text size="small" color="gray">
+            {quantity}
+          </Text>
+        </Flex>
+      </Box>
     </Flex>
   )
 }
