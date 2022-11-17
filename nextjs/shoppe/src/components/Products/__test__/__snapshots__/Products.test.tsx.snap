@@ -1,6 +1,67 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home render Should show match Home DOM Snapshot 1`] = `
+exports[`Products render Should show error 1`] = `
+<div>
+  <div
+    class="css-butksl"
+  >
+    <h2
+      class="chakra-heading css-aj5n6i"
+    >
+      Shop The Latest
+    </h2>
+    <div
+      class="css-17dci3b"
+    >
+      <div
+        class="css-1i5wex2"
+      >
+        <div
+          class="css-zrbfnb"
+        >
+          <input
+            class="chakra-input css-b2ycb2"
+            placeholder="Search..."
+            type="text"
+          />
+          <button
+            aria-label="Search database"
+            class="chakra-button css-1ljo2n9"
+            type="submit"
+          >
+            <svg
+              aria-hidden="true"
+              class="chakra-icon css-bokek7"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23.384,21.619,16.855,15.09a9.284,9.284,0,1,0-1.768,1.768l6.529,6.529a1.266,1.266,0,0,0,1.768,0A1.251,1.251,0,0,0,23.384,21.619ZM2.75,9.5a6.75,6.75,0,1,1,6.75,6.75A6.758,6.758,0,0,1,2.75,9.5Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        class="css-aozu9f"
+      >
+        <p
+          class="chakra-text css-2lrtt"
+        >
+          Something went wrong. Please try again!
+        </p>
+      </div>
+    </div>
+  </div>
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
+</div>
+`;
+
+exports[`Products render should match data for Products component 1`] = `
 <div>
   <div
     class="css-butksl"

@@ -6,4 +6,5 @@ export const colors = {
   gray: '#EFEFEF',
   beaver: '#A18A68',
   lightSilver: '#D8D8D8',
+  warning: '#D21D26',
 }

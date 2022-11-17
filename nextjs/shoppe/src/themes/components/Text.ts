@@ -26,6 +26,9 @@ export const Text: ComponentStyleConfig = {
     secondary: {
       color: 'beaver',
     },
+    warning: {
+      color: 'warning',
+    },
   },
 
   defaultProps: {

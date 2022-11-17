@@ -36,6 +36,7 @@ module.exports = {
     'plugin:storybook/recommended',
   ],
   rules: {
+    'react/require-default-props': 'off',
     'import/no-extraneous-dependencies': 'off',
     'no-undef': 'off',
     '@typescript-eslint/no-unused-vars': 'error',

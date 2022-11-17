@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home render Should show match Home DOM Snapshot 1`] = `
+exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
 <div>
   <div
     class="css-butksl"

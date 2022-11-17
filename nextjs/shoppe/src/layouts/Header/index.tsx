@@ -1,9 +1,12 @@
 import Link from 'next/link'
-import Image from 'next/image'
+import Image, { ImageLoader } from 'next/image'
 import { Flex, Heading } from '@chakra-ui/react'
 
 // Components
 import Icon from '@components/Icon'
+
+// Services
+import myImageLoader from '@services/imageLoader'
 
 const Header = () => {
   return (
@@ -25,10 +28,13 @@ const Header = () => {
             height={40}
             src="/images/logo.png"
             alt="Logo Shoppe"
+            loader={myImageLoader as ImageLoader}
           />
         </Link>
       </Heading>
       <Icon
+        width="21px"
+        height="20px"
         marginRight="60px"
         srcIcon="/images/shoppingCart.svg"
         alt="Shopping Cart Icon"

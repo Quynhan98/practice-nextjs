@@ -19,20 +19,25 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
             decoding="async"
             height="40"
             loading="lazy"
-            src="/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75"
-            srcset="/_next/image?url=%2Fimages%2Flogo.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&w=256&q=75 2x"
+            src="/images/logo.png?w=256&q=75"
+            srcset="/images/logo.png?w=128&q=75 1x, /images/logo.png?w=256&q=75 2x"
             style="color: transparent;"
             width="125"
           />
         </h1>
         <div
-          class="css-1bdr409"
+          class="css-c3i4bm"
         >
           <img
             alt="Shopping Cart Icon"
-            class="chakra-image css-0"
+            data-nimg="fill"
             data-testid="image"
-            src="/images/shoppingCart.svg"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/images/shoppingCart.svg?w=3840&q=75"
+            srcset="/images/shoppingCart.svg?w=640&q=75 640w, /images/shoppingCart.svg?w=750&q=75 750w, /images/shoppingCart.svg?w=828&q=75 828w, /images/shoppingCart.svg?w=1080&q=75 1080w, /images/shoppingCart.svg?w=1200&q=75 1200w, /images/shoppingCart.svg?w=1920&q=75 1920w, /images/shoppingCart.svg?w=2048&q=75 2048w, /images/shoppingCart.svg?w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
           />
         </div>
       </header>
@@ -77,13 +82,18 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
               Give an email, get the newsletter.
             </p>
             <div
-              class="css-1ok46vh"
+              class="css-1o1su5v"
             >
               <img
                 alt="Right arrow"
-                class="chakra-image css-0"
+                data-nimg="fill"
                 data-testid="image"
-                src="/images/iconRight.svg"
+                decoding="async"
+                loading="lazy"
+                sizes="100vw"
+                src="/images/iconRight.svg?w=3840&q=75"
+                srcset="/images/iconRight.svg?w=640&q=75 640w, /images/iconRight.svg?w=750&q=75 750w, /images/iconRight.svg?w=828&q=75 828w, /images/iconRight.svg?w=1080&q=75 1080w, /images/iconRight.svg?w=1200&q=75 1200w, /images/iconRight.svg?w=1920&q=75 1920w, /images/iconRight.svg?w=2048&q=75 2048w, /images/iconRight.svg?w=3840&q=75 3840w"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
               />
             </div>
           </div>
@@ -114,43 +124,63 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
             class="css-st3z69"
           >
             <div
-              class="css-1nylpq2"
+              class="css-14b8luf"
             >
               <img
                 alt="LinkIn Icon"
-                class="chakra-image css-0"
+                data-nimg="fill"
                 data-testid="image"
-                src="/images/inIcon.svg"
+                decoding="async"
+                loading="lazy"
+                sizes="100vw"
+                src="/images/inIcon.svg?w=3840&q=75"
+                srcset="/images/inIcon.svg?w=640&q=75 640w, /images/inIcon.svg?w=750&q=75 750w, /images/inIcon.svg?w=828&q=75 828w, /images/inIcon.svg?w=1080&q=75 1080w, /images/inIcon.svg?w=1200&q=75 1200w, /images/inIcon.svg?w=1920&q=75 1920w, /images/inIcon.svg?w=2048&q=75 2048w, /images/inIcon.svg?w=3840&q=75 3840w"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
               />
             </div>
             <div
-              class="css-1nylpq2"
+              class="css-14b8luf"
             >
               <img
                 alt="Facebook icon"
-                class="chakra-image css-0"
+                data-nimg="fill"
                 data-testid="image"
-                src="/images/facebook.svg"
+                decoding="async"
+                loading="lazy"
+                sizes="100vw"
+                src="/images/facebook.svg?w=3840&q=75"
+                srcset="/images/facebook.svg?w=640&q=75 640w, /images/facebook.svg?w=750&q=75 750w, /images/facebook.svg?w=828&q=75 828w, /images/facebook.svg?w=1080&q=75 1080w, /images/facebook.svg?w=1200&q=75 1200w, /images/facebook.svg?w=1920&q=75 1920w, /images/facebook.svg?w=2048&q=75 2048w, /images/facebook.svg?w=3840&q=75 3840w"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
               />
             </div>
             <div
-              class="css-1nylpq2"
+              class="css-14b8luf"
             >
               <img
                 alt="Instagram icon"
-                class="chakra-image css-0"
+                data-nimg="fill"
                 data-testid="image"
-                src="/images/instagram.svg"
+                decoding="async"
+                loading="lazy"
+                sizes="100vw"
+                src="/images/instagram.svg?w=3840&q=75"
+                srcset="/images/instagram.svg?w=640&q=75 640w, /images/instagram.svg?w=750&q=75 750w, /images/instagram.svg?w=828&q=75 828w, /images/instagram.svg?w=1080&q=75 1080w, /images/instagram.svg?w=1200&q=75 1200w, /images/instagram.svg?w=1920&q=75 1920w, /images/instagram.svg?w=2048&q=75 2048w, /images/instagram.svg?w=3840&q=75 3840w"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
               />
             </div>
             <div
-              class="css-1nylpq2"
+              class="css-14b8luf"
             >
               <img
                 alt="Twitter icon"
-                class="chakra-image css-0"
+                data-nimg="fill"
                 data-testid="image"
-                src="/images/twitter.svg"
+                decoding="async"
+                loading="lazy"
+                sizes="100vw"
+                src="/images/twitter.svg?w=3840&q=75"
+                srcset="/images/twitter.svg?w=640&q=75 640w, /images/twitter.svg?w=750&q=75 750w, /images/twitter.svg?w=828&q=75 828w, /images/twitter.svg?w=1080&q=75 1080w, /images/twitter.svg?w=1200&q=75 1200w, /images/twitter.svg?w=1920&q=75 1920w, /images/twitter.svg?w=2048&q=75 2048w, /images/twitter.svg?w=3840&q=75 3840w"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
               />
             </div>
           </div>
@@ -259,20 +289,25 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
           decoding="async"
           height="40"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75"
-          srcset="/_next/image?url=%2Fimages%2Flogo.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&w=256&q=75 2x"
+          src="/images/logo.png?w=256&q=75"
+          srcset="/images/logo.png?w=128&q=75 1x, /images/logo.png?w=256&q=75 2x"
           style="color: transparent;"
           width="125"
         />
       </h1>
       <div
-        class="css-1bdr409"
+        class="css-c3i4bm"
       >
         <img
           alt="Shopping Cart Icon"
-          class="chakra-image css-0"
+          data-nimg="fill"
           data-testid="image"
-          src="/images/shoppingCart.svg"
+          decoding="async"
+          loading="lazy"
+          sizes="100vw"
+          src="/images/shoppingCart.svg?w=3840&q=75"
+          srcset="/images/shoppingCart.svg?w=640&q=75 640w, /images/shoppingCart.svg?w=750&q=75 750w, /images/shoppingCart.svg?w=828&q=75 828w, /images/shoppingCart.svg?w=1080&q=75 1080w, /images/shoppingCart.svg?w=1200&q=75 1200w, /images/shoppingCart.svg?w=1920&q=75 1920w, /images/shoppingCart.svg?w=2048&q=75 2048w, /images/shoppingCart.svg?w=3840&q=75 3840w"
+          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
         />
       </div>
     </header>
@@ -317,13 +352,18 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
             Give an email, get the newsletter.
           </p>
           <div
-            class="css-1ok46vh"
+            class="css-1o1su5v"
           >
             <img
               alt="Right arrow"
-              class="chakra-image css-0"
+              data-nimg="fill"
               data-testid="image"
-              src="/images/iconRight.svg"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/images/iconRight.svg?w=3840&q=75"
+              srcset="/images/iconRight.svg?w=640&q=75 640w, /images/iconRight.svg?w=750&q=75 750w, /images/iconRight.svg?w=828&q=75 828w, /images/iconRight.svg?w=1080&q=75 1080w, /images/iconRight.svg?w=1200&q=75 1200w, /images/iconRight.svg?w=1920&q=75 1920w, /images/iconRight.svg?w=2048&q=75 2048w, /images/iconRight.svg?w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
             />
           </div>
         </div>
@@ -354,43 +394,63 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
           class="css-st3z69"
         >
           <div
-            class="css-1nylpq2"
+            class="css-14b8luf"
           >
             <img
               alt="LinkIn Icon"
-              class="chakra-image css-0"
+              data-nimg="fill"
               data-testid="image"
-              src="/images/inIcon.svg"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/images/inIcon.svg?w=3840&q=75"
+              srcset="/images/inIcon.svg?w=640&q=75 640w, /images/inIcon.svg?w=750&q=75 750w, /images/inIcon.svg?w=828&q=75 828w, /images/inIcon.svg?w=1080&q=75 1080w, /images/inIcon.svg?w=1200&q=75 1200w, /images/inIcon.svg?w=1920&q=75 1920w, /images/inIcon.svg?w=2048&q=75 2048w, /images/inIcon.svg?w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
             />
           </div>
           <div
-            class="css-1nylpq2"
+            class="css-14b8luf"
           >
             <img
               alt="Facebook icon"
-              class="chakra-image css-0"
+              data-nimg="fill"
               data-testid="image"
-              src="/images/facebook.svg"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/images/facebook.svg?w=3840&q=75"
+              srcset="/images/facebook.svg?w=640&q=75 640w, /images/facebook.svg?w=750&q=75 750w, /images/facebook.svg?w=828&q=75 828w, /images/facebook.svg?w=1080&q=75 1080w, /images/facebook.svg?w=1200&q=75 1200w, /images/facebook.svg?w=1920&q=75 1920w, /images/facebook.svg?w=2048&q=75 2048w, /images/facebook.svg?w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
             />
           </div>
           <div
-            class="css-1nylpq2"
+            class="css-14b8luf"
           >
             <img
               alt="Instagram icon"
-              class="chakra-image css-0"
+              data-nimg="fill"
               data-testid="image"
-              src="/images/instagram.svg"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/images/instagram.svg?w=3840&q=75"
+              srcset="/images/instagram.svg?w=640&q=75 640w, /images/instagram.svg?w=750&q=75 750w, /images/instagram.svg?w=828&q=75 828w, /images/instagram.svg?w=1080&q=75 1080w, /images/instagram.svg?w=1200&q=75 1200w, /images/instagram.svg?w=1920&q=75 1920w, /images/instagram.svg?w=2048&q=75 2048w, /images/instagram.svg?w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
             />
           </div>
           <div
-            class="css-1nylpq2"
+            class="css-14b8luf"
           >
             <img
               alt="Twitter icon"
-              class="chakra-image css-0"
+              data-nimg="fill"
               data-testid="image"
-              src="/images/twitter.svg"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/images/twitter.svg?w=3840&q=75"
+              srcset="/images/twitter.svg?w=640&q=75 640w, /images/twitter.svg?w=750&q=75 750w, /images/twitter.svg?w=828&q=75 828w, /images/twitter.svg?w=1080&q=75 1080w, /images/twitter.svg?w=1200&q=75 1200w, /images/twitter.svg?w=1920&q=75 1920w, /images/twitter.svg?w=2048&q=75 2048w, /images/twitter.svg?w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
             />
           </div>
         </div>

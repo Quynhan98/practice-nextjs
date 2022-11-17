@@ -29,7 +29,13 @@ const Footer = () => {
           <Text fontSize="base" color="secondary" marginBottom="10px">
             Give an email, get the newsletter.
           </Text>
-          <Icon alt="Right arrow" ml="128px" srcIcon="/images/iconRight.svg" />
+          <Icon
+            alt="Right arrow"
+            ml="128px"
+            srcIcon="/images/iconRight.svg"
+            width="25px"
+            height="9px"
+          />
         </Flex>
       </Flex>
       <Flex mt="48px" justifyContent="space-between" alignItems="center">
@@ -46,7 +52,13 @@ const Footer = () => {
         </Text>
         <Flex w="150px" justifyContent="space-between">
           {SOCIAL_ICONS.map((icon) => (
-            <Icon key={icon.id} alt={icon.alt} srcIcon={icon.iconURL} />
+            <Icon
+              width="18px"
+              height="18px"
+              key={icon.id}
+              alt={icon.alt}
+              srcIcon={icon.iconURL}
+            />
           ))}
         </Flex>
       </Flex>
