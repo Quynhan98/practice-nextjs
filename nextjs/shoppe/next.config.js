@@ -12,6 +12,7 @@ const nextConfig = {
 
   swcMinify: true,
   images: {
+    domains: ['localhost:3000'],
     loader: 'custom',
     loaderFile: './src/services/imageLoader.ts',
     minimumCacheTTL: 60,

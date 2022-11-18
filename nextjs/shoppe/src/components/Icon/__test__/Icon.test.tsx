@@ -22,6 +22,8 @@ describe('Icon render', () => {
 
     const image = screen.getByTestId('image')
 
-    expect(image.getAttribute('src')).toEqual(`${props.srcIcon}?w=3840&q=75`)
+    expect(image.getAttribute('src')).toEqual(
+      `${process.env.NEXT_PUBLIC_BASE_URL}/${props.srcIcon}?w=3840&q=75`,
+    )
   })
 })

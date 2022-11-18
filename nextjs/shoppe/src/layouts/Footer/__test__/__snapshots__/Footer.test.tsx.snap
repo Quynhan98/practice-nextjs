@@ -45,8 +45,8 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
             decoding="async"
             loading="lazy"
             sizes="100vw"
-            src="/images/iconRight.svg?w=3840&q=75"
-            srcset="/images/iconRight.svg?w=640&q=75 640w, /images/iconRight.svg?w=750&q=75 750w, /images/iconRight.svg?w=828&q=75 828w, /images/iconRight.svg?w=1080&q=75 1080w, /images/iconRight.svg?w=1200&q=75 1200w, /images/iconRight.svg?w=1920&q=75 1920w, /images/iconRight.svg?w=2048&q=75 2048w, /images/iconRight.svg?w=3840&q=75 3840w"
+            src="http://localhost:3000//images/iconRight.svg?w=3840&q=75"
+            srcset="http://localhost:3000//images/iconRight.svg?w=640&q=75 640w, http://localhost:3000//images/iconRight.svg?w=750&q=75 750w, http://localhost:3000//images/iconRight.svg?w=828&q=75 828w, http://localhost:3000//images/iconRight.svg?w=1080&q=75 1080w, http://localhost:3000//images/iconRight.svg?w=1200&q=75 1200w, http://localhost:3000//images/iconRight.svg?w=1920&q=75 1920w, http://localhost:3000//images/iconRight.svg?w=2048&q=75 2048w, http://localhost:3000//images/iconRight.svg?w=3840&q=75 3840w"
             style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
           />
         </div>
@@ -87,8 +87,8 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
             decoding="async"
             loading="lazy"
             sizes="100vw"
-            src="/images/inIcon.svg?w=3840&q=75"
-            srcset="/images/inIcon.svg?w=640&q=75 640w, /images/inIcon.svg?w=750&q=75 750w, /images/inIcon.svg?w=828&q=75 828w, /images/inIcon.svg?w=1080&q=75 1080w, /images/inIcon.svg?w=1200&q=75 1200w, /images/inIcon.svg?w=1920&q=75 1920w, /images/inIcon.svg?w=2048&q=75 2048w, /images/inIcon.svg?w=3840&q=75 3840w"
+            src="http://localhost:3000//images/inIcon.svg?w=3840&q=75"
+            srcset="http://localhost:3000//images/inIcon.svg?w=640&q=75 640w, http://localhost:3000//images/inIcon.svg?w=750&q=75 750w, http://localhost:3000//images/inIcon.svg?w=828&q=75 828w, http://localhost:3000//images/inIcon.svg?w=1080&q=75 1080w, http://localhost:3000//images/inIcon.svg?w=1200&q=75 1200w, http://localhost:3000//images/inIcon.svg?w=1920&q=75 1920w, http://localhost:3000//images/inIcon.svg?w=2048&q=75 2048w, http://localhost:3000//images/inIcon.svg?w=3840&q=75 3840w"
             style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
           />
         </div>
@@ -102,8 +102,8 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
             decoding="async"
             loading="lazy"
             sizes="100vw"
-            src="/images/facebook.svg?w=3840&q=75"
-            srcset="/images/facebook.svg?w=640&q=75 640w, /images/facebook.svg?w=750&q=75 750w, /images/facebook.svg?w=828&q=75 828w, /images/facebook.svg?w=1080&q=75 1080w, /images/facebook.svg?w=1200&q=75 1200w, /images/facebook.svg?w=1920&q=75 1920w, /images/facebook.svg?w=2048&q=75 2048w, /images/facebook.svg?w=3840&q=75 3840w"
+            src="http://localhost:3000//images/facebook.svg?w=3840&q=75"
+            srcset="http://localhost:3000//images/facebook.svg?w=640&q=75 640w, http://localhost:3000//images/facebook.svg?w=750&q=75 750w, http://localhost:3000//images/facebook.svg?w=828&q=75 828w, http://localhost:3000//images/facebook.svg?w=1080&q=75 1080w, http://localhost:3000//images/facebook.svg?w=1200&q=75 1200w, http://localhost:3000//images/facebook.svg?w=1920&q=75 1920w, http://localhost:3000//images/facebook.svg?w=2048&q=75 2048w, http://localhost:3000//images/facebook.svg?w=3840&q=75 3840w"
             style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
           />
         </div>
@@ -117,8 +117,8 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
             decoding="async"
             loading="lazy"
             sizes="100vw"
-            src="/images/instagram.svg?w=3840&q=75"
-            srcset="/images/instagram.svg?w=640&q=75 640w, /images/instagram.svg?w=750&q=75 750w, /images/instagram.svg?w=828&q=75 828w, /images/instagram.svg?w=1080&q=75 1080w, /images/instagram.svg?w=1200&q=75 1200w, /images/instagram.svg?w=1920&q=75 1920w, /images/instagram.svg?w=2048&q=75 2048w, /images/instagram.svg?w=3840&q=75 3840w"
+            src="http://localhost:3000//images/instagram.svg?w=3840&q=75"
+            srcset="http://localhost:3000//images/instagram.svg?w=640&q=75 640w, http://localhost:3000//images/instagram.svg?w=750&q=75 750w, http://localhost:3000//images/instagram.svg?w=828&q=75 828w, http://localhost:3000//images/instagram.svg?w=1080&q=75 1080w, http://localhost:3000//images/instagram.svg?w=1200&q=75 1200w, http://localhost:3000//images/instagram.svg?w=1920&q=75 1920w, http://localhost:3000//images/instagram.svg?w=2048&q=75 2048w, http://localhost:3000//images/instagram.svg?w=3840&q=75 3840w"
             style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
           />
         </div>
@@ -132,8 +132,8 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
             decoding="async"
             loading="lazy"
             sizes="100vw"
-            src="/images/twitter.svg?w=3840&q=75"
-            srcset="/images/twitter.svg?w=640&q=75 640w, /images/twitter.svg?w=750&q=75 750w, /images/twitter.svg?w=828&q=75 828w, /images/twitter.svg?w=1080&q=75 1080w, /images/twitter.svg?w=1200&q=75 1200w, /images/twitter.svg?w=1920&q=75 1920w, /images/twitter.svg?w=2048&q=75 2048w, /images/twitter.svg?w=3840&q=75 3840w"
+            src="http://localhost:3000//images/twitter.svg?w=3840&q=75"
+            srcset="http://localhost:3000//images/twitter.svg?w=640&q=75 640w, http://localhost:3000//images/twitter.svg?w=750&q=75 750w, http://localhost:3000//images/twitter.svg?w=828&q=75 828w, http://localhost:3000//images/twitter.svg?w=1080&q=75 1080w, http://localhost:3000//images/twitter.svg?w=1200&q=75 1200w, http://localhost:3000//images/twitter.svg?w=1920&q=75 1920w, http://localhost:3000//images/twitter.svg?w=2048&q=75 2048w, http://localhost:3000//images/twitter.svg?w=3840&q=75 3840w"
             style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
           />
         </div>
