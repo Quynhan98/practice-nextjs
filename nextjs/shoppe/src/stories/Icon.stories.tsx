@@ -3,9 +3,6 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 // components
 import Icon from '@components/Icon'
 
-// Public
-import { inIcon, facebook, instagram, twitter } from '../../public'
-
 export default {
   title: 'Component/Icon',
   component: Icon,
@@ -17,24 +14,24 @@ const Template: ComponentStory<typeof Icon> = (args) => (
 
 export const LinkIn = Template.bind({})
 LinkIn.args = {
-  srcIcon: inIcon.src,
+  srcIcon: './images/inIcon.svg',
   alt: 'LinkIn',
 }
 
 export const Facebook = Template.bind({})
 Facebook.args = {
-  srcIcon: facebook.src,
+  srcIcon: './images/facebook.svg',
   alt: 'Facebook',
 }
 
 export const Instagram = Template.bind({})
 Instagram.args = {
-  srcIcon: instagram.src,
+  srcIcon: './images/instagram.svg',
   alt: 'Instagram',
 }
 
 export const Twitter = Template.bind({})
 Twitter.args = {
-  srcIcon: twitter.src,
+  srcIcon: './images/twitter.svg',
   alt: 'Twitter',
 }
