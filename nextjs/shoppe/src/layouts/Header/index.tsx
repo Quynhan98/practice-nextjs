@@ -12,19 +12,12 @@ import myImageLoader from '@services/imageLoader'
 // Hooks
 import { useCartContext } from '@hooks/useCartContext'
 
-// Types
-import { IProductDetail } from '@self-types/index'
-
 const Header = () => {
   const { listCart } = useCartContext()
 
-  const quantity = useMemo(
-    () =>
-      listCart.reduce((acc: number, obj: IProductDetail) => {
-        return acc + obj.quantity
-      }, 0),
-    [listCart],
-  )
+  const quantity = useMemo(() => {
+    return listCart.length
+  }, [listCart])
 
   return (
     <Flex

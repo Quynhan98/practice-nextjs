@@ -9,5 +9,7 @@ export default function myImageLoader({
   width,
   quality,
 }: myImageLoaderProps) {
-  return `${src}?w=${width}&q=${quality || 75}`
+  return `${process.env.NEXT_PUBLIC_BASE_URL}/${src}?w=${width}&q=${
+    quality || 75
+  }`
 }

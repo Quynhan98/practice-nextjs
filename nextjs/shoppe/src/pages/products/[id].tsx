@@ -12,6 +12,8 @@ import { fetcherApi } from '@services/index'
 
 // Constants
 import { SERVER_ERROR } from '@constants/errorMessage'
+
+// Hooks
 import { useCartContext } from '@hooks/useCartContext'
 
 export interface DetailPageProps {
@@ -33,7 +35,7 @@ export const getStaticPaths = async () => {
 
     return {
       paths,
-      fallback: false,
+      fallback: true,
     }
   } catch (error) {
     return { props: error }
@@ -62,7 +64,16 @@ const DetailPage = ({ product, error }: DetailPageProps) => {
   // Handle add product into cart
   const handleAddCart = useCallback(
     async (data: IProductDetail) => {
-      const listProduct = [...listCart, data]
+      const updateQuantity = listCart.map((item) => {
+        if (item.id === data.id) {
+          return { ...item, quantity: item.quantity + data.quantity }
+        }
+        return item
+      })
+
+      const listProduct = !listCart.find((item) => item.id === data.id)
+        ? [...listCart, data]
+        : updateQuantity
 
       const dataCart = await addCart(listProduct)
 
