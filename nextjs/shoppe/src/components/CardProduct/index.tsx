@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import Link from 'next/link'
 import Image, { ImageLoader } from 'next/image'
-import { Box, Heading, Text } from '@chakra-ui/react'
+import { Box, Heading, Text, useMediaQuery } from '@chakra-ui/react'
 
 // Types
 import { IProduct } from '@self-types/index'
@@ -12,14 +12,25 @@ import { currencyFormat } from '@utils/index'
 // Services
 import myImageLoader from '@services/imageLoader'
 
+// Constants
+import { BREAKPOINTS } from '@constants/variables'
+
 interface CardProductProps {
   product: IProduct
 }
 
 const CardProduct = ({ product }: CardProductProps) => {
   const { imageUrl, status, name, price, id } = product
+  const [isMobile] = useMediaQuery(BREAKPOINTS.MEDIUM)
+
   return (
-    <Box maxW="sm" borderRadius="lg" overflow="hidden" position="relative">
+    <Box
+      maxW="sm"
+      borderRadius="lg"
+      overflow="hidden"
+      position="relative"
+      margin="0 auto"
+    >
       {status && (
         <Box
           position="absolute"
@@ -37,15 +48,22 @@ const CardProduct = ({ product }: CardProductProps) => {
       )}
       <Link href={`/products/${id}`} key={id}>
         <Image
-          width={300}
-          height={300}
+          width={isMobile ? 136 : 300}
+          height={isMobile ? 136 : 300}
           src={imageUrl}
           alt={name}
           loader={myImageLoader as ImageLoader}
+          priority
         />
       </Link>
-      <Box pt="24px" color="dark" fontSize="medium">
-        <Heading as="h3" fontSize="medium" fontWeight="base" color="dark">
+      <Box pt={{ base: '10px', md: '24px' }} color="dark" fontSize="medium">
+        <Heading
+          as="h3"
+          fontSize={{ base: 'small', md: 'medium' }}
+          fontWeight="base"
+          color="dark"
+          maxW={{ base: '136px', md: '300px' }}
+        >
           <Link href={`/products/${id}`}>{name}</Link>
         </Heading>
         <Text mt="16px" textColor="beaver">

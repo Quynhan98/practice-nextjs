@@ -28,8 +28,8 @@ const Header = () => {
       alignItems="center"
       paddingBottom="5px"
       maxWidth="1248px"
-      margin="0 auto"
-      pt="67px"
+      margin={{ base: ' 0px 16px', lg: '0 auto' }}
+      pt={{ base: '26px', lg: '67px' }}
     >
       <Heading as="h1">
         <Link href="/">

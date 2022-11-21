@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home render Should show match Home DOM Snapshot 1`] = `
+<div>
+  <div
+    class="css-e1uvfk"
+  >
+    <div
+      class="css-120yquv"
+    >
+      <div
+        class="css-1t8dwq6"
+      >
+        <img
+          alt="Lira Earrings"
+          data-nimg="1"
+          decoding="async"
+          height="600"
+          loading="lazy"
+          src="https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=1200&q=75"
+          srcset="https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=640&q=75 1x, https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=1200&q=75 2x"
+          style="color: transparent;"
+          width="560"
+        />
+        <div
+          class="css-14sa009"
+        >
+          <h2
+            class="chakra-text css-tq06qo"
+            data-testid="link-to-detail-page/1"
+            href="/products/1"
+          >
+            Lira Earrings
+          </h2>
+          <p
+            class="chakra-text css-1plr3rm"
+          >
+            $ 20.00
+          </p>
+          <p
+            class="chakra-text css-ubux72"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. 
+          </p>
+          <div
+            class="css-17symod"
+          >
+            <div
+              class="css-drsjqf"
+            >
+              <button
+                aria-label="Search database"
+                class="chakra-button css-rzypxw"
+                data-testid="increase-button"
+                type="submit"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="chakra-icon css-onkibi"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0,12a1.5,1.5,0,0,0,1.5,1.5h8.75a.25.25,0,0,1,.25.25V22.5a1.5,1.5,0,0,0,3,0V13.75a.25.25,0,0,1,.25-.25H22.5a1.5,1.5,0,0,0,0-3H13.75a.25.25,0,0,1-.25-.25V1.5a1.5,1.5,0,0,0-3,0v8.75a.25.25,0,0,1-.25.25H1.5A1.5,1.5,0,0,0,0,12Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <p
+                class="chakra-text css-17i4smz"
+                data-testid="quantity"
+              >
+                1
+              </p>
+              <button
+                aria-label="Search database"
+                class="chakra-button css-rzypxw"
+                data-testid="decrement-button"
+                type="submit"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="chakra-icon css-onkibi"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="currentColor"
+                  >
+                    <rect
+                      height="4"
+                      width="20"
+                      x="2"
+                      y="10"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <button
+              class="chakra-button css-1a6r7m5"
+              type="button"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-t7tec9"
+    >
+      <h3
+        class="chakra-heading css-qk8ml6"
+      >
+        Description
+      </h3>
+      <p
+        class="chakra-text css-10pov33"
+      />
+    </div>
+  </div>
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
+</div>
+`;
