@@ -3,21 +3,21 @@
 exports[`Products render Should show error 1`] = `
 <div>
   <div
-    class="css-butksl"
+    class="css-nmq16m"
   >
     <h2
-      class="chakra-heading css-aj5n6i"
+      class="chakra-heading css-lpqg55"
     >
       Shop The Latest
     </h2>
     <div
-      class="css-17dci3b"
+      class="css-cy7va0"
     >
       <div
         class="css-1i5wex2"
       >
         <div
-          class="css-zrbfnb"
+          class="css-pbwc9d"
         >
           <input
             class="chakra-input css-b2ycb2"
@@ -26,7 +26,7 @@ exports[`Products render Should show error 1`] = `
           />
           <button
             aria-label="Search database"
-            class="chakra-button css-1ljo2n9"
+            class="chakra-button css-xcn56a"
             type="submit"
           >
             <svg
@@ -42,6 +42,11 @@ exports[`Products render Should show error 1`] = `
             </svg>
           </button>
         </div>
+        <h2
+          class="chakra-heading css-cmaddm"
+        >
+          Shop
+        </h2>
       </div>
       <div
         class="css-aozu9f"

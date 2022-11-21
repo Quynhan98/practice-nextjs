@@ -3,7 +3,7 @@
 exports[`Search component should render Search 1`] = `
 <div>
   <div
-    class="css-zrbfnb"
+    class="css-pbwc9d"
   >
     <input
       class="chakra-input css-b2ycb2"
@@ -12,7 +12,7 @@ exports[`Search component should render Search 1`] = `
     />
     <button
       aria-label="Search database"
-      class="chakra-button css-1ljo2n9"
+      class="chakra-button css-xcn56a"
       type="submit"
     >
       <svg
