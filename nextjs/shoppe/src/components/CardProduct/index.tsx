@@ -1,4 +1,4 @@
-import { memo } from 'react'
+import { lazy, memo } from 'react'
 import Link from 'next/link'
 import Image, { ImageLoader } from 'next/image'
 import { Box, Heading, Text, useMediaQuery } from '@chakra-ui/react'
@@ -14,6 +14,8 @@ import myImageLoader from '@services/imageLoader'
 
 // Constants
 import { BREAKPOINTS } from '@constants/variables'
+
+const Image = lazy(() => import('next/image'))
 
 interface CardProductProps {
   product: IProduct

@@ -1,6 +1,6 @@
-import { useMemo } from 'react'
+import { lazy, useMemo } from 'react'
 import Link from 'next/link'
-import Image, { ImageLoader } from 'next/image'
+import { ImageLoader } from 'next/image'
 import { Box, Flex, Heading, Text } from '@chakra-ui/react'
 
 // Components
@@ -11,6 +11,8 @@ import myImageLoader from '@services/imageLoader'
 
 // Hooks
 import { useCartContext } from '@hooks/useCartContext'
+
+const Image = lazy(() => import('next/image'))
 
 const Header = () => {
   const { listCart } = useCartContext()

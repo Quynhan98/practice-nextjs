@@ -1,9 +1,11 @@
-import React, { memo } from 'react'
-import Image, { ImageLoader } from 'next/image'
+import React, { lazy, memo } from 'react'
+import { ImageLoader } from 'next/image'
 import { Box, BoxProps } from '@chakra-ui/react'
 
 // Services
 import myImageLoader from '@services/imageLoader'
+
+const Image = lazy(() => import('next/image'))
 
 interface IconProps extends BoxProps {
   srcIcon: string
