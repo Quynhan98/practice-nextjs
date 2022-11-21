@@ -134,7 +134,7 @@ const DetailPage = ({ product, error }: DetailPageProps) => {
   }, [error, handleAddCart, product])
 
   return (
-    <Box pt="128px" pb="100px">
+    <Box pt={{ base: '10px', md: '128px' }} pb="100px">
       {renderContent}
     </Box>
   )

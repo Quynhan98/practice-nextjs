@@ -23,18 +23,6 @@ const Quantity = ({
       borderRadius="4px"
     >
       <IconButton
-        data-testid="increase-button"
-        color="secondary"
-        fontSize="x-small"
-        onClick={onIncreaseCartQuantity}
-        type="submit"
-        aria-label="Search database"
-        icon={<AddIcon />}
-      />
-      <Text color="secondary" fontSize="16px" data-testid="quantity">
-        {quantity}
-      </Text>
-      <IconButton
         data-testid="decrement-button"
         color="secondary"
         fontSize="x-small"
@@ -42,6 +30,18 @@ const Quantity = ({
         type="submit"
         aria-label="Search database"
         icon={<MinusIcon />}
+      />
+      <Text color="secondary" fontSize="16px" data-testid="quantity">
+        {quantity}
+      </Text>
+      <IconButton
+        data-testid="increase-button"
+        color="secondary"
+        fontSize="x-small"
+        onClick={onIncreaseCartQuantity}
+        type="submit"
+        aria-label="Search database"
+        icon={<AddIcon />}
       />
     </Box>
   )

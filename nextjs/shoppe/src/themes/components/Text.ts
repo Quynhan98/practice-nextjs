@@ -11,7 +11,7 @@ export const Text: ComponentStyleConfig = {
       fontWeight: 'medium',
     },
     default: {
-      fontSize: 'base',
+      fontSize: { base: 'extraSmall', md: 'base' },
       fontWeight: 'base',
     },
   },

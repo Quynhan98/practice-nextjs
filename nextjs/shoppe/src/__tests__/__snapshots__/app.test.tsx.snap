@@ -7,198 +7,20 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
     class="chakra-ui-light"
   >
     <div>
-      <header
-        class="css-n5jh5q"
+      <div
+        class="css-7b662e"
       >
-        <h1
-          class="chakra-heading css-1dklj6k"
+        <h2
+          class="chakra-heading css-1a4jri"
         >
-          <img
-            alt="Logo Shoppe"
-            data-nimg="1"
-            decoding="async"
-            height="40"
-            loading="lazy"
-            src="http://localhost:3000//images/logo.png?w=256&q=75"
-            srcset="http://localhost:3000//images/logo.png?w=128&q=75 1x, http://localhost:3000//images/logo.png?w=256&q=75 2x"
-            style="color: transparent;"
-            width="125"
-          />
-        </h1>
-        <div
-          class="css-79elbk"
+          Something went wrong. Please try again!
+        </h2>
+        <a
+          href="/"
         >
-          <div
-            class="css-c3i4bm"
-          >
-            <img
-              alt="Shopping Cart Icon"
-              data-nimg="fill"
-              data-testid="image"
-              decoding="async"
-              loading="lazy"
-              sizes="100vw"
-              src="http://localhost:3000//images/shoppingCart.svg?w=3840&q=75"
-              srcset="http://localhost:3000//images/shoppingCart.svg?w=640&q=75 640w, http://localhost:3000//images/shoppingCart.svg?w=750&q=75 750w, http://localhost:3000//images/shoppingCart.svg?w=828&q=75 828w, http://localhost:3000//images/shoppingCart.svg?w=1080&q=75 1080w, http://localhost:3000//images/shoppingCart.svg?w=1200&q=75 1200w, http://localhost:3000//images/shoppingCart.svg?w=1920&q=75 1920w, http://localhost:3000//images/shoppingCart.svg?w=2048&q=75 2048w, http://localhost:3000//images/shoppingCart.svg?w=3840&q=75 3840w"
-              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-            />
-          </div>
-          <div
-            class="css-2jnr0l"
-          >
-            <p
-              class="chakra-text css-1xb8dar"
-            >
-              0
-            </p>
-          </div>
-        </div>
-      </header>
-      <main
-        class="css-qcp6ks"
-      >
-        <div>
-          Mocked Test Component
-        </div>
-      </main>
-      <footer
-        class="css-xmbrgk"
-      >
-        <div
-          class="css-gg4vpm"
-        >
-          <nav
-            class="css-fd0xex"
-          >
-            <a
-              href="/contact"
-            >
-              Contact
-            </a>
-            <a
-              href="/terms-of-services"
-            >
-              Terms of services
-            </a>
-            <a
-              href="/shipping-and-return"
-            >
-              Shipping and Return
-            </a>
-          </nav>
-          <div
-            class="css-11xbhwq"
-          >
-            <p
-              class="chakra-text css-ozfm6u"
-            >
-              Give an email, get the newsletter.
-            </p>
-            <div
-              class="css-1o1su5v"
-            >
-              <img
-                alt="Right arrow"
-                data-nimg="fill"
-                data-testid="image"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="http://localhost:3000//images/iconRight.svg?w=3840&q=75"
-                srcset="http://localhost:3000//images/iconRight.svg?w=640&q=75 640w, http://localhost:3000//images/iconRight.svg?w=750&q=75 750w, http://localhost:3000//images/iconRight.svg?w=828&q=75 828w, http://localhost:3000//images/iconRight.svg?w=1080&q=75 1080w, http://localhost:3000//images/iconRight.svg?w=1200&q=75 1200w, http://localhost:3000//images/iconRight.svg?w=1920&q=75 1920w, http://localhost:3000//images/iconRight.svg?w=2048&q=75 2048w, http://localhost:3000//images/iconRight.svg?w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          class="css-167212l"
-        >
-          <p
-            class="chakra-text css-tujbob"
-          >
-            <b
-              class="chakra-text css-lz4kvn"
-            >
-              © 2021 Shelly.
-            </b>
-             
-            Terms of use
-            <b
-              class="chakra-text css-lz4kvn"
-            >
-               
-              and
-            </b>
-             
-            privacy policy
-          </p>
-          <div
-            class="css-st3z69"
-          >
-            <div
-              class="css-14b8luf"
-            >
-              <img
-                alt="LinkIn Icon"
-                data-nimg="fill"
-                data-testid="image"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="http://localhost:3000//images/inIcon.svg?w=3840&q=75"
-                srcset="http://localhost:3000//images/inIcon.svg?w=640&q=75 640w, http://localhost:3000//images/inIcon.svg?w=750&q=75 750w, http://localhost:3000//images/inIcon.svg?w=828&q=75 828w, http://localhost:3000//images/inIcon.svg?w=1080&q=75 1080w, http://localhost:3000//images/inIcon.svg?w=1200&q=75 1200w, http://localhost:3000//images/inIcon.svg?w=1920&q=75 1920w, http://localhost:3000//images/inIcon.svg?w=2048&q=75 2048w, http://localhost:3000//images/inIcon.svg?w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="css-14b8luf"
-            >
-              <img
-                alt="Facebook icon"
-                data-nimg="fill"
-                data-testid="image"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="http://localhost:3000//images/facebook.svg?w=3840&q=75"
-                srcset="http://localhost:3000//images/facebook.svg?w=640&q=75 640w, http://localhost:3000//images/facebook.svg?w=750&q=75 750w, http://localhost:3000//images/facebook.svg?w=828&q=75 828w, http://localhost:3000//images/facebook.svg?w=1080&q=75 1080w, http://localhost:3000//images/facebook.svg?w=1200&q=75 1200w, http://localhost:3000//images/facebook.svg?w=1920&q=75 1920w, http://localhost:3000//images/facebook.svg?w=2048&q=75 2048w, http://localhost:3000//images/facebook.svg?w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="css-14b8luf"
-            >
-              <img
-                alt="Instagram icon"
-                data-nimg="fill"
-                data-testid="image"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="http://localhost:3000//images/instagram.svg?w=3840&q=75"
-                srcset="http://localhost:3000//images/instagram.svg?w=640&q=75 640w, http://localhost:3000//images/instagram.svg?w=750&q=75 750w, http://localhost:3000//images/instagram.svg?w=828&q=75 828w, http://localhost:3000//images/instagram.svg?w=1080&q=75 1080w, http://localhost:3000//images/instagram.svg?w=1200&q=75 1200w, http://localhost:3000//images/instagram.svg?w=1920&q=75 1920w, http://localhost:3000//images/instagram.svg?w=2048&q=75 2048w, http://localhost:3000//images/instagram.svg?w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="css-14b8luf"
-            >
-              <img
-                alt="Twitter icon"
-                data-nimg="fill"
-                data-testid="image"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="http://localhost:3000//images/twitter.svg?w=3840&q=75"
-                srcset="http://localhost:3000//images/twitter.svg?w=640&q=75 640w, http://localhost:3000//images/twitter.svg?w=750&q=75 750w, http://localhost:3000//images/twitter.svg?w=828&q=75 828w, http://localhost:3000//images/twitter.svg?w=1080&q=75 1080w, http://localhost:3000//images/twitter.svg?w=1200&q=75 1200w, http://localhost:3000//images/twitter.svg?w=1920&q=75 1920w, http://localhost:3000//images/twitter.svg?w=2048&q=75 2048w, http://localhost:3000//images/twitter.svg?w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-          </div>
-        </div>
-      </footer>
+          Back To Home
+        </a>
+      </div>
       <span
         hidden=""
         id="__chakra_env"
@@ -290,198 +112,20 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
     </div>
   </body>,
   "container": <div>
-    <header
-      class="css-n5jh5q"
+    <div
+      class="css-7b662e"
     >
-      <h1
-        class="chakra-heading css-1dklj6k"
+      <h2
+        class="chakra-heading css-1a4jri"
       >
-        <img
-          alt="Logo Shoppe"
-          data-nimg="1"
-          decoding="async"
-          height="40"
-          loading="lazy"
-          src="http://localhost:3000//images/logo.png?w=256&q=75"
-          srcset="http://localhost:3000//images/logo.png?w=128&q=75 1x, http://localhost:3000//images/logo.png?w=256&q=75 2x"
-          style="color: transparent;"
-          width="125"
-        />
-      </h1>
-      <div
-        class="css-79elbk"
+        Something went wrong. Please try again!
+      </h2>
+      <a
+        href="/"
       >
-        <div
-          class="css-c3i4bm"
-        >
-          <img
-            alt="Shopping Cart Icon"
-            data-nimg="fill"
-            data-testid="image"
-            decoding="async"
-            loading="lazy"
-            sizes="100vw"
-            src="http://localhost:3000//images/shoppingCart.svg?w=3840&q=75"
-            srcset="http://localhost:3000//images/shoppingCart.svg?w=640&q=75 640w, http://localhost:3000//images/shoppingCart.svg?w=750&q=75 750w, http://localhost:3000//images/shoppingCart.svg?w=828&q=75 828w, http://localhost:3000//images/shoppingCart.svg?w=1080&q=75 1080w, http://localhost:3000//images/shoppingCart.svg?w=1200&q=75 1200w, http://localhost:3000//images/shoppingCart.svg?w=1920&q=75 1920w, http://localhost:3000//images/shoppingCart.svg?w=2048&q=75 2048w, http://localhost:3000//images/shoppingCart.svg?w=3840&q=75 3840w"
-            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-          />
-        </div>
-        <div
-          class="css-2jnr0l"
-        >
-          <p
-            class="chakra-text css-1xb8dar"
-          >
-            0
-          </p>
-        </div>
-      </div>
-    </header>
-    <main
-      class="css-qcp6ks"
-    >
-      <div>
-        Mocked Test Component
-      </div>
-    </main>
-    <footer
-      class="css-xmbrgk"
-    >
-      <div
-        class="css-gg4vpm"
-      >
-        <nav
-          class="css-fd0xex"
-        >
-          <a
-            href="/contact"
-          >
-            Contact
-          </a>
-          <a
-            href="/terms-of-services"
-          >
-            Terms of services
-          </a>
-          <a
-            href="/shipping-and-return"
-          >
-            Shipping and Return
-          </a>
-        </nav>
-        <div
-          class="css-11xbhwq"
-        >
-          <p
-            class="chakra-text css-ozfm6u"
-          >
-            Give an email, get the newsletter.
-          </p>
-          <div
-            class="css-1o1su5v"
-          >
-            <img
-              alt="Right arrow"
-              data-nimg="fill"
-              data-testid="image"
-              decoding="async"
-              loading="lazy"
-              sizes="100vw"
-              src="http://localhost:3000//images/iconRight.svg?w=3840&q=75"
-              srcset="http://localhost:3000//images/iconRight.svg?w=640&q=75 640w, http://localhost:3000//images/iconRight.svg?w=750&q=75 750w, http://localhost:3000//images/iconRight.svg?w=828&q=75 828w, http://localhost:3000//images/iconRight.svg?w=1080&q=75 1080w, http://localhost:3000//images/iconRight.svg?w=1200&q=75 1200w, http://localhost:3000//images/iconRight.svg?w=1920&q=75 1920w, http://localhost:3000//images/iconRight.svg?w=2048&q=75 2048w, http://localhost:3000//images/iconRight.svg?w=3840&q=75 3840w"
-              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        class="css-167212l"
-      >
-        <p
-          class="chakra-text css-tujbob"
-        >
-          <b
-            class="chakra-text css-lz4kvn"
-          >
-            © 2021 Shelly.
-          </b>
-           
-          Terms of use
-          <b
-            class="chakra-text css-lz4kvn"
-          >
-             
-            and
-          </b>
-           
-          privacy policy
-        </p>
-        <div
-          class="css-st3z69"
-        >
-          <div
-            class="css-14b8luf"
-          >
-            <img
-              alt="LinkIn Icon"
-              data-nimg="fill"
-              data-testid="image"
-              decoding="async"
-              loading="lazy"
-              sizes="100vw"
-              src="http://localhost:3000//images/inIcon.svg?w=3840&q=75"
-              srcset="http://localhost:3000//images/inIcon.svg?w=640&q=75 640w, http://localhost:3000//images/inIcon.svg?w=750&q=75 750w, http://localhost:3000//images/inIcon.svg?w=828&q=75 828w, http://localhost:3000//images/inIcon.svg?w=1080&q=75 1080w, http://localhost:3000//images/inIcon.svg?w=1200&q=75 1200w, http://localhost:3000//images/inIcon.svg?w=1920&q=75 1920w, http://localhost:3000//images/inIcon.svg?w=2048&q=75 2048w, http://localhost:3000//images/inIcon.svg?w=3840&q=75 3840w"
-              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-            />
-          </div>
-          <div
-            class="css-14b8luf"
-          >
-            <img
-              alt="Facebook icon"
-              data-nimg="fill"
-              data-testid="image"
-              decoding="async"
-              loading="lazy"
-              sizes="100vw"
-              src="http://localhost:3000//images/facebook.svg?w=3840&q=75"
-              srcset="http://localhost:3000//images/facebook.svg?w=640&q=75 640w, http://localhost:3000//images/facebook.svg?w=750&q=75 750w, http://localhost:3000//images/facebook.svg?w=828&q=75 828w, http://localhost:3000//images/facebook.svg?w=1080&q=75 1080w, http://localhost:3000//images/facebook.svg?w=1200&q=75 1200w, http://localhost:3000//images/facebook.svg?w=1920&q=75 1920w, http://localhost:3000//images/facebook.svg?w=2048&q=75 2048w, http://localhost:3000//images/facebook.svg?w=3840&q=75 3840w"
-              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-            />
-          </div>
-          <div
-            class="css-14b8luf"
-          >
-            <img
-              alt="Instagram icon"
-              data-nimg="fill"
-              data-testid="image"
-              decoding="async"
-              loading="lazy"
-              sizes="100vw"
-              src="http://localhost:3000//images/instagram.svg?w=3840&q=75"
-              srcset="http://localhost:3000//images/instagram.svg?w=640&q=75 640w, http://localhost:3000//images/instagram.svg?w=750&q=75 750w, http://localhost:3000//images/instagram.svg?w=828&q=75 828w, http://localhost:3000//images/instagram.svg?w=1080&q=75 1080w, http://localhost:3000//images/instagram.svg?w=1200&q=75 1200w, http://localhost:3000//images/instagram.svg?w=1920&q=75 1920w, http://localhost:3000//images/instagram.svg?w=2048&q=75 2048w, http://localhost:3000//images/instagram.svg?w=3840&q=75 3840w"
-              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-            />
-          </div>
-          <div
-            class="css-14b8luf"
-          >
-            <img
-              alt="Twitter icon"
-              data-nimg="fill"
-              data-testid="image"
-              decoding="async"
-              loading="lazy"
-              sizes="100vw"
-              src="http://localhost:3000//images/twitter.svg?w=3840&q=75"
-              srcset="http://localhost:3000//images/twitter.svg?w=640&q=75 640w, http://localhost:3000//images/twitter.svg?w=750&q=75 750w, http://localhost:3000//images/twitter.svg?w=828&q=75 828w, http://localhost:3000//images/twitter.svg?w=1080&q=75 1080w, http://localhost:3000//images/twitter.svg?w=1200&q=75 1200w, http://localhost:3000//images/twitter.svg?w=1920&q=75 1920w, http://localhost:3000//images/twitter.svg?w=2048&q=75 2048w, http://localhost:3000//images/twitter.svg?w=3840&q=75 3840w"
-              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-            />
-          </div>
-        </div>
-      </div>
-    </footer>
+        Back To Home
+      </a>
+    </div>
     <span
       hidden=""
       id="__chakra_env"
