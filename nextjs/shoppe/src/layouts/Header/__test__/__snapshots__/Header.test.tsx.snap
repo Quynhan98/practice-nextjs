@@ -3,10 +3,10 @@
 exports[`Header render Should Header match Snapshot 1`] = `
 <div>
   <header
-    class="css-n5jh5q"
+    class="css-15otjsi"
   >
     <h1
-      class="chakra-heading css-1dklj6k"
+      class="chakra-heading css-dp3sr4"
     >
       <img
         alt="Logo Shoppe"

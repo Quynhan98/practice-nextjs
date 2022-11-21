@@ -1,6 +1,13 @@
 import { ChangeEvent, memo, useCallback, useMemo, useState } from 'react'
 import { useRouter } from 'next/router'
-import { Box, Heading, Flex, Button, Text } from '@chakra-ui/react'
+import {
+  Box,
+  Heading,
+  Flex,
+  Button,
+  Text,
+  useMediaQuery,
+} from '@chakra-ui/react'
 
 // Components
 import Search from '@components/Search'
@@ -11,7 +18,7 @@ import { useDebounce } from '@hooks/useDebounce'
 import { usePagination } from '@hooks/usePagination'
 
 // Constants
-import { SERVER_ERROR, PRODUCT_NOT_FOUND } from '@constants/index'
+import { SERVER_ERROR, PRODUCT_NOT_FOUND, BREAKPOINTS } from '@constants/index'
 
 // Types
 import { IProduct } from '@self-types/index'
@@ -25,6 +32,7 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
   const router = useRouter()
   const [searchValue, setSearchValue] = useState<string>('')
   const searchTerm = useDebounce(searchValue, 500)
+  const [isMobile] = useMediaQuery(BREAKPOINTS.MEDIUM)
 
   const {
     paginatedData,
@@ -118,10 +126,17 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
 
   return (
     <Box pt="96px">
-      <Heading as="h2" fontSize="large" fontWeight="medium">
-        Shop The Latest
-      </Heading>
-      <Flex pt="40px" gap="35px" justifyContent="space-between">
+      {!isMobile && (
+        <Heading as="h2" fontSize="large" fontWeight="medium">
+          Shop The Latest
+        </Heading>
+      )}
+      <Flex
+        pt="40px"
+        gap={{ base: '16px', lg: '35px' }}
+        justifyContent="space-between"
+        flexDirection={{ base: 'column', lg: 'unset' }}
+      >
         <Box minW="261px">
           <Search
             onChange={handleChangeSearch}

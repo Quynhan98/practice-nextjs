@@ -38,3 +38,10 @@ export const SOCIAL_ICONS = [
     iconURL: '/images/twitter.svg',
   },
 ]
+
+export enum BREAKPOINTS {
+  SMALL = '(max-width: 320px)',
+  MEDIUM = '(max-width: 768px)',
+  LARGE = '(max-width: 960px)',
+  EXTRA_LARGE = '(max-width: 1200px)',
+}

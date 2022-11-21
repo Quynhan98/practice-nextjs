@@ -17,6 +17,7 @@ const PageLayout = ({ children }: PageLayoutProps) => {
         maxWidth="1248px"
         width="100%"
         margin="0 auto"
+        padding={{ base: '16px', lg: '0px' }}
       >
         {children}
       </Box>
