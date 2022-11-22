@@ -3,7 +3,7 @@
 exports[`CardProduct render Should match data for card component 1`] = `
 <div>
   <div
-    class="css-7ccns3"
+    class="css-vjcztt"
   >
     <div
       class="css-ervdjc"
@@ -19,17 +19,16 @@ exports[`CardProduct render Should match data for card component 1`] = `
       data-nimg="1"
       decoding="async"
       height="300"
-      loading="lazy"
       src="http://localhost:3000/https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=640&q=75"
       srcset="http://localhost:3000/https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=384&q=75 1x, http://localhost:3000/https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=640&q=75 2x"
       style="color: transparent;"
       width="300"
     />
     <div
-      class="css-1xzknfv"
+      class="css-inp0u2"
     >
       <h3
-        class="chakra-heading css-7ex3dd"
+        class="chakra-heading css-b14ccn"
       >
         <a
           href="/products/1"
@@ -38,7 +37,7 @@ exports[`CardProduct render Should match data for card component 1`] = `
         </a>
       </h3>
       <p
-        class="chakra-text css-1ovs4to"
+        class="chakra-text css-uc37v3"
       >
         $ 20.00
       </p>

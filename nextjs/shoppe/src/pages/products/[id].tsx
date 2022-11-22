@@ -114,10 +114,10 @@ const DetailPage = ({ product, error }: DetailPageProps) => {
     return (
       <>
         <CardDetail productDetail={product} handleAddCart={handleAddCart} />
-        <Box pt="123px">
+        <Box pt={{ base: '24px', md: '123px' }}>
           <Heading
             as="h3"
-            pb="34px"
+            pb={{ base: '10px', md: '34px' }}
             borderBottom="1px"
             fontSize="medium"
             fontWeight="base"
@@ -125,7 +125,7 @@ const DetailPage = ({ product, error }: DetailPageProps) => {
           >
             Description
           </Heading>
-          <Text textAlign="initial" pt="40px">
+          <Text textAlign="initial" pt={{ base: '24px', md: '40px' }}>
             {product.description}
           </Text>
         </Box>

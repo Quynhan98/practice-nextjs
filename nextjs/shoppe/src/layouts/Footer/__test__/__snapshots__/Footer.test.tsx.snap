@@ -3,26 +3,26 @@
 exports[`Footer render Should Footer match Snapshot 1`] = `
 <div>
   <footer
-    class="css-xmbrgk"
+    class="css-1frnbgd"
   >
     <div
-      class="css-gg4vpm"
+      class="css-15g748d"
     >
       <nav
-        class="css-fd0xex"
+        class="css-15pl4p6"
       >
         <a
-          href="/contact"
+          href="/"
         >
           Contact
         </a>
         <a
-          href="/terms-of-services"
+          href="/"
         >
           Terms of services
         </a>
         <a
-          href="/shipping-and-return"
+          href="/"
         >
           Shipping and Return
         </a>
@@ -31,12 +31,12 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
         class="css-11xbhwq"
       >
         <p
-          class="chakra-text css-ozfm6u"
+          class="chakra-text css-17znp9"
         >
           Give an email, get the newsletter.
         </p>
         <div
-          class="css-1o1su5v"
+          class="css-16dh40w"
         >
           <img
             alt="Right arrow"
@@ -53,20 +53,20 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
       </div>
     </div>
     <div
-      class="css-167212l"
+      class="css-82b87w"
     >
       <p
-        class="chakra-text css-tujbob"
+        class="chakra-text css-11rc6k7"
       >
         <b
-          class="chakra-text css-lz4kvn"
+          class="chakra-text css-1qtkha6"
         >
           © 2021 Shelly.
         </b>
          
         Terms of use
         <b
-          class="chakra-text css-lz4kvn"
+          class="chakra-text css-1qtkha6"
         >
            
           and
@@ -75,10 +75,10 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
         privacy policy
       </p>
       <div
-        class="css-st3z69"
+        class="css-13zimb6"
       >
         <div
-          class="css-14b8luf"
+          class="css-1dvkee8"
         >
           <img
             alt="LinkIn Icon"
@@ -93,7 +93,7 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
           />
         </div>
         <div
-          class="css-14b8luf"
+          class="css-1dvkee8"
         >
           <img
             alt="Facebook icon"
@@ -108,7 +108,7 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
           />
         </div>
         <div
-          class="css-14b8luf"
+          class="css-1dvkee8"
         >
           <img
             alt="Instagram icon"
@@ -123,7 +123,7 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
           />
         </div>
         <div
-          class="css-14b8luf"
+          class="css-1dvkee8"
         >
           <img
             alt="Twitter icon"

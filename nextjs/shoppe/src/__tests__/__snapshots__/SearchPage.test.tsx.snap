@@ -3,21 +3,21 @@
 exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
 <div>
   <div
-    class="css-butksl"
+    class="css-nmq16m"
   >
     <h2
-      class="chakra-heading css-aj5n6i"
+      class="chakra-heading css-lpqg55"
     >
       Shop The Latest
     </h2>
     <div
-      class="css-17dci3b"
+      class="css-cy7va0"
     >
       <div
         class="css-1i5wex2"
       >
         <div
-          class="css-zrbfnb"
+          class="css-pbwc9d"
         >
           <input
             class="chakra-input css-b2ycb2"
@@ -26,7 +26,7 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
           />
           <button
             aria-label="Search database"
-            class="chakra-button css-1ljo2n9"
+            class="chakra-button css-xcn56a"
             type="submit"
           >
             <svg
@@ -42,6 +42,11 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
             </svg>
           </button>
         </div>
+        <h2
+          class="chakra-heading css-cmaddm"
+        >
+          Shop
+        </h2>
       </div>
       <div
         class="css-aozu9f"
@@ -50,7 +55,7 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
           class="css-ub1tjl"
         >
           <div
-            class="css-7ccns3"
+            class="css-vjcztt"
           >
             <div
               class="css-ervdjc"
@@ -66,17 +71,16 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
               data-nimg="1"
               decoding="async"
               height="300"
-              loading="lazy"
               src="http://localhost:3000//images/liraEarring.svg?w=640&q=75"
               srcset="http://localhost:3000//images/liraEarring.svg?w=384&q=75 1x, http://localhost:3000//images/liraEarring.svg?w=640&q=75 2x"
               style="color: transparent;"
               width="300"
             />
             <div
-              class="css-1xzknfv"
+              class="css-inp0u2"
             >
               <h3
-                class="chakra-heading css-7ex3dd"
+                class="chakra-heading css-b14ccn"
               >
                 <a
                   href="/products/1"
@@ -85,31 +89,30 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
                 </a>
               </h3>
               <p
-                class="chakra-text css-1ovs4to"
+                class="chakra-text css-uc37v3"
               >
                 $ 20.00
               </p>
             </div>
           </div>
           <div
-            class="css-7ccns3"
+            class="css-vjcztt"
           >
             <img
               alt="Lira Earrings"
               data-nimg="1"
               decoding="async"
               height="300"
-              loading="lazy"
               src="http://localhost:3000//images/liraEarring.svg?w=640&q=75"
               srcset="http://localhost:3000//images/liraEarring.svg?w=384&q=75 1x, http://localhost:3000//images/liraEarring.svg?w=640&q=75 2x"
               style="color: transparent;"
               width="300"
             />
             <div
-              class="css-1xzknfv"
+              class="css-inp0u2"
             >
               <h3
-                class="chakra-heading css-7ex3dd"
+                class="chakra-heading css-b14ccn"
               >
                 <a
                   href="/products/2"
@@ -118,31 +121,30 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
                 </a>
               </h3>
               <p
-                class="chakra-text css-1ovs4to"
+                class="chakra-text css-uc37v3"
               >
                 $ 20.00
               </p>
             </div>
           </div>
           <div
-            class="css-7ccns3"
+            class="css-vjcztt"
           >
             <img
               alt="Kaede Hair Pin Set Of 3"
               data-nimg="1"
               decoding="async"
               height="300"
-              loading="lazy"
               src="http://localhost:3000//images/liraEarring.svg?w=640&q=75"
               srcset="http://localhost:3000//images/liraEarring.svg?w=384&q=75 1x, http://localhost:3000//images/liraEarring.svg?w=640&q=75 2x"
               style="color: transparent;"
               width="300"
             />
             <div
-              class="css-1xzknfv"
+              class="css-inp0u2"
             >
               <h3
-                class="chakra-heading css-7ex3dd"
+                class="chakra-heading css-b14ccn"
               >
                 <a
                   href="/products/3"
@@ -151,31 +153,30 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
                 </a>
               </h3>
               <p
-                class="chakra-text css-1ovs4to"
+                class="chakra-text css-uc37v3"
               >
                 $ 20.00
               </p>
             </div>
           </div>
           <div
-            class="css-7ccns3"
+            class="css-vjcztt"
           >
             <img
               alt="Hair Pin Set of 3"
               data-nimg="1"
               decoding="async"
               height="300"
-              loading="lazy"
               src="http://localhost:3000//images/liraEarring.svg?w=640&q=75"
               srcset="http://localhost:3000//images/liraEarring.svg?w=384&q=75 1x, http://localhost:3000//images/liraEarring.svg?w=640&q=75 2x"
               style="color: transparent;"
               width="300"
             />
             <div
-              class="css-1xzknfv"
+              class="css-inp0u2"
             >
               <h3
-                class="chakra-heading css-7ex3dd"
+                class="chakra-heading css-b14ccn"
               >
                 <a
                   href="/products/4"
@@ -184,14 +185,14 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
                 </a>
               </h3>
               <p
-                class="chakra-text css-1ovs4to"
+                class="chakra-text css-uc37v3"
               >
                 $ 20.00
               </p>
             </div>
           </div>
           <div
-            class="css-7ccns3"
+            class="css-vjcztt"
           >
             <div
               class="css-ervdjc"
@@ -207,17 +208,16 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
               data-nimg="1"
               decoding="async"
               height="300"
-              loading="lazy"
               src="http://localhost:3000//images/liraEarring.svg?w=640&q=75"
               srcset="http://localhost:3000//images/liraEarring.svg?w=384&q=75 1x, http://localhost:3000//images/liraEarring.svg?w=640&q=75 2x"
               style="color: transparent;"
               width="300"
             />
             <div
-              class="css-1xzknfv"
+              class="css-inp0u2"
             >
               <h3
-                class="chakra-heading css-7ex3dd"
+                class="chakra-heading css-b14ccn"
               >
                 <a
                   href="/products/5"
@@ -226,31 +226,30 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
                 </a>
               </h3>
               <p
-                class="chakra-text css-1ovs4to"
+                class="chakra-text css-uc37v3"
               >
                 $ 20.00
               </p>
             </div>
           </div>
           <div
-            class="css-7ccns3"
+            class="css-vjcztt"
           >
             <img
               alt="Yuki Hair Pin Set of 3"
               data-nimg="1"
               decoding="async"
               height="300"
-              loading="lazy"
               src="http://localhost:3000//images/liraEarring.svg?w=640&q=75"
               srcset="http://localhost:3000//images/liraEarring.svg?w=384&q=75 1x, http://localhost:3000//images/liraEarring.svg?w=640&q=75 2x"
               style="color: transparent;"
               width="300"
             />
             <div
-              class="css-1xzknfv"
+              class="css-inp0u2"
             >
               <h3
-                class="chakra-heading css-7ex3dd"
+                class="chakra-heading css-b14ccn"
               >
                 <a
                   href="/products/6"
@@ -259,7 +258,7 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
                 </a>
               </h3>
               <p
-                class="chakra-text css-1ovs4to"
+                class="chakra-text css-uc37v3"
               >
                 $ 20.00
               </p>

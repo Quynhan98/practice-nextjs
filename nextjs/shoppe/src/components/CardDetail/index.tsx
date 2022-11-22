@@ -1,6 +1,5 @@
 import { memo, useState } from 'react'
 import Image, { ImageLoader } from 'next/image'
-import Link from 'next/link'
 import { Box, Flex, Heading, Text, useMediaQuery } from '@chakra-ui/react'
 
 // Utils
@@ -53,7 +52,7 @@ const CardDetail = ({ productDetail, handleAddCart }: CardDetailProps) => {
     <Box display="flex" justifyContent="space-between" maxW="1248px">
       <Box
         display="flex"
-        gap="78px"
+        gap={{ base: '40px', md: '78px' }}
         flexDirection={{ base: 'column', md: 'unset' }}
         margin="0 auto"
       >
@@ -64,26 +63,28 @@ const CardDetail = ({ productDetail, handleAddCart }: CardDetailProps) => {
           alt={name}
           loader={myImageLoader as ImageLoader}
           priority
-          style={{ margin: '0 auto' }}
+          style={{ width: 'auto', height: 'auto' }}
         />
         <Flex h="full" direction="column">
-          <Link href={`/products/${id}`} passHref>
-            <Heading
-              as="h2"
-              fontSize="26px"
-              fontWeight="base"
-              textColor="dark"
-              data-testid={`link-to-detail-page/${id}`}
-            >
-              {name}
-            </Heading>
-          </Link>
-          <Text fontSize="20px" mt="24px" textColor="beaver">
+          <Heading
+            as="h2"
+            fontSize="26px"
+            fontWeight="base"
+            textColor="dark"
+            data-testid={`link-to-detail-page/${id}`}
+          >
+            {name}
+          </Heading>
+          <Text
+            fontSize="20px"
+            mt={{ base: '10px', md: '24px' }}
+            textColor="beaver"
+          >
             {currencyFormat(price)}
           </Text>
           <Text
             fontSize={{ base: 'extraSmall', md: 'base' }}
-            mt="46px"
+            mt={{ base: '16px', md: '46px' }}
             textAlign="justify"
             minW="288px"
             maxW="630px"
@@ -92,7 +93,7 @@ const CardDetail = ({ productDetail, handleAddCart }: CardDetailProps) => {
           </Text>
           <Flex
             flexDirection={{ base: 'column', md: 'unset' }}
-            mt="75px"
+            mt={{ base: '24px', md: '75px' }}
             gap="58px"
           >
             {!isMobile && (

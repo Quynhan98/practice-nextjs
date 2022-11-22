@@ -62,3 +62,32 @@ export const LIST_PRODUCT = [
     status: '',
   },
 ]
+
+export const CARTS_MOCK = [
+  {
+    name: 'Lira Earrings',
+    price: 20,
+    introduction:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. Nunc sed porta augue. Morbi porta tempor odio, in molestie diam bibendum sed.',
+    imageUrl:
+      'https://firebasestorage.googleapis.com/v0/b/image-blog-155e2.appspot.com/o/Img%2001.png?alt=media&token=7437b1da-7f3b-4ecb-9bbf-e0fca1df9d9b',
+    status: '- %21',
+    id: 1,
+    quantity: 17,
+  },
+  {
+    name: 'Hal Earrings',
+    price: 25,
+    introduction:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. ',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. Nunc sed porta augue. Morbi porta tempor odio, in molestie diam bibendum sed.',
+    imageUrl:
+      'https://firebasestorage.googleapis.com/v0/b/image-blog-155e2.appspot.com/o/Img%2002.png?alt=media&token=598ddd11-aa7b-4e7f-ba58-97cf6d8cdb1a',
+    status: '',
+    id: 2,
+    quantity: 28,
+  },
+]

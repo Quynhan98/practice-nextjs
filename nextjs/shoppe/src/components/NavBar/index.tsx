@@ -32,7 +32,10 @@ const NavBar = ({ navList, ...rest }: NavBarProps) => {
         <Link
           href={obj.href}
           key={obj.value}
-          style={{ fontSize: isMobile ? '12px' : '16px' }}
+          style={{
+            fontSize: isMobile ? '12px' : '16px',
+            maxWidth: isMobile ? '135px' : '100%',
+          }}
         >
           {obj.name}
         </Link>

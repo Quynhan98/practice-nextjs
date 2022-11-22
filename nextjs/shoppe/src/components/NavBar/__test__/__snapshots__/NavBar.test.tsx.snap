@@ -3,20 +3,20 @@
 exports[`NavBar component Renders NavBar correctly 1`] = `
 <div>
   <nav
-    class="css-1aaz8j"
+    class="css-34qmr9"
   >
     <a
-      href="/contact"
+      href="/"
     >
       Contact
     </a>
     <a
-      href="/terms-of-services"
+      href="/"
     >
       Terms of services
     </a>
     <a
-      href="/shipping-and-return"
+      href="/"
     >
       Shipping and Return
     </a>

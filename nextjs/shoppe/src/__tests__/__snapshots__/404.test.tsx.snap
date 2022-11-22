@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFound render Should show match NotFound DOM Snapshot 1`] = `
+<div>
+  <div
+    class="css-11l89fl"
+  >
+    <p
+      class="chakra-text css-1wkcfl0"
+    >
+      404 - Page Not Found!
+    </p>
+    <a
+      href="/"
+    >
+      Back To Home
+    </a>
+  </div>
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
+</div>
+`;

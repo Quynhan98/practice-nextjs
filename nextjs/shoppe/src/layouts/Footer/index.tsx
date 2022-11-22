@@ -35,10 +35,10 @@ const Footer = () => {
         {isMobile && (
           <Checkbox
             defaultChecked
-            fontSize="extraSmall"
             color="dark"
             borderColor="secondary"
             pt="10px"
+            size="sm"
           >
             I agree to the website’s terms and conditions
           </Checkbox>
