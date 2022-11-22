@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home render Should show match Home DOM Snapshot 1`] = `
+exports[`Detail page render Should show match Detail page DOM Snapshot 1`] = `
 <div>
   <div
     class="css-1k927r0"

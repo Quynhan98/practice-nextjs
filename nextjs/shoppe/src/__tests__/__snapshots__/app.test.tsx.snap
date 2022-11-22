@@ -85,6 +85,44 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
               Shipping and Return
             </a>
           </nav>
+          <label
+            class="chakra-checkbox css-a1ldsk"
+            data-checked=""
+          >
+            <input
+              checked=""
+              class="chakra-checkbox__input"
+              style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+              type="checkbox"
+              value=""
+            />
+            <span
+              aria-hidden="true"
+              class="chakra-checkbox__control css-kn2htf"
+              data-checked=""
+            >
+              <div
+                class="css-0"
+                style="display: flex; align-items: center; justify-content: center; height: 100%;"
+              >
+                <svg
+                  class="css-1v5j1c"
+                  style="fill: none; stroke-width: 2; stroke: currentColor; stroke-dasharray: 16;"
+                  viewBox="0 0 12 10"
+                >
+                  <polyline
+                    points="1.5 6 4.5 9 10.5 1"
+                  />
+                </svg>
+              </div>
+            </span>
+            <span
+              class="chakra-checkbox__label css-1p6mdqm"
+              data-checked=""
+            >
+              I agree to the website’s terms and conditions
+            </span>
+          </label>
           <div
             class="css-11xbhwq"
           >
@@ -135,6 +173,18 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
           <div
             class="css-13zimb6"
           >
+            <div
+              class="css-o5xvzg"
+            >
+              <p
+                class="chakra-text css-1bz4vjt"
+              >
+                Follow us
+              </p>
+              <span
+                class="css-13xadkr"
+              />
+            </div>
             <div
               class="css-1dvkee8"
             >
@@ -367,6 +417,44 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
             Shipping and Return
           </a>
         </nav>
+        <label
+          class="chakra-checkbox css-a1ldsk"
+          data-checked=""
+        >
+          <input
+            checked=""
+            class="chakra-checkbox__input"
+            style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+            type="checkbox"
+            value=""
+          />
+          <span
+            aria-hidden="true"
+            class="chakra-checkbox__control css-kn2htf"
+            data-checked=""
+          >
+            <div
+              class="css-0"
+              style="display: flex; align-items: center; justify-content: center; height: 100%;"
+            >
+              <svg
+                class="css-1v5j1c"
+                style="fill: none; stroke-width: 2; stroke: currentColor; stroke-dasharray: 16;"
+                viewBox="0 0 12 10"
+              >
+                <polyline
+                  points="1.5 6 4.5 9 10.5 1"
+                />
+              </svg>
+            </div>
+          </span>
+          <span
+            class="chakra-checkbox__label css-1p6mdqm"
+            data-checked=""
+          >
+            I agree to the website’s terms and conditions
+          </span>
+        </label>
         <div
           class="css-11xbhwq"
         >
@@ -417,6 +505,18 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
         <div
           class="css-13zimb6"
         >
+          <div
+            class="css-o5xvzg"
+          >
+            <p
+              class="chakra-text css-1bz4vjt"
+            >
+              Follow us
+            </p>
+            <span
+              class="css-13xadkr"
+            />
+          </div>
           <div
             class="css-1dvkee8"
           >

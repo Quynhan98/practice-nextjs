@@ -32,17 +32,16 @@ const Footer = () => {
           paddingTop={{ base: '42px', md: '10px' }}
           navList={NAV_LIST}
         />
-        {isMobile && (
-          <Checkbox
-            defaultChecked
-            color="dark"
-            borderColor="secondary"
-            pt="10px"
-            size="sm"
-          >
-            I agree to the website’s terms and conditions
-          </Checkbox>
-        )}
+        <Checkbox
+          defaultChecked
+          color="dark"
+          borderColor="secondary"
+          pt="10px"
+          size="sm"
+          display={{ base: 'inline-flex', md: 'none' }}
+        >
+          I agree to the website’s terms and conditions
+        </Checkbox>
         <Flex
           borderBottom="1px"
           borderBottomColor="dark"
@@ -96,19 +95,21 @@ const Footer = () => {
           privacy policy
         </Text>
         <Flex gap={{ base: '16px', md: '30px' }} alignItems="center">
-          {isMobile && (
-            <>
-              <Text fontSize="extraSmall" variant="primary">
-                Follow us
-              </Text>
-              <Box
-                as="span"
-                borderBottom="1px"
-                borderBottomColor="dark"
-                width="47px"
-              />
-            </>
-          )}
+          <Box
+            display={{ base: 'flex', md: 'none' }}
+            alignItems="center"
+            gap="16px"
+          >
+            <Text fontSize="extraSmall" variant="primary">
+              Follow us
+            </Text>
+            <Box
+              as="span"
+              borderBottom="1px"
+              borderBottomColor="dark"
+              width="47px"
+            />
+          </Box>
           {socialNetworkIcons.map((icon) => (
             <Icon
               width={{ base: '12px', md: '18px' }}

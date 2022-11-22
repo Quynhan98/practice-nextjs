@@ -17,8 +17,8 @@ import { SERVER_ERROR } from '@constants/errorMessage'
 import { useCartContext } from '@hooks/useCartContext'
 
 export interface DetailPageProps {
-  product: IProductDetail
-  error: string
+  product?: IProductDetail
+  error?: string
 }
 
 export const getStaticPaths = async () => {

@@ -6,6 +6,8 @@ import Products from '@components/Products'
 
 // Mocks
 import { LIST_PRODUCT } from '@mocks/mockData'
+
+// Constants
 import { SERVER_ERROR } from '@constants/errorMessage'
 
 const props = {
@@ -25,6 +27,6 @@ describe('Products render', () => {
   it('Should show error', () => {
     const { container } = render(<Products error={SERVER_ERROR} />)
 
-    expect(container).toMatchSnapshot()
+    expect(container).toBeInTheDocument()
   })
 })
