@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { memo, useMemo } from 'react'
 import Link from 'next/link'
 import Image, { ImageLoader } from 'next/image'
 import { Box, Flex, Heading, Text } from '@chakra-ui/react'
@@ -9,15 +9,16 @@ import Icon from '@components/Icon'
 // Services
 import myImageLoader from '@services/imageLoader'
 
-// Hooks
-import { useCartContext } from '@hooks/useCartContext'
+// Types
+import { IProductDetail } from '@self-types/index'
 
-const Header = () => {
-  const { listCart } = useCartContext()
-
+interface HeaderProps {
+  carts: IProductDetail[]
+}
+const Header = ({ carts }: HeaderProps) => {
   const quantity = useMemo(() => {
-    return listCart.length
-  }, [listCart])
+    return carts.length
+  }, [carts.length])
 
   return (
     <Flex
@@ -28,17 +29,19 @@ const Header = () => {
       alignItems="center"
       paddingBottom="5px"
       maxWidth="1248px"
-      margin="0 auto"
-      pt="67px"
+      margin={{ base: ' 0px 16px', lg: '0 auto' }}
+      pt={{ base: '26px', lg: '67px' }}
     >
       <Heading as="h1">
         <Link href="/">
           <Image
+            loader={myImageLoader as ImageLoader}
             width={125}
             height={40}
             src="/images/logo.png"
             alt="Logo Shoppe"
-            loader={myImageLoader as ImageLoader}
+            style={{ width: 'auto', height: 'auto' }}
+            priority
           />
         </Link>
       </Heading>
@@ -62,7 +65,7 @@ const Header = () => {
           justifyContent="center"
         >
           <Text size="small" color="gray">
-            {quantity}
+            {quantity || 0}
           </Text>
         </Flex>
       </Box>
@@ -70,4 +73,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default memo(Header)

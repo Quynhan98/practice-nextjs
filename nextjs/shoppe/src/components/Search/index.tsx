@@ -18,10 +18,13 @@ const Search = ({
   return (
     <Box
       borderBottom="1px"
+      borderRadius={{ base: '4px', md: '0px' }}
       borderBottomColor="lightSilver"
+      background={{ base: 'lightSilver', md: 'none' }}
       display="flex"
       justifyContent="space-between"
       alignItems="center"
+      flexDirection={{ base: 'row-reverse', md: 'unset' }}
     >
       <Input
         type="text"
@@ -35,7 +38,9 @@ const Search = ({
       />
       <IconButton
         size="small"
-        marginBottom="10px"
+        marginBottom={{ base: '0px', md: '10px' }}
+        marginLeft="10px"
+        marginRight={{ base: '8px', md: '0px' }}
         type="submit"
         onClick={onClick}
         aria-label="Search database"

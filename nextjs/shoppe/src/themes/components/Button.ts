@@ -18,6 +18,10 @@ export const Button: ComponentStyleConfig = {
       height: '53px',
       width: '150px',
     },
+    full: {
+      height: '32px',
+      width: '100%',
+    },
   },
   variants: {
     primary: {
@@ -31,6 +35,12 @@ export const Button: ComponentStyleConfig = {
     },
     default: {
       border: 'none',
+    },
+    small: {
+      fontSize: '12px',
+      fontWeight: '400',
+      borderRadius: '4px',
+      border: '1px solid #000000',
     },
   },
   defaultProps: {

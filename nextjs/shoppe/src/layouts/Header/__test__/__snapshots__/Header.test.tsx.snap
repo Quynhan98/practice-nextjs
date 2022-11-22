@@ -3,20 +3,19 @@
 exports[`Header render Should Header match Snapshot 1`] = `
 <div>
   <header
-    class="css-n5jh5q"
+    class="css-15otjsi"
   >
     <h1
-      class="chakra-heading css-1dklj6k"
+      class="chakra-heading css-dp3sr4"
     >
       <img
         alt="Logo Shoppe"
         data-nimg="1"
         decoding="async"
         height="40"
-        loading="lazy"
         src="http://localhost:3000//images/logo.png?w=256&q=75"
         srcset="http://localhost:3000//images/logo.png?w=128&q=75 1x, http://localhost:3000//images/logo.png?w=256&q=75 2x"
-        style="color: transparent;"
+        style="color: transparent; width: auto; height: auto;"
         width="125"
       />
     </h1>
@@ -44,7 +43,7 @@ exports[`Header render Should Header match Snapshot 1`] = `
         <p
           class="chakra-text css-1xb8dar"
         >
-          0
+          2
         </p>
       </div>
     </div>

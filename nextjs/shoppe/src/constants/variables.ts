@@ -2,17 +2,17 @@ export const NAV_LIST = [
   {
     value: 1,
     name: 'Contact',
-    href: '/contact',
+    href: '/',
   },
   {
     value: 2,
     name: 'Terms of services',
-    href: '/terms-of-services',
+    href: '/',
   },
   {
     value: 3,
     name: 'Shipping and Return',
-    href: '/shipping-and-return',
+    href: '/',
   },
 ]
 
@@ -38,3 +38,10 @@ export const SOCIAL_ICONS = [
     iconURL: '/images/twitter.svg',
   },
 ]
+
+export enum BREAKPOINTS {
+  SMALL = '(max-width: 320px)',
+  MEDIUM = '(max-width: 768px)',
+  LARGE = '(max-width: 960px)',
+  EXTRA_LARGE = '(max-width: 1200px)',
+}

@@ -8,20 +8,19 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
   >
     <div>
       <header
-        class="css-n5jh5q"
+        class="css-15otjsi"
       >
         <h1
-          class="chakra-heading css-1dklj6k"
+          class="chakra-heading css-dp3sr4"
         >
           <img
             alt="Logo Shoppe"
             data-nimg="1"
             decoding="async"
             height="40"
-            loading="lazy"
             src="http://localhost:3000//images/logo.png?w=256&q=75"
             srcset="http://localhost:3000//images/logo.png?w=128&q=75 1x, http://localhost:3000//images/logo.png?w=256&q=75 2x"
-            style="color: transparent;"
+            style="color: transparent; width: auto; height: auto;"
             width="125"
           />
         </h1>
@@ -55,47 +54,85 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
         </div>
       </header>
       <main
-        class="css-qcp6ks"
+        class="css-7iu33a"
       >
         <div>
           Mocked Test Component
         </div>
       </main>
       <footer
-        class="css-xmbrgk"
+        class="css-1frnbgd"
       >
         <div
-          class="css-gg4vpm"
+          class="css-15g748d"
         >
           <nav
-            class="css-fd0xex"
+            class="css-15pl4p6"
           >
             <a
-              href="/contact"
+              href="/"
             >
               Contact
             </a>
             <a
-              href="/terms-of-services"
+              href="/"
             >
               Terms of services
             </a>
             <a
-              href="/shipping-and-return"
+              href="/"
             >
               Shipping and Return
             </a>
           </nav>
+          <label
+            class="chakra-checkbox css-a1ldsk"
+            data-checked=""
+          >
+            <input
+              checked=""
+              class="chakra-checkbox__input"
+              style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+              type="checkbox"
+              value=""
+            />
+            <span
+              aria-hidden="true"
+              class="chakra-checkbox__control css-kn2htf"
+              data-checked=""
+            >
+              <div
+                class="css-0"
+                style="display: flex; align-items: center; justify-content: center; height: 100%;"
+              >
+                <svg
+                  class="css-1v5j1c"
+                  style="fill: none; stroke-width: 2; stroke: currentColor; stroke-dasharray: 16;"
+                  viewBox="0 0 12 10"
+                >
+                  <polyline
+                    points="1.5 6 4.5 9 10.5 1"
+                  />
+                </svg>
+              </div>
+            </span>
+            <span
+              class="chakra-checkbox__label css-1p6mdqm"
+              data-checked=""
+            >
+              I agree to the website’s terms and conditions
+            </span>
+          </label>
           <div
             class="css-11xbhwq"
           >
             <p
-              class="chakra-text css-ozfm6u"
+              class="chakra-text css-17znp9"
             >
               Give an email, get the newsletter.
             </p>
             <div
-              class="css-1o1su5v"
+              class="css-16dh40w"
             >
               <img
                 alt="Right arrow"
@@ -112,20 +149,20 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
           </div>
         </div>
         <div
-          class="css-167212l"
+          class="css-82b87w"
         >
           <p
-            class="chakra-text css-tujbob"
+            class="chakra-text css-11rc6k7"
           >
             <b
-              class="chakra-text css-lz4kvn"
+              class="chakra-text css-1qtkha6"
             >
               © 2021 Shelly.
             </b>
              
             Terms of use
             <b
-              class="chakra-text css-lz4kvn"
+              class="chakra-text css-1qtkha6"
             >
                
               and
@@ -134,10 +171,22 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
             privacy policy
           </p>
           <div
-            class="css-st3z69"
+            class="css-13zimb6"
           >
             <div
-              class="css-14b8luf"
+              class="css-o5xvzg"
+            >
+              <p
+                class="chakra-text css-1bz4vjt"
+              >
+                Follow us
+              </p>
+              <span
+                class="css-13xadkr"
+              />
+            </div>
+            <div
+              class="css-1dvkee8"
             >
               <img
                 alt="LinkIn Icon"
@@ -152,7 +201,7 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
               />
             </div>
             <div
-              class="css-14b8luf"
+              class="css-1dvkee8"
             >
               <img
                 alt="Facebook icon"
@@ -167,7 +216,7 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
               />
             </div>
             <div
-              class="css-14b8luf"
+              class="css-1dvkee8"
             >
               <img
                 alt="Instagram icon"
@@ -182,7 +231,7 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
               />
             </div>
             <div
-              class="css-14b8luf"
+              class="css-1dvkee8"
             >
               <img
                 alt="Twitter icon"
@@ -291,20 +340,19 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
   </body>,
   "container": <div>
     <header
-      class="css-n5jh5q"
+      class="css-15otjsi"
     >
       <h1
-        class="chakra-heading css-1dklj6k"
+        class="chakra-heading css-dp3sr4"
       >
         <img
           alt="Logo Shoppe"
           data-nimg="1"
           decoding="async"
           height="40"
-          loading="lazy"
           src="http://localhost:3000//images/logo.png?w=256&q=75"
           srcset="http://localhost:3000//images/logo.png?w=128&q=75 1x, http://localhost:3000//images/logo.png?w=256&q=75 2x"
-          style="color: transparent;"
+          style="color: transparent; width: auto; height: auto;"
           width="125"
         />
       </h1>
@@ -338,47 +386,85 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
       </div>
     </header>
     <main
-      class="css-qcp6ks"
+      class="css-7iu33a"
     >
       <div>
         Mocked Test Component
       </div>
     </main>
     <footer
-      class="css-xmbrgk"
+      class="css-1frnbgd"
     >
       <div
-        class="css-gg4vpm"
+        class="css-15g748d"
       >
         <nav
-          class="css-fd0xex"
+          class="css-15pl4p6"
         >
           <a
-            href="/contact"
+            href="/"
           >
             Contact
           </a>
           <a
-            href="/terms-of-services"
+            href="/"
           >
             Terms of services
           </a>
           <a
-            href="/shipping-and-return"
+            href="/"
           >
             Shipping and Return
           </a>
         </nav>
+        <label
+          class="chakra-checkbox css-a1ldsk"
+          data-checked=""
+        >
+          <input
+            checked=""
+            class="chakra-checkbox__input"
+            style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+            type="checkbox"
+            value=""
+          />
+          <span
+            aria-hidden="true"
+            class="chakra-checkbox__control css-kn2htf"
+            data-checked=""
+          >
+            <div
+              class="css-0"
+              style="display: flex; align-items: center; justify-content: center; height: 100%;"
+            >
+              <svg
+                class="css-1v5j1c"
+                style="fill: none; stroke-width: 2; stroke: currentColor; stroke-dasharray: 16;"
+                viewBox="0 0 12 10"
+              >
+                <polyline
+                  points="1.5 6 4.5 9 10.5 1"
+                />
+              </svg>
+            </div>
+          </span>
+          <span
+            class="chakra-checkbox__label css-1p6mdqm"
+            data-checked=""
+          >
+            I agree to the website’s terms and conditions
+          </span>
+        </label>
         <div
           class="css-11xbhwq"
         >
           <p
-            class="chakra-text css-ozfm6u"
+            class="chakra-text css-17znp9"
           >
             Give an email, get the newsletter.
           </p>
           <div
-            class="css-1o1su5v"
+            class="css-16dh40w"
           >
             <img
               alt="Right arrow"
@@ -395,20 +481,20 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
         </div>
       </div>
       <div
-        class="css-167212l"
+        class="css-82b87w"
       >
         <p
-          class="chakra-text css-tujbob"
+          class="chakra-text css-11rc6k7"
         >
           <b
-            class="chakra-text css-lz4kvn"
+            class="chakra-text css-1qtkha6"
           >
             © 2021 Shelly.
           </b>
            
           Terms of use
           <b
-            class="chakra-text css-lz4kvn"
+            class="chakra-text css-1qtkha6"
           >
              
             and
@@ -417,10 +503,22 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
           privacy policy
         </p>
         <div
-          class="css-st3z69"
+          class="css-13zimb6"
         >
           <div
-            class="css-14b8luf"
+            class="css-o5xvzg"
+          >
+            <p
+              class="chakra-text css-1bz4vjt"
+            >
+              Follow us
+            </p>
+            <span
+              class="css-13xadkr"
+            />
+          </div>
+          <div
+            class="css-1dvkee8"
           >
             <img
               alt="LinkIn Icon"
@@ -435,7 +533,7 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
             />
           </div>
           <div
-            class="css-14b8luf"
+            class="css-1dvkee8"
           >
             <img
               alt="Facebook icon"
@@ -450,7 +548,7 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
             />
           </div>
           <div
-            class="css-14b8luf"
+            class="css-1dvkee8"
           >
             <img
               alt="Instagram icon"
@@ -465,7 +563,7 @@ exports[`App render Should show match App DOM Snapshot 1`] = `
             />
           </div>
           <div
-            class="css-14b8luf"
+            class="css-1dvkee8"
           >
             <img
               alt="Twitter icon"

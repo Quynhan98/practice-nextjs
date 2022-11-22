@@ -117,11 +117,21 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
   }
 
   return (
-    <Box pt="96px">
-      <Heading as="h2" fontSize="large" fontWeight="medium">
+    <Box pt={{ base: '10px', md: '96px' }}>
+      <Heading
+        display={{ base: 'none', md: 'block' }}
+        as="h2"
+        fontSize="large"
+        fontWeight="medium"
+      >
         Shop The Latest
       </Heading>
-      <Flex pt="40px" gap="35px" justifyContent="space-between">
+      <Flex
+        pt={{ base: '0px', md: '40px' }}
+        gap={{ base: '16px', lg: '35px' }}
+        justifyContent="space-between"
+        flexDirection={{ base: 'column', lg: 'unset' }}
+      >
         <Box minW="261px">
           <Search
             onChange={handleChangeSearch}
@@ -129,6 +139,16 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
             onClick={handleSubmitSearch}
             placeholder="Search..."
           />
+          <Heading
+            as="h2"
+            display={{ base: 'block', md: 'none' }}
+            pt="24px"
+            pb="15px"
+            fontSize="medium"
+            fontWeight="medium"
+          >
+            Shop
+          </Heading>
         </Box>
         <Flex
           flexDirection="column"

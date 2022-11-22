@@ -17,8 +17,8 @@ import { SERVER_ERROR } from '@constants/errorMessage'
 import { useCartContext } from '@hooks/useCartContext'
 
 export interface DetailPageProps {
-  product: IProductDetail
-  error: string
+  product?: IProductDetail
+  error?: string
 }
 
 export const getStaticPaths = async () => {
@@ -114,10 +114,10 @@ const DetailPage = ({ product, error }: DetailPageProps) => {
     return (
       <>
         <CardDetail productDetail={product} handleAddCart={handleAddCart} />
-        <Box pt="123px">
+        <Box pt={{ base: '24px', md: '123px' }}>
           <Heading
             as="h3"
-            pb="34px"
+            pb={{ base: '10px', md: '34px' }}
             borderBottom="1px"
             fontSize="medium"
             fontWeight="base"
@@ -125,7 +125,7 @@ const DetailPage = ({ product, error }: DetailPageProps) => {
           >
             Description
           </Heading>
-          <Text textAlign="initial" pt="40px">
+          <Text textAlign="initial" pt={{ base: '24px', md: '40px' }}>
             {product.description}
           </Text>
         </Box>
@@ -134,7 +134,7 @@ const DetailPage = ({ product, error }: DetailPageProps) => {
   }, [error, handleAddCart, product])
 
   return (
-    <Box pt="128px" pb="100px">
+    <Box pt={{ base: '10px', md: '128px' }} pb="100px">
       {renderContent}
     </Box>
   )
