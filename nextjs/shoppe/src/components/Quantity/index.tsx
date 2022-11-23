@@ -1,6 +1,5 @@
 import { AddIcon, MinusIcon } from '@chakra-ui/icons'
 import { Box, IconButton, Text } from '@chakra-ui/react'
-import { memo } from 'react'
 
 interface QuantityProps {
   quantity: number
@@ -47,4 +46,4 @@ const Quantity = ({
   )
 }
 
-export default memo(Quantity)
+export default Quantity

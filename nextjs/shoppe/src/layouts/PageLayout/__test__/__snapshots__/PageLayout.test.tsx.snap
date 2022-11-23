@@ -15,7 +15,7 @@ exports[`PageLayout render Should PageLayout match Snapshot 1`] = `
         height="40"
         src="http://localhost:3000//images/logo.png?w=256&q=75"
         srcset="http://localhost:3000//images/logo.png?w=128&q=75 1x, http://localhost:3000//images/logo.png?w=256&q=75 2x"
-        style="color: transparent; width: auto; height: auto;"
+        style="color: transparent; width: auto; height: auto; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
         width="125"
       />
     </h1>
@@ -34,7 +34,7 @@ exports[`PageLayout render Should PageLayout match Snapshot 1`] = `
           sizes="100vw"
           src="http://localhost:3000//images/shoppingCart.svg?w=3840&q=75"
           srcset="http://localhost:3000//images/shoppingCart.svg?w=640&q=75 640w, http://localhost:3000//images/shoppingCart.svg?w=750&q=75 750w, http://localhost:3000//images/shoppingCart.svg?w=828&q=75 828w, http://localhost:3000//images/shoppingCart.svg?w=1080&q=75 1080w, http://localhost:3000//images/shoppingCart.svg?w=1200&q=75 1200w, http://localhost:3000//images/shoppingCart.svg?w=1920&q=75 1920w, http://localhost:3000//images/shoppingCart.svg?w=2048&q=75 2048w, http://localhost:3000//images/shoppingCart.svg?w=3840&q=75 3840w"
-          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
         />
       </div>
       <div
@@ -136,7 +136,7 @@ exports[`PageLayout render Should PageLayout match Snapshot 1`] = `
             sizes="100vw"
             src="http://localhost:3000//images/iconRight.svg?w=3840&q=75"
             srcset="http://localhost:3000//images/iconRight.svg?w=640&q=75 640w, http://localhost:3000//images/iconRight.svg?w=750&q=75 750w, http://localhost:3000//images/iconRight.svg?w=828&q=75 828w, http://localhost:3000//images/iconRight.svg?w=1080&q=75 1080w, http://localhost:3000//images/iconRight.svg?w=1200&q=75 1200w, http://localhost:3000//images/iconRight.svg?w=1920&q=75 1920w, http://localhost:3000//images/iconRight.svg?w=2048&q=75 2048w, http://localhost:3000//images/iconRight.svg?w=3840&q=75 3840w"
-            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
           />
         </div>
       </div>
@@ -190,7 +190,7 @@ exports[`PageLayout render Should PageLayout match Snapshot 1`] = `
             sizes="100vw"
             src="http://localhost:3000//images/inIcon.svg?w=3840&q=75"
             srcset="http://localhost:3000//images/inIcon.svg?w=640&q=75 640w, http://localhost:3000//images/inIcon.svg?w=750&q=75 750w, http://localhost:3000//images/inIcon.svg?w=828&q=75 828w, http://localhost:3000//images/inIcon.svg?w=1080&q=75 1080w, http://localhost:3000//images/inIcon.svg?w=1200&q=75 1200w, http://localhost:3000//images/inIcon.svg?w=1920&q=75 1920w, http://localhost:3000//images/inIcon.svg?w=2048&q=75 2048w, http://localhost:3000//images/inIcon.svg?w=3840&q=75 3840w"
-            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
           />
         </div>
         <div
@@ -205,7 +205,7 @@ exports[`PageLayout render Should PageLayout match Snapshot 1`] = `
             sizes="100vw"
             src="http://localhost:3000//images/facebook.svg?w=3840&q=75"
             srcset="http://localhost:3000//images/facebook.svg?w=640&q=75 640w, http://localhost:3000//images/facebook.svg?w=750&q=75 750w, http://localhost:3000//images/facebook.svg?w=828&q=75 828w, http://localhost:3000//images/facebook.svg?w=1080&q=75 1080w, http://localhost:3000//images/facebook.svg?w=1200&q=75 1200w, http://localhost:3000//images/facebook.svg?w=1920&q=75 1920w, http://localhost:3000//images/facebook.svg?w=2048&q=75 2048w, http://localhost:3000//images/facebook.svg?w=3840&q=75 3840w"
-            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
           />
         </div>
         <div
@@ -220,7 +220,7 @@ exports[`PageLayout render Should PageLayout match Snapshot 1`] = `
             sizes="100vw"
             src="http://localhost:3000//images/instagram.svg?w=3840&q=75"
             srcset="http://localhost:3000//images/instagram.svg?w=640&q=75 640w, http://localhost:3000//images/instagram.svg?w=750&q=75 750w, http://localhost:3000//images/instagram.svg?w=828&q=75 828w, http://localhost:3000//images/instagram.svg?w=1080&q=75 1080w, http://localhost:3000//images/instagram.svg?w=1200&q=75 1200w, http://localhost:3000//images/instagram.svg?w=1920&q=75 1920w, http://localhost:3000//images/instagram.svg?w=2048&q=75 2048w, http://localhost:3000//images/instagram.svg?w=3840&q=75 3840w"
-            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
           />
         </div>
         <div
@@ -235,7 +235,7 @@ exports[`PageLayout render Should PageLayout match Snapshot 1`] = `
             sizes="100vw"
             src="http://localhost:3000//images/twitter.svg?w=3840&q=75"
             srcset="http://localhost:3000//images/twitter.svg?w=640&q=75 640w, http://localhost:3000//images/twitter.svg?w=750&q=75 750w, http://localhost:3000//images/twitter.svg?w=828&q=75 828w, http://localhost:3000//images/twitter.svg?w=1080&q=75 1080w, http://localhost:3000//images/twitter.svg?w=1200&q=75 1200w, http://localhost:3000//images/twitter.svg?w=1920&q=75 1920w, http://localhost:3000//images/twitter.svg?w=2048&q=75 2048w, http://localhost:3000//images/twitter.svg?w=3840&q=75 3840w"
-            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
           />
         </div>
       </div>

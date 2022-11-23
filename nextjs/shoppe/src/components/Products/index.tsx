@@ -1,6 +1,6 @@
 import { ChangeEvent, memo, useCallback, useMemo, useState } from 'react'
 import { useRouter } from 'next/router'
-import { Box, Heading, Flex, Button, Text } from '@chakra-ui/react'
+import { Box, Heading, Flex, Button, Text, Spinner } from '@chakra-ui/react'
 
 // Components
 import Search from '@components/Search'
@@ -24,7 +24,7 @@ interface ProductsProps {
 const Products = ({ products, error, paramSearch }: ProductsProps) => {
   const router = useRouter()
   const [searchValue, setSearchValue] = useState<string>('')
-  const searchTerm = useDebounce(searchValue, 500)
+  const searchTerm = useDebounce(searchValue, 200)
 
   const {
     paginatedData,
@@ -61,12 +61,16 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
       )
     }
 
-    if (!listProduct || (listProduct && listProduct.length === 0)) {
+    if (listProduct && listProduct.length === 0) {
       return (
         <Text variant="primary" size="heading">
           {PRODUCT_NOT_FOUND}
         </Text>
       )
+    }
+
+    if (!listProduct) {
+      return <Spinner />
     }
 
     return (
@@ -88,7 +92,14 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
         </Button>
       </>
     )
-  }, [error, isLoadingMore, isReachingEnd, listProduct, paginationError])
+  }, [
+    error,
+    isLoadingMore,
+    isReachingEnd,
+    listProduct,
+    paginatedData,
+    paginationError,
+  ])
 
   // Handle change search
   const handleChangeSearch = (e: ChangeEvent<HTMLInputElement>) => {

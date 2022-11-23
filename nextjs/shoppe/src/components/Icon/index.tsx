@@ -3,7 +3,8 @@ import Image, { ImageLoader } from 'next/image'
 import { Box, BoxProps } from '@chakra-ui/react'
 
 // Services
-import myImageLoader from '@services/imageLoader'
+import imageLoader from '@services/imageLoader'
+import { shimmer, toBase64 } from '@utils/index'
 
 interface IconProps extends BoxProps {
   srcIcon: string
@@ -18,7 +19,9 @@ const Icon = ({ srcIcon, alt, ...rest }: IconProps) => {
         alt={alt}
         data-testid="image"
         fill
-        loader={myImageLoader as ImageLoader}
+        loader={imageLoader as ImageLoader}
+        placeholder="blur"
+        blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(190, 300))}`}
       />
     </Box>
   )

@@ -10,11 +10,11 @@ import { LIST_PRODUCT } from '@mocks/mockData'
 // Constants
 import { SERVER_ERROR } from '@constants/errorMessage'
 
-const props = {
-  products: LIST_PRODUCT,
-}
-
 describe('Products render', () => {
+  const props = {
+    products: LIST_PRODUCT,
+  }
+
   it('should match data for Products component', () => {
     const { container } = render(<Products {...props} />)
 
@@ -27,6 +27,7 @@ describe('Products render', () => {
   it('Should show error', () => {
     const { container } = render(<Products error={SERVER_ERROR} />)
 
+    expect(screen.getByText(SERVER_ERROR)).toHaveTextContent(SERVER_ERROR)
     expect(container).toBeInTheDocument()
   })
 })

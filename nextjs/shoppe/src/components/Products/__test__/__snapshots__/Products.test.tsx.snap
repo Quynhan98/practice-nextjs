@@ -73,7 +73,7 @@ exports[`Products render should match data for Products component 1`] = `
               height="300"
               src="http://localhost:3000//images/liraEarring.svg?w=640&q=75"
               srcset="http://localhost:3000//images/liraEarring.svg?w=384&q=75 1x, http://localhost:3000//images/liraEarring.svg?w=640&q=75 2x"
-              style="color: transparent;"
+              style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
               width="300"
             />
             <div
@@ -105,7 +105,7 @@ exports[`Products render should match data for Products component 1`] = `
               height="300"
               src="http://localhost:3000//images/liraEarring.svg?w=640&q=75"
               srcset="http://localhost:3000//images/liraEarring.svg?w=384&q=75 1x, http://localhost:3000//images/liraEarring.svg?w=640&q=75 2x"
-              style="color: transparent;"
+              style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
               width="300"
             />
             <div
@@ -137,7 +137,7 @@ exports[`Products render should match data for Products component 1`] = `
               height="300"
               src="http://localhost:3000//images/liraEarring.svg?w=640&q=75"
               srcset="http://localhost:3000//images/liraEarring.svg?w=384&q=75 1x, http://localhost:3000//images/liraEarring.svg?w=640&q=75 2x"
-              style="color: transparent;"
+              style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
               width="300"
             />
             <div
@@ -169,7 +169,7 @@ exports[`Products render should match data for Products component 1`] = `
               height="300"
               src="http://localhost:3000//images/liraEarring.svg?w=640&q=75"
               srcset="http://localhost:3000//images/liraEarring.svg?w=384&q=75 1x, http://localhost:3000//images/liraEarring.svg?w=640&q=75 2x"
-              style="color: transparent;"
+              style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
               width="300"
             />
             <div
@@ -210,7 +210,7 @@ exports[`Products render should match data for Products component 1`] = `
               height="300"
               src="http://localhost:3000//images/liraEarring.svg?w=640&q=75"
               srcset="http://localhost:3000//images/liraEarring.svg?w=384&q=75 1x, http://localhost:3000//images/liraEarring.svg?w=640&q=75 2x"
-              style="color: transparent;"
+              style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
               width="300"
             />
             <div
@@ -242,7 +242,7 @@ exports[`Products render should match data for Products component 1`] = `
               height="300"
               src="http://localhost:3000//images/liraEarring.svg?w=640&q=75"
               srcset="http://localhost:3000//images/liraEarring.svg?w=384&q=75 1x, http://localhost:3000//images/liraEarring.svg?w=640&q=75 2x"
-              style="color: transparent;"
+              style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
               width="300"
             />
             <div

@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react'
 
 // Utils
-import { currencyFormat } from '@utils/index'
+import { currencyFormat, shimmer, toBase64 } from '@utils/index'
 
 // Types
 import { IProductDetail } from '@self-types/index'
@@ -19,17 +19,22 @@ import { IProductDetail } from '@self-types/index'
 import Quantity from '@components/Quantity'
 
 // Services
-import myImageLoader from '@services/imageLoader'
+import imageLoader from '@services/imageLoader'
 
 // Constants
 import { BREAKPOINTS } from '@constants/variables'
 
 interface CardDetailProps {
+  isAdded?: boolean
   productDetail: IProductDetail
   handleAddCart: (data: IProductDetail) => void
 }
 
-const CardDetail = ({ productDetail, handleAddCart }: CardDetailProps) => {
+const CardDetail = ({
+  isAdded,
+  productDetail,
+  handleAddCart,
+}: CardDetailProps) => {
   const { name, price, imageUrl, id, introduction } = productDetail
 
   const [quantityProduct, setQuantityProduct] = useState<number>(1)
@@ -67,9 +72,13 @@ const CardDetail = ({ productDetail, handleAddCart }: CardDetailProps) => {
           height={isMobile ? 374 : 600}
           src={imageUrl}
           alt={name}
-          loader={myImageLoader as ImageLoader}
+          loader={imageLoader as ImageLoader}
           priority
           style={{ width: 'auto', height: 'auto' }}
+          placeholder="blur"
+          blurDataURL={`data:image/svg+xml;base64,${toBase64(
+            shimmer(190, 300),
+          )}`}
         />
         <Flex h="full" direction="column">
           <Heading
@@ -110,11 +119,12 @@ const CardDetail = ({ productDetail, handleAddCart }: CardDetailProps) => {
               />
             )}
             <Button
+              isDisabled={isAdded}
               onClick={handleClickAddCart}
               size={isMobile ? 'full' : 'default'}
               variant={isMobile ? 'small' : 'primary'}
             >
-              ADD TO CART
+              {isAdded ? 'Added to cart' : 'Add to cart'}
             </Button>
           </Flex>
         </Flex>

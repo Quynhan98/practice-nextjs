@@ -11,7 +11,7 @@ import { IProductDetail } from '@self-types/index'
 import { fetcherApi } from '@services/index'
 
 // Constants
-import { SERVER_ERROR } from '@constants/errorMessage'
+import { SERVER_ERROR, SNACKBAR_ADD_CART_SUCCESS } from '@constants/index'
 
 // Hooks
 import { useCartContext } from '@hooks/useCartContext'
@@ -61,19 +61,12 @@ const DetailPage = ({ product, error }: DetailPageProps) => {
   const toast = useToast()
   const { listCart, addCart } = useCartContext()
 
+  const isAdded = product && !!listCart.find((item) => item.id === product.id)
+
   // Handle add product into cart
   const handleAddCart = useCallback(
     async (data: IProductDetail) => {
-      const updateQuantity = listCart.map((item) => {
-        if (item.id === data.id) {
-          return { ...item, quantity: item.quantity + data.quantity }
-        }
-        return item
-      })
-
-      const listProduct = !listCart.find((item) => item.id === data.id)
-        ? [...listCart, data]
-        : updateQuantity
+      const listProduct = [...listCart, data]
 
       const dataCart = await addCart(listProduct)
 
@@ -88,7 +81,7 @@ const DetailPage = ({ product, error }: DetailPageProps) => {
       } else {
         toast({
           title: 'Success',
-          description: 'Product added successfully.',
+          description: SNACKBAR_ADD_CART_SUCCESS,
           status: 'success',
           isClosable: true,
           position: 'bottom-left',
@@ -113,7 +106,11 @@ const DetailPage = ({ product, error }: DetailPageProps) => {
 
     return (
       <>
-        <CardDetail productDetail={product} handleAddCart={handleAddCart} />
+        <CardDetail
+          isAdded={isAdded}
+          productDetail={product}
+          handleAddCart={handleAddCart}
+        />
         <Box pt={{ base: '24px', md: '123px' }}>
           <Heading
             as="h3"
@@ -131,7 +128,7 @@ const DetailPage = ({ product, error }: DetailPageProps) => {
         </Box>
       </>
     )
-  }, [error, handleAddCart, product])
+  }, [error, isAdded, product])
 
   return (
     <Box pt={{ base: '10px', md: '128px' }} pb="100px">

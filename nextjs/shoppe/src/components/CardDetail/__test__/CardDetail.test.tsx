@@ -11,6 +11,7 @@ describe('CardDetail render', () => {
   const mockProps = {
     productDetail: PRODUCT_DETAIL,
     handleAddCart: jest.fn(),
+    isAdded: false,
   }
   it('Should match data for card component', () => {
     const { container } = render(<CardDetail {...mockProps} />)
@@ -21,10 +22,22 @@ describe('CardDetail render', () => {
   it('Should click button add', () => {
     render(<CardDetail {...mockProps} />)
 
-    const buttonAddCart = screen.getByText('ADD TO CART')
+    const buttonAddCart = screen.getByRole('button', {
+      name: /add to cart/i,
+    })
 
     fireEvent.click(buttonAddCart)
     expect(mockProps.handleAddCart).toBeCalled()
+  })
+
+  it('Should render button in added to cart', () => {
+    render(<CardDetail {...mockProps} isAdded />)
+
+    const buttonAddCart = screen.getByRole('button', {
+      name: /added to cart/i,
+    })
+
+    expect(buttonAddCart).toHaveTextContent('Added to cart')
   })
 
   it('Should click increase and decrease the quantity', () => {

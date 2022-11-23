@@ -7,10 +7,10 @@ import { Box, Heading, Text, useMediaQuery } from '@chakra-ui/react'
 import { IProduct } from '@self-types/index'
 
 // Utils
-import { currencyFormat } from '@utils/index'
+import { currencyFormat, shimmer, toBase64 } from '@utils/index'
 
 // Services
-import myImageLoader from '@services/imageLoader'
+import imageLoader from '@services/imageLoader'
 
 // Constants
 import { BREAKPOINTS } from '@constants/variables'
@@ -52,8 +52,12 @@ const CardProduct = ({ product }: CardProductProps) => {
           height={isMobile ? 136 : 300}
           src={imageUrl}
           alt={name}
-          loader={myImageLoader as ImageLoader}
+          loader={imageLoader as ImageLoader}
           priority
+          placeholder="blur"
+          blurDataURL={`data:image/svg+xml;base64,${toBase64(
+            shimmer(190, 300),
+          )}`}
         />
       </Link>
       <Box pt={{ base: '10px', md: '24px' }} color="dark" fontSize="medium">

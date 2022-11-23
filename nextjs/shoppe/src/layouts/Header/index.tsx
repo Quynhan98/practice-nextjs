@@ -7,10 +7,11 @@ import { Box, Flex, Heading, Text } from '@chakra-ui/react'
 import Icon from '@components/Icon'
 
 // Services
-import myImageLoader from '@services/imageLoader'
+import imageLoader from '@services/imageLoader'
 
 // Types
 import { IProductDetail } from '@self-types/index'
+import { shimmer, toBase64 } from '@utils/index'
 
 interface HeaderProps {
   carts: IProductDetail[]
@@ -35,13 +36,17 @@ const Header = ({ carts }: HeaderProps) => {
       <Heading as="h1">
         <Link href="/">
           <Image
-            loader={myImageLoader as ImageLoader}
+            loader={imageLoader as ImageLoader}
             width={125}
             height={40}
             src="/images/logo.png"
             alt="Logo Shoppe"
             style={{ width: 'auto', height: 'auto' }}
             priority
+            placeholder="blur"
+            blurDataURL={`data:image/svg+xml;base64,${toBase64(
+              shimmer(190, 300),
+            )}`}
           />
         </Link>
       </Heading>
