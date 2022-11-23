@@ -33,6 +33,7 @@
 - **Deploy with Vercel**
 - **Party town**
 - **Chakra UI**
+- **SWR**
 
 ## Developer Tools
 
@@ -67,10 +68,12 @@
 
 ## **How to install and run app**
 
+- **Deployed link:** https://shoppe-app-nextjs.vercel.app/
+
 | Command                                                            | Action                                             |
 | :----------------------------------------------------------------- | :------------------------------------------------- |
 | `git clone git@gitlab.asoft-python.com:nhan.le/react-training.git` | Clone project from gitlab                          |
-| `git checkout feature/practice-nextjs`                             | Switch to branch feature/practice-nextjs           |
+| `git checkout develop`                                             | Switch to branch develop                           |
 | `cd react-training/nextjs/shoppe`                                  | Move to `shoppe` folder                            |
 | `pnpm install`                                                     | Installs dependencies                              |
 | `pnpm dev`                                                         | Run dev production at `http://localhost:3000`      |
@@ -82,3 +85,12 @@
 | `pnpm prepare`                                                     | Install folder .husky                              |
 | `pnpm test`                                                        | Testing application                                |
 | `pnpm test:coverage`                                               | Testing application and get coverage               |
+
+- **Set up file .env.local**
+
+  - Example:
+    ```
+      NEXT_PUBLIC_API_ENDPOINT=https://636ccd6591576e19e3159e5b.mockapi.io/api
+      NEXT_PUBLIC_BASE_URL=http://localhost:3000
+      NEXT_PUBLIC_TRACKING_ID=YOUR-GOOGLE-ID
+    ```
