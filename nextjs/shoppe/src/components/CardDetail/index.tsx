@@ -1,6 +1,13 @@
 import { memo, useState } from 'react'
 import Image, { ImageLoader } from 'next/image'
-import { Box, Flex, Heading, Text, useMediaQuery } from '@chakra-ui/react'
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  Text,
+  useMediaQuery,
+} from '@chakra-ui/react'
 
 // Utils
 import { currencyFormat } from '@utils/index'
@@ -9,7 +16,6 @@ import { currencyFormat } from '@utils/index'
 import { IProductDetail } from '@self-types/index'
 
 // Components
-import Button from '@components/Button'
 import Quantity from '@components/Quantity'
 
 // Services
