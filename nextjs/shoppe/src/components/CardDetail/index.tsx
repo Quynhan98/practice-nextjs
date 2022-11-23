@@ -1,4 +1,4 @@
-import { memo, useState } from 'react'
+import { memo, useCallback, useState } from 'react'
 import Image, { ImageLoader } from 'next/image'
 import {
   Box,
@@ -41,13 +41,16 @@ const CardDetail = ({
   const [isMobile] = useMediaQuery(BREAKPOINTS.MEDIUM)
 
   // Handle increment quantity
-  const handleIncrementQuantity = () => setQuantityProduct(quantityProduct + 1)
+  const handleIncrementQuantity = useCallback(
+    () => setQuantityProduct(quantityProduct + 1),
+    [quantityProduct],
+  )
 
   // Handle decrement quantity
-  const handleDecrementQuantity = () => {
+  const handleDecrementQuantity = useCallback(() => {
     const value = quantityProduct > 1 ? quantityProduct - 1 : 1
     setQuantityProduct(value)
-  }
+  }, [quantityProduct])
 
   // Handle Click button Add to cart
   const handleClickAddCart = () => {

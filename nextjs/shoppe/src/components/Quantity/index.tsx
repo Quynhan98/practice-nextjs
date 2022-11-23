@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import { AddIcon, MinusIcon } from '@chakra-ui/icons'
 import { Box, IconButton, Text } from '@chakra-ui/react'
 
@@ -46,4 +47,13 @@ const Quantity = ({
   )
 }
 
-export default Quantity
+const quantityPropsAreEqual = (
+  prevQuantity: QuantityProps,
+  nextQuantity: QuantityProps,
+) =>
+  prevQuantity.quantity === nextQuantity.quantity &&
+  prevQuantity.onDecrementCartQuantity ===
+    nextQuantity.onDecrementCartQuantity &&
+  prevQuantity.onIncreaseCartQuantity === nextQuantity.onIncreaseCartQuantity
+
+export default memo(Quantity, quantityPropsAreEqual)
