@@ -80,19 +80,28 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
             <CardProduct key={`product-${product.id}`} product={product} />
           ))}
         </Flex>
-        <Button
-          isDisabled={isReachingEnd}
-          isLoading={isLoadingMore}
-          onClick={handleLoadMore}
-          margin="0 auto"
-          variant="primary"
-          size="medium"
-        >
-          Load More
-        </Button>
+        {listProduct.length >= 6 && !paramSearch && (
+          <Button
+            isDisabled={isReachingEnd}
+            isLoading={isLoadingMore}
+            onClick={handleLoadMore}
+            margin="0 auto"
+            variant="primary"
+            size="medium"
+          >
+            Load More
+          </Button>
+        )}
       </>
     )
-  }, [error, isLoadingMore, isReachingEnd, listProduct, paginationError])
+  }, [
+    error,
+    isLoadingMore,
+    isReachingEnd,
+    listProduct,
+    paginationError,
+    paramSearch,
+  ])
 
   // Handle change search
   const handleChangeSearch = (e: ChangeEvent<HTMLInputElement>) => {

@@ -12,7 +12,7 @@ import { fetcherApi } from '@services/index'
 
 export interface SearchPageProps {
   products: IProduct[]
-  error: string
+  error?: string
   paramSearch: string
 }
 
