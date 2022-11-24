@@ -271,6 +271,31 @@ exports[`Search Page render Should show match Search Page DOM Snapshot 1`] = `
             </div>
           </div>
         </div>
+        <button
+          class="chakra-button css-5p8da"
+          data-loading=""
+          disabled=""
+          type="button"
+        >
+          <div
+            class="chakra-button__spinner chakra-button__spinner--start css-1aamklj"
+          >
+            <div
+              class="chakra-spinner css-1wpg9jd"
+            >
+              <span
+                class="css-8b45rq"
+              >
+                Loading...
+              </span>
+            </div>
+          </div>
+          <span
+            class="css-q7lffx"
+          >
+            Load More
+          </span>
+        </button>
       </div>
     </div>
   </div>

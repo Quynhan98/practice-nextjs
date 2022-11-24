@@ -80,7 +80,7 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
             <CardProduct key={`product-${product.id}`} product={product} />
           ))}
         </Flex>
-        {listProduct.length >= 6 && !paramSearch && (
+        {listProduct.length >= 6 && (
           <Button
             isDisabled={isReachingEnd}
             isLoading={isLoadingMore}
