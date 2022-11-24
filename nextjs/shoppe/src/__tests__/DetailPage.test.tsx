@@ -26,10 +26,6 @@ describe('Detail page render', () => {
     const { container } = render(<DetailPage product={MOCK_PRODUCT} />)
 
     expect(container).toMatchSnapshot()
-
-    const value = await getStaticProps({ params: { id: '1' } })
-
-    expect(value).toEqual({ props: { product: MOCK_PRODUCT } })
   })
 
   it('Should show match Detail page with error', async () => {

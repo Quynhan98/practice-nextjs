@@ -20,6 +20,7 @@ export const QuantityDefault: ComponentStory<typeof Quantity> = () => {
       quantity={quantity}
       onIncreaseCartQuantity={incrementQuantity}
       onDecrementCartQuantity={decrementQuantity}
+      isDisable={false}
     />
   )
 }

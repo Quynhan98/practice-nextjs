@@ -45,3 +45,7 @@ export enum BREAKPOINTS {
   LARGE = '(max-width: 960px)',
   EXTRA_LARGE = '(max-width: 1200px)',
 }
+
+export enum STATUS {
+  SOLD_OUT = 'Sold out',
+}

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Products render should match data for Products component 1`] = `
+exports[`Products render should match data for Products component and call search 1`] = `
 <div>
   <div
     class="css-nmq16m"

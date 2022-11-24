@@ -11,7 +11,7 @@ exports[`CardProduct render Should match data for card component 1`] = `
       <p
         class="chakra-text css-1ok93o9"
       >
-        Sold out
+        -25%
       </p>
     </div>
     <img

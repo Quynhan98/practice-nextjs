@@ -1,5 +1,6 @@
 import { memo, useCallback, useState } from 'react'
 import {
+  Box,
   Button,
   Center,
   Flex,
@@ -19,7 +20,7 @@ import { IProductDetail } from '@self-types/index'
 import Quantity from '@components/Quantity'
 
 // Constants
-import { BREAKPOINTS } from '@constants/variables'
+import { BREAKPOINTS, STATUS } from '@constants/index'
 
 interface CardDetailProps {
   isAdded?: boolean
@@ -32,7 +33,7 @@ const CardDetail = ({
   productDetail,
   handleAddCart,
 }: CardDetailProps) => {
-  const { name, price, imageUrl, id, introduction } = productDetail
+  const { name, price, imageUrl, id, introduction, status } = productDetail
 
   const [quantityProduct, setQuantityProduct] = useState<number>(1)
   const [isMobile] = useMediaQuery(BREAKPOINTS.MEDIUM)
@@ -66,13 +67,32 @@ const CardDetail = ({
       maxW="1248px"
     >
       <Center>
-        <RenderImage
-          width={isMobile ? 288 : 560}
-          height={isMobile ? 374 : 600}
-          src={imageUrl}
-          alt={name}
-          priority
-        />
+        <Box position="relative" width={{ base: '288px', md: '560px' }}>
+          {status && (
+            <Box
+              position="absolute"
+              top="26px"
+              left="26px"
+              background="beaver"
+              borderRadius="4px"
+              textAlign="center"
+              padding="3px 6px"
+            >
+              <Text
+                fontSize={{ base: 'extraSmall', md: 'base' }}
+                textColor="light"
+              >
+                {status}
+              </Text>
+            </Box>
+          )}
+          <RenderImage
+            width={isMobile ? 288 : 560}
+            height={isMobile ? 374 : 600}
+            src={imageUrl}
+            alt={name}
+          />
+        </Box>
       </Center>
       <Flex h="full" direction="column">
         <Heading
@@ -107,13 +127,14 @@ const CardDetail = ({
         >
           {!isMobile && (
             <Quantity
+              isDisable={isAdded || status === STATUS.SOLD_OUT}
               onIncreaseCartQuantity={handleIncrementQuantity}
               onDecrementCartQuantity={handleDecrementQuantity}
               quantity={quantityProduct}
             />
           )}
           <Button
-            isDisabled={isAdded}
+            isDisabled={isAdded || status === STATUS.SOLD_OUT}
             onClick={handleClickAddCart}
             size={isMobile ? 'full' : 'default'}
             variant={isMobile ? 'small' : 'primary'}

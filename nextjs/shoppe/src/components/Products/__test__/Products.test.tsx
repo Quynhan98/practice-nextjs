@@ -1,5 +1,5 @@
 // Utils
-import { render, screen } from '@utils/testUtils'
+import { render, screen, fireEvent } from '@utils/testUtils'
 
 // Components
 import Products from '@components/Products'
@@ -15,13 +15,19 @@ describe('Products render', () => {
     products: LIST_PRODUCT,
   }
 
-  it('should match data for Products component', () => {
+  it('should match data for Products component and call search', () => {
     const { container } = render(<Products {...props} />)
 
     expect(container).toMatchSnapshot()
 
     const nameProducts = screen.getAllByRole('heading', { level: 3 })
     expect(nameProducts.length).toBe(LIST_PRODUCT.length)
+
+    const search = screen.getByRole('textbox') as HTMLInputElement
+    fireEvent.change(search, {
+      target: { value: 'Search Value' },
+    })
+    expect(search.value).toBe('Search Value')
   })
 
   it('Should show error', () => {

@@ -3,12 +3,14 @@ import { AddIcon, MinusIcon } from '@chakra-ui/icons'
 import { Box, IconButton, Text } from '@chakra-ui/react'
 
 interface QuantityProps {
+  isDisable: boolean
   quantity: number
   onIncreaseCartQuantity: () => void
   onDecrementCartQuantity: () => void
 }
 
 const Quantity = ({
+  isDisable,
   quantity,
   onIncreaseCartQuantity,
   onDecrementCartQuantity,
@@ -23,6 +25,7 @@ const Quantity = ({
       borderRadius="4px"
     >
       <IconButton
+        isDisabled={isDisable}
         data-testid="decrement-button"
         color="secondary"
         fontSize="x-small"
@@ -35,6 +38,7 @@ const Quantity = ({
         {quantity}
       </Text>
       <IconButton
+        isDisabled={isDisable}
         data-testid="increase-button"
         color="secondary"
         fontSize="x-small"
@@ -52,6 +56,7 @@ const quantityPropsAreEqual = (
   nextQuantity: QuantityProps,
 ) =>
   prevQuantity.quantity === nextQuantity.quantity &&
+  prevQuantity.isDisable === nextQuantity.isDisable &&
   prevQuantity.onDecrementCartQuantity ===
     nextQuantity.onDecrementCartQuantity &&
   prevQuantity.onIncreaseCartQuantity === nextQuantity.onIncreaseCartQuantity

@@ -9,6 +9,7 @@ describe('Quantity render', () => {
     quantity: 1,
     onIncreaseCartQuantity: jest.fn(),
     onDecrementCartQuantity: jest.fn(),
+    isDisable: false,
   }
   it('Should show match Quantity DOM Snapshot', () => {
     const { container } = render(<Quantity {...mockProps} />)

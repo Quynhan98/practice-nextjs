@@ -11,16 +11,30 @@ exports[`Detail page render Should show match Detail page DOM Snapshot 1`] = `
       <div
         class="css-gmuwbf"
       >
-        <img
-          alt="Lira Earrings"
-          data-nimg="1"
-          decoding="async"
-          height="600"
-          src="http://localhost:3000/https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=1200&q=75"
-          srcset="http://localhost:3000/https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=640&q=75 1x, http://localhost:3000/https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=1200&q=75 2x"
-          style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
-          width="560"
-        />
+        <div
+          class="css-uetzqw"
+        >
+          <div
+            class="css-18ju09y"
+          >
+            <p
+              class="chakra-text css-1yy0g5x"
+            >
+              -25%
+            </p>
+          </div>
+          <img
+            alt="Lira Earrings"
+            data-nimg="1"
+            decoding="async"
+            height="600"
+            loading="lazy"
+            src="http://localhost:3000/https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=1200&q=75"
+            srcset="http://localhost:3000/https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=640&q=75 1x, http://localhost:3000/https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=1200&q=75 2x"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="560"
+          />
+        </div>
       </div>
       <div
         class="css-14sa009"

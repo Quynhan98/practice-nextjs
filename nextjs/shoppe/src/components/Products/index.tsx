@@ -52,6 +52,32 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
     setSize(size + 1)
   }, [setSize, size])
 
+  // Handle change search
+  const handleChangeSearch = (e: ChangeEvent<HTMLInputElement>) => {
+    const inputSearchValue = e.target.value
+
+    if (inputSearchValue) {
+      setSearchValue(inputSearchValue)
+    } else {
+      router.push('/')
+    }
+  }
+
+  // Handle search when user press enter
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (searchTerm && e.key === 'Enter') {
+      router.push(`/search?param=${searchTerm}`)
+    }
+  }
+  // Handle search when user press submit button
+  const handleSubmitSearch = () => {
+    if (searchTerm) {
+      router.push(`/search?param=${searchTerm}`)
+    } else {
+      router.push('/')
+    }
+  }
+
   const renderContent = useMemo(() => {
     if (error || paginationError) {
       return (
@@ -94,42 +120,7 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
         )}
       </>
     )
-  }, [
-    error,
-    isLoadingMore,
-    isReachingEnd,
-    listProduct,
-    paginationError,
-    paramSearch,
-  ])
-
-  // Handle change search
-  const handleChangeSearch = (e: ChangeEvent<HTMLInputElement>) => {
-    const inputSearchValue = e.target.value
-
-    if (inputSearchValue) {
-      setSearchValue(inputSearchValue)
-    } else {
-      router.push('/')
-    }
-  }
-
-  // Handle search when user press enter
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (searchTerm && e.key === 'Enter') {
-      router.push(`/search?param=${searchTerm}`)
-    } else {
-      router.push('/')
-    }
-  }
-  // Handle search when user press submit button
-  const handleSubmitSearch = () => {
-    if (searchTerm) {
-      router.push(`/search?param=${searchTerm}`)
-    } else {
-      router.push('/')
-    }
-  }
+  }, [error, isLoadingMore, isReachingEnd, listProduct, paginationError])
 
   return (
     <Box pt={{ base: '10px', md: '96px' }}>
