@@ -90,7 +90,7 @@
 
   - Example:
     ```
-      NEXT_PUBLIC_API_ENDPOINT=https://636ccd6591576e19e3159e5b.mockapi.io/api
-      NEXT_PUBLIC_BASE_URL=http://localhost:3000
+      NEXT_PUBLIC_API_ENDPOINT=http://yourApi:3006/
+      NEXT_PUBLIC_BASE_URL=http://yourApi:3000/
       NEXT_PUBLIC_TRACKING_ID=YOUR-GOOGLE-ID
     ```
