@@ -1,5 +1,4 @@
 import { memo, useCallback, useState } from 'react'
-import Image, { ImageLoader } from 'next/image'
 import {
   Button,
   Center,
@@ -10,16 +9,14 @@ import {
 } from '@chakra-ui/react'
 
 // Utils
-import { currencyFormat, shimmer, toBase64 } from '@utils/index'
+import { currencyFormat } from '@utils/index'
+import { RenderImage } from '@utils/renderImage'
 
 // Types
 import { IProductDetail } from '@self-types/index'
 
 // Components
 import Quantity from '@components/Quantity'
-
-// Services
-import imageLoader from '@services/imageLoader'
 
 // Constants
 import { BREAKPOINTS } from '@constants/variables'
@@ -69,17 +66,12 @@ const CardDetail = ({
       maxW="1248px"
     >
       <Center>
-        <Image
+        <RenderImage
           width={isMobile ? 288 : 560}
           height={isMobile ? 374 : 600}
           src={imageUrl}
           alt={name}
-          loader={imageLoader as ImageLoader}
           priority
-          placeholder="blur"
-          blurDataURL={`data:image/svg+xml;base64,${toBase64(
-            shimmer(560, 600),
-          )}`}
         />
       </Center>
       <Flex h="full" direction="column">

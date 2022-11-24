@@ -1,16 +1,13 @@
 import { memo } from 'react'
 import Link from 'next/link'
-import Image, { ImageLoader } from 'next/image'
 import { Box, Heading, Text, useMediaQuery } from '@chakra-ui/react'
 
 // Types
 import { IProduct } from '@self-types/index'
 
 // Utils
-import { currencyFormat, shimmer, toBase64 } from '@utils/index'
-
-// Services
-import imageLoader from '@services/imageLoader'
+import { currencyFormat } from '@utils/index'
+import { RenderImage } from '@utils/renderImage'
 
 // Constants
 import { BREAKPOINTS } from '@constants/variables'
@@ -47,17 +44,11 @@ const CardProduct = ({ product }: CardProductProps) => {
         </Box>
       )}
       <Link href={`/products/${id}`} key={id}>
-        <Image
+        <RenderImage
           width={isMobile ? 136 : 300}
           height={isMobile ? 136 : 300}
           src={imageUrl}
           alt={name}
-          loader={imageLoader as ImageLoader}
-          priority
-          placeholder="blur"
-          blurDataURL={`data:image/svg+xml;base64,${toBase64(
-            shimmer(300, 300),
-          )}`}
         />
       </Link>
       <Box pt={{ base: '10px', md: '24px' }} color="dark" fontSize="medium">

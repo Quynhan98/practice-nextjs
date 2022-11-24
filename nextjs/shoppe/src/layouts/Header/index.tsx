@@ -1,17 +1,15 @@
 import { memo, useMemo } from 'react'
 import Link from 'next/link'
-import Image, { ImageLoader } from 'next/image'
 import { Box, Flex, Heading, Text } from '@chakra-ui/react'
 
 // Components
 import Icon from '@components/Icon'
 
-// Services
-import imageLoader from '@services/imageLoader'
-
 // Types
 import { IProductDetail } from '@self-types/index'
-import { shimmer, toBase64 } from '@utils/index'
+
+// Utils
+import { RenderImage } from '@utils/renderImage'
 
 interface HeaderProps {
   carts: IProductDetail[]
@@ -35,18 +33,13 @@ const Header = ({ carts }: HeaderProps) => {
     >
       <Heading as="h1">
         <Link href="/">
-          <Image
-            loader={imageLoader as ImageLoader}
+          <RenderImage
             width={125}
             height={40}
             src="/images/logo.png"
             alt="Logo Shoppe"
-            style={{ width: 'auto', height: 'auto' }}
             priority
-            placeholder="blur"
-            blurDataURL={`data:image/svg+xml;base64,${toBase64(
-              shimmer(125, 40),
-            )}`}
+            style={{ width: 'auto', height: 'auto' }}
           />
         </Link>
       </Heading>
