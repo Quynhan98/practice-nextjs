@@ -56,7 +56,7 @@ const CardProduct = ({ product }: CardProductProps) => {
           priority
           placeholder="blur"
           blurDataURL={`data:image/svg+xml;base64,${toBase64(
-            shimmer(190, 300),
+            shimmer(300, 300),
           )}`}
         />
       </Link>
@@ -68,7 +68,9 @@ const CardProduct = ({ product }: CardProductProps) => {
           color="dark"
           maxW={{ base: '136px', md: '300px' }}
         >
-          <Link href={`/products/${id}`}>{name}</Link>
+          <Link href={`/products/${id}`} prefetch={false}>
+            {name}
+          </Link>
         </Heading>
         <Text mt="16px" textColor="beaver">
           {currencyFormat(price)}

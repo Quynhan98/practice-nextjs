@@ -15,6 +15,7 @@ import { SERVER_ERROR, SNACKBAR_ADD_CART_SUCCESS } from '@constants/index'
 
 // Hooks
 import { useCartContext } from '@hooks/useCartContext'
+import { useLoadingContext } from '@hooks/useLoadingContext'
 
 export interface DetailPageProps {
   product?: IProductDetail
@@ -59,6 +60,7 @@ export const getStaticProps = async (context: { params: { id: string } }) => {
 
 const DetailPage = ({ product, error }: DetailPageProps) => {
   const toast = useToast()
+  const { setLoading } = useLoadingContext()
   const { listCart, addCart } = useCartContext()
 
   const isAdded = product && !!listCart.find((item) => item.id === product.id)
@@ -68,6 +70,7 @@ const DetailPage = ({ product, error }: DetailPageProps) => {
     async (data: IProductDetail) => {
       const listProduct = [...listCart, data]
 
+      setLoading(true)
       const dataCart = await addCart(listProduct)
 
       if (typeof dataCart === 'string') {
@@ -87,6 +90,8 @@ const DetailPage = ({ product, error }: DetailPageProps) => {
           position: 'bottom-left',
         })
       }
+
+      setLoading(false)
     },
     [listCart, toast],
   )

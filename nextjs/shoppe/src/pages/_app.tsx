@@ -19,6 +19,7 @@ import { ErrorBoundary } from '@components/ErrorBoundary'
 
 // Contexts
 import { CartProvider } from '@contexts/CartProvider'
+import { LoadingProvider } from '@contexts/LoadingProvider'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -30,9 +31,11 @@ export default function App({ Component, pageProps }: AppProps) {
       <ChakraProvider theme={customTheme}>
         <ErrorBoundary>
           <CartProvider>
-            <PageLayout>
-              <Component {...pageProps} />
-            </PageLayout>
+            <LoadingProvider>
+              <PageLayout>
+                <Component {...pageProps} />
+              </PageLayout>
+            </LoadingProvider>
           </CartProvider>
         </ErrorBoundary>
       </ChakraProvider>

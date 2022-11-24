@@ -1,8 +1,8 @@
 import { memo, useCallback, useState } from 'react'
 import Image, { ImageLoader } from 'next/image'
 import {
-  Box,
   Button,
+  Center,
   Flex,
   Heading,
   Text,
@@ -63,13 +63,12 @@ const CardDetail = ({
   }
 
   return (
-    <Box display="flex" justifyContent="space-between" maxW="1248px">
-      <Box
-        display="flex"
-        gap={{ base: '40px', md: '78px' }}
-        flexDirection={{ base: 'column', md: 'unset' }}
-        margin="0 auto"
-      >
+    <Flex
+      gap={{ base: '40px', md: '78px' }}
+      flexDirection={{ base: 'column', md: 'unset' }}
+      maxW="1248px"
+    >
+      <Center>
         <Image
           width={isMobile ? 288 : 560}
           height={isMobile ? 374 : 600}
@@ -77,62 +76,61 @@ const CardDetail = ({
           alt={name}
           loader={imageLoader as ImageLoader}
           priority
-          style={{ width: 'auto', height: 'auto' }}
           placeholder="blur"
           blurDataURL={`data:image/svg+xml;base64,${toBase64(
-            shimmer(190, 300),
+            shimmer(560, 600),
           )}`}
         />
-        <Flex h="full" direction="column">
-          <Heading
-            as="h2"
-            fontSize="26px"
-            fontWeight="base"
-            textColor="dark"
-            data-testid={`link-to-detail-page/${id}`}
+      </Center>
+      <Flex h="full" direction="column">
+        <Heading
+          as="h2"
+          fontSize="26px"
+          fontWeight="base"
+          textColor="dark"
+          data-testid={`link-to-detail-page/${id}`}
+        >
+          {name}
+        </Heading>
+        <Text
+          fontSize="20px"
+          mt={{ base: '10px', md: '24px' }}
+          textColor="beaver"
+        >
+          {currencyFormat(price)}
+        </Text>
+        <Text
+          fontSize={{ base: 'extraSmall', md: 'base' }}
+          mt={{ base: '16px', md: '46px' }}
+          textAlign="justify"
+          minW="288px"
+          maxW="630px"
+        >
+          {introduction}
+        </Text>
+        <Flex
+          flexDirection={{ base: 'column', md: 'unset' }}
+          mt={{ base: '24px', md: '75px' }}
+          gap="58px"
+        >
+          {!isMobile && (
+            <Quantity
+              onIncreaseCartQuantity={handleIncrementQuantity}
+              onDecrementCartQuantity={handleDecrementQuantity}
+              quantity={quantityProduct}
+            />
+          )}
+          <Button
+            isDisabled={isAdded}
+            onClick={handleClickAddCart}
+            size={isMobile ? 'full' : 'default'}
+            variant={isMobile ? 'small' : 'primary'}
           >
-            {name}
-          </Heading>
-          <Text
-            fontSize="20px"
-            mt={{ base: '10px', md: '24px' }}
-            textColor="beaver"
-          >
-            {currencyFormat(price)}
-          </Text>
-          <Text
-            fontSize={{ base: 'extraSmall', md: 'base' }}
-            mt={{ base: '16px', md: '46px' }}
-            textAlign="justify"
-            minW="288px"
-            maxW="630px"
-          >
-            {introduction}
-          </Text>
-          <Flex
-            flexDirection={{ base: 'column', md: 'unset' }}
-            mt={{ base: '24px', md: '75px' }}
-            gap="58px"
-          >
-            {!isMobile && (
-              <Quantity
-                onIncreaseCartQuantity={handleIncrementQuantity}
-                onDecrementCartQuantity={handleDecrementQuantity}
-                quantity={quantityProduct}
-              />
-            )}
-            <Button
-              isDisabled={isAdded}
-              onClick={handleClickAddCart}
-              size={isMobile ? 'full' : 'default'}
-              variant={isMobile ? 'small' : 'primary'}
-            >
-              {isAdded ? 'Added to cart' : 'Add to cart'}
-            </Button>
-          </Flex>
+            {isAdded ? 'Added to cart' : 'Add to cart'}
+          </Button>
         </Flex>
-      </Box>
-    </Box>
+      </Flex>
+    </Flex>
   )
 }
 

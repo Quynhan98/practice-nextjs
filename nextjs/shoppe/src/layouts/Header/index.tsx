@@ -45,7 +45,7 @@ const Header = ({ carts }: HeaderProps) => {
             priority
             placeholder="blur"
             blurDataURL={`data:image/svg+xml;base64,${toBase64(
-              shimmer(190, 300),
+              shimmer(125, 40),
             )}`}
           />
         </Link>

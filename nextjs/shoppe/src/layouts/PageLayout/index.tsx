@@ -5,7 +5,13 @@ import { ReactNode } from 'react'
 // Layouts
 import Header from '@layouts/Header'
 import Footer from '@layouts/Footer'
+
+// Hooks
 import { useCartContext } from '@hooks/useCartContext'
+import { useLoadingContext } from '@hooks/useLoadingContext'
+
+// Components
+import LoadingIndicator from '@components/LoadingIndicator'
 
 interface PageLayoutProps {
   children: ReactNode
@@ -13,6 +19,7 @@ interface PageLayoutProps {
 
 const PageLayout = ({ children }: PageLayoutProps) => {
   const { listCart } = useCartContext()
+  const { loading } = useLoadingContext()
 
   return (
     <>
@@ -33,6 +40,7 @@ const PageLayout = ({ children }: PageLayoutProps) => {
         {children}
       </Box>
       <Footer />
+      {loading && <LoadingIndicator size="lg" />}
     </>
   )
 }

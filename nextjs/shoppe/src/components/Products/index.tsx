@@ -92,14 +92,7 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
         </Button>
       </>
     )
-  }, [
-    error,
-    isLoadingMore,
-    isReachingEnd,
-    listProduct,
-    paginatedData,
-    paginationError,
-  ])
+  }, [error, isLoadingMore, isReachingEnd, listProduct, paginationError])
 
   // Handle change search
   const handleChangeSearch = (e: ChangeEvent<HTMLInputElement>) => {
@@ -116,6 +109,8 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (searchTerm && e.key === 'Enter') {
       router.push(`/search?param=${searchTerm}`)
+    } else {
+      router.push('/')
     }
   }
   // Handle search when user press submit button
@@ -123,7 +118,7 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
     if (searchTerm) {
       router.push(`/search?param=${searchTerm}`)
     } else {
-      router.push('/search')
+      router.push('/')
     }
   }
 
