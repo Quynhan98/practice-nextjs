@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import { Box } from '@chakra-ui/react'
-import { ReactNode } from 'react'
+import { Box, Spinner } from '@chakra-ui/react'
+import { lazy, ReactNode, Suspense } from 'react'
 
 // Layouts
 import Header from '@layouts/Header'
-import Footer from '@layouts/Footer'
 
 // Hooks
 import { useCartContext } from '@hooks/useCartContext'
@@ -12,6 +11,8 @@ import { useLoadingContext } from '@hooks/useLoadingContext'
 
 // Components
 import LoadingIndicator from '@components/LoadingIndicator'
+
+const Footer = lazy(() => import('@layouts/Footer'))
 
 interface PageLayoutProps {
   children: ReactNode
@@ -39,7 +40,9 @@ const PageLayout = ({ children }: PageLayoutProps) => {
       >
         {children}
       </Box>
-      <Footer />
+      <Suspense fallback={<Spinner />}>
+        <Footer />
+      </Suspense>
       {loading && <LoadingIndicator size="lg" />}
     </>
   )
