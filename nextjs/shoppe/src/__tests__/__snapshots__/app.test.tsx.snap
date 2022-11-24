@@ -1,0 +1,286 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App render Should show match App DOM Snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body
+    class="chakra-ui-light"
+  >
+    <div>
+      <header
+        class="css-15otjsi"
+      >
+        <h1
+          class="chakra-heading css-dp3sr4"
+        >
+          <img
+            alt="Logo Shoppe"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            src="http://localhost:3000//images/logo.png?w=256&q=75"
+            srcset="http://localhost:3000//images/logo.png?w=128&q=75 1x, http://localhost:3000//images/logo.png?w=256&q=75 2x"
+            style="color: transparent; width: auto; height: auto; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="125"
+          />
+        </h1>
+        <div
+          class="css-79elbk"
+        >
+          <div
+            class="css-c3i4bm"
+          >
+            <img
+              alt="Shopping Cart Icon"
+              data-nimg="fill"
+              data-testid="image"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="http://localhost:3000//images/shoppingCart.svg?w=3840&q=75"
+              srcset="http://localhost:3000//images/shoppingCart.svg?w=640&q=75 640w, http://localhost:3000//images/shoppingCart.svg?w=750&q=75 750w, http://localhost:3000//images/shoppingCart.svg?w=828&q=75 828w, http://localhost:3000//images/shoppingCart.svg?w=1080&q=75 1080w, http://localhost:3000//images/shoppingCart.svg?w=1200&q=75 1200w, http://localhost:3000//images/shoppingCart.svg?w=1920&q=75 1920w, http://localhost:3000//images/shoppingCart.svg?w=2048&q=75 2048w, http://localhost:3000//images/shoppingCart.svg?w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            />
+          </div>
+          <div
+            class="css-2jnr0l"
+          >
+            <p
+              class="chakra-text css-1xb8dar"
+            >
+              0
+            </p>
+          </div>
+        </div>
+      </header>
+      <main
+        class="css-7iu33a"
+      >
+        <div>
+          Mocked Test Component
+        </div>
+      </main>
+      <div
+        class="chakra-spinner css-nkpswe"
+      >
+        <span
+          class="css-8b45rq"
+        >
+          Loading...
+        </span>
+      </div>
+      <span
+        hidden=""
+        id="__chakra_env"
+      />
+      <span
+        hidden=""
+        id="__chakra_env"
+      />
+    </div>
+    <div
+      class="chakra-portal"
+    >
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-top"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-top-left"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-top-right"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-bottom-left"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-bottom"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-bottom-right"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+    </div>
+    <div
+      class="chakra-portal"
+    >
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-top"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-top-left"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-top-right"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-bottom-left"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-bottom"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+      />
+      <ul
+        aria-live="polite"
+        id="chakra-toast-manager-bottom-right"
+        role="region"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="css-15otjsi"
+    >
+      <h1
+        class="chakra-heading css-dp3sr4"
+      >
+        <img
+          alt="Logo Shoppe"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          src="http://localhost:3000//images/logo.png?w=256&q=75"
+          srcset="http://localhost:3000//images/logo.png?w=128&q=75 1x, http://localhost:3000//images/logo.png?w=256&q=75 2x"
+          style="color: transparent; width: auto; height: auto; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+          width="125"
+        />
+      </h1>
+      <div
+        class="css-79elbk"
+      >
+        <div
+          class="css-c3i4bm"
+        >
+          <img
+            alt="Shopping Cart Icon"
+            data-nimg="fill"
+            data-testid="image"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="http://localhost:3000//images/shoppingCart.svg?w=3840&q=75"
+            srcset="http://localhost:3000//images/shoppingCart.svg?w=640&q=75 640w, http://localhost:3000//images/shoppingCart.svg?w=750&q=75 750w, http://localhost:3000//images/shoppingCart.svg?w=828&q=75 828w, http://localhost:3000//images/shoppingCart.svg?w=1080&q=75 1080w, http://localhost:3000//images/shoppingCart.svg?w=1200&q=75 1200w, http://localhost:3000//images/shoppingCart.svg?w=1920&q=75 1920w, http://localhost:3000//images/shoppingCart.svg?w=2048&q=75 2048w, http://localhost:3000//images/shoppingCart.svg?w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+          />
+        </div>
+        <div
+          class="css-2jnr0l"
+        >
+          <p
+            class="chakra-text css-1xb8dar"
+          >
+            0
+          </p>
+        </div>
+      </div>
+    </header>
+    <main
+      class="css-7iu33a"
+    >
+      <div>
+        Mocked Test Component
+      </div>
+    </main>
+    <div
+      class="chakra-spinner css-nkpswe"
+    >
+      <span
+        class="css-8b45rq"
+      >
+        Loading...
+      </span>
+    </div>
+    <span
+      hidden=""
+      id="__chakra_env"
+    />
+    <span
+      hidden=""
+      id="__chakra_env"
+    />
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

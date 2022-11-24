@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoadingIndicator component should be renders loading indicator snapshot 1`] = `
+<div>
+  <div
+    class="css-1toluv3"
+  >
+    <div
+      class="chakra-spinner css-nkpswe"
+    >
+      <span
+        class="css-8b45rq"
+      >
+        Loading...
+      </span>
+    </div>
+  </div>
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
+</div>
+`;

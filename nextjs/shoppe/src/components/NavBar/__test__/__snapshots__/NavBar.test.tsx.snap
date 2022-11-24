@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar component Renders NavBar correctly 1`] = `
+<div>
+  <nav
+    class="css-34qmr9"
+  >
+    <a
+      href="/"
+    >
+      Contact
+    </a>
+    <a
+      href="/"
+    >
+      Terms of services
+    </a>
+    <a
+      href="/"
+    >
+      Shipping and Return
+    </a>
+  </nav>
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
+</div>
+`;
