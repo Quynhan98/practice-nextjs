@@ -113,8 +113,8 @@ const DetailPage = ({ product, error }: DetailPageProps) => {
       <>
         <CardDetail
           isAdded={isAdded}
-          productDetail={product}
           handleAddCart={handleAddCart}
+          {...product}
         />
         <Box pt={{ base: '24px', md: '123px' }}>
           <Heading

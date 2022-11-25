@@ -23,6 +23,7 @@ exports[`Home render Should show match Home DOM Snapshot 1`] = `
             class="chakra-input css-b2ycb2"
             placeholder="Search..."
             type="text"
+            value=""
           />
           <button
             aria-label="Search database"

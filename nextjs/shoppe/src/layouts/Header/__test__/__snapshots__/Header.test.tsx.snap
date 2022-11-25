@@ -43,7 +43,7 @@ exports[`Header render Should Header match Snapshot 1`] = `
         <p
           class="chakra-text css-1xb8dar"
         >
-          2
+          0
         </p>
       </div>
     </div>

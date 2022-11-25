@@ -5,19 +5,18 @@ import { Box, Flex, Heading, Text } from '@chakra-ui/react'
 // Components
 import Icon from '@components/Icon'
 
-// Types
-import { IProductDetail } from '@self-types/index'
-
 // Utils
 import { RenderImage } from '@utils/renderImage'
 
-interface HeaderProps {
-  carts: IProductDetail[]
-}
-const Header = ({ carts }: HeaderProps) => {
+// Hooks
+import { useCartContext } from '@hooks/useCartContext'
+
+const Header = () => {
+  const { listCart } = useCartContext()
+
   const quantity = useMemo(() => {
-    return carts.length
-  }, [carts.length])
+    return listCart.length
+  }, [listCart.length])
 
   return (
     <Flex

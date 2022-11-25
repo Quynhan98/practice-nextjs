@@ -24,17 +24,25 @@ import { BREAKPOINTS, STATUS } from '@constants/index'
 
 interface CardDetailProps {
   isAdded?: boolean
-  productDetail: IProductDetail
+  name: string
+  price: number
+  imageUrl: string
+  id: number
+  introduction: string
+  status?: string
   handleAddCart: (data: IProductDetail) => void
 }
 
 const CardDetail = ({
+  name,
+  price,
+  imageUrl,
+  id,
+  introduction,
+  status,
   isAdded,
-  productDetail,
   handleAddCart,
 }: CardDetailProps) => {
-  const { name, price, imageUrl, id, introduction, status } = productDetail
-
   const [quantityProduct, setQuantityProduct] = useState<number>(1)
   const [isMobile] = useMediaQuery(BREAKPOINTS.MEDIUM)
 
@@ -53,7 +61,12 @@ const CardDetail = ({
   // Handle Click button Add to cart
   const handleClickAddCart = () => {
     const newCart: IProductDetail = {
-      ...productDetail,
+      name,
+      price,
+      imageUrl,
+      id,
+      introduction,
+      status,
       quantity: quantityProduct,
     }
 

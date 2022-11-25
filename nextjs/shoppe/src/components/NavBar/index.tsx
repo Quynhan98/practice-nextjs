@@ -1,9 +1,6 @@
 import { memo } from 'react'
-import { Box, BoxProps, useMediaQuery } from '@chakra-ui/react'
+import { Box, BoxProps, ListItem, UnorderedList } from '@chakra-ui/react'
 import Link from 'next/link'
-
-// Constants
-import { BREAKPOINTS } from '@constants/variables'
 
 type NavType = {
   value: number
@@ -16,30 +13,29 @@ interface NavBarProps extends BoxProps {
 }
 
 const NavBar = ({ navList, ...rest }: NavBarProps) => {
-  const [isMobile] = useMediaQuery(BREAKPOINTS.MEDIUM)
-
   return (
-    <Box
-      as="nav"
-      textTransform="uppercase"
-      display="flex"
-      fontSize="16px"
-      gap={{ base: '8px', md: '41px' }}
-      color="secondary"
-      {...rest}
-    >
-      {navList.map((obj) => (
-        <Link
-          href={obj.href}
-          key={obj.value}
-          style={{
-            fontSize: isMobile ? '12px' : '16px',
-            maxWidth: isMobile ? '135px' : '100%',
-          }}
-        >
-          {obj.name}
-        </Link>
-      ))}
+    <Box as="nav" {...rest}>
+      <UnorderedList
+        display="flex"
+        flexDirection={{ base: 'column', md: 'unset' }}
+        justifyContent={{ base: 'flex-start', md: 'space-between' }}
+        fontSize="16px"
+        gap={{ base: '8px', md: '41px' }}
+        marginLeft="0px"
+      >
+        {navList.map((obj) => (
+          <ListItem
+            key={obj.value}
+            color="secondary"
+            textTransform="uppercase"
+            listStyleType="none"
+            fontSize={{ base: '12px', md: '16px' }}
+            maxW={{ base: '135px', md: '100%' }}
+          >
+            <Link href={obj.href}>{obj.name}</Link>
+          </ListItem>
+        ))}
+      </UnorderedList>
     </Box>
   )
 }

@@ -103,7 +103,7 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
       <>
         <Flex flexWrap="wrap" gap="24px" paddingBottom="60px">
           {listProduct.map((product) => (
-            <CardProduct key={`product-${product.id}`} product={product} />
+            <CardProduct key={`product-${product.id}`} {...product} />
           ))}
         </Flex>
         {listProduct.length >= 6 && (
@@ -144,6 +144,7 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
             onKeyDown={handleKeyDown}
             onClick={handleSubmitSearch}
             placeholder="Search..."
+            defaultValue={paramSearch}
           />
           <Heading
             as="h2"

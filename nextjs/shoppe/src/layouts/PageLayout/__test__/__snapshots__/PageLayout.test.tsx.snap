@@ -66,5 +66,9 @@ exports[`PageLayout render Should PageLayout match Snapshot 1`] = `
     hidden=""
     id="__chakra_env"
   />
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
 </div>
 `;

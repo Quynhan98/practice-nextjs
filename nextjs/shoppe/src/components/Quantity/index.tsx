@@ -56,9 +56,6 @@ const quantityPropsAreEqual = (
   nextQuantity: QuantityProps,
 ) =>
   prevQuantity.quantity === nextQuantity.quantity &&
-  prevQuantity.isDisable === nextQuantity.isDisable &&
-  prevQuantity.onDecrementCartQuantity ===
-    nextQuantity.onDecrementCartQuantity &&
-  prevQuantity.onIncreaseCartQuantity === nextQuantity.onIncreaseCartQuantity
+  prevQuantity.isDisable === nextQuantity.isDisable
 
 export default memo(Quantity, quantityPropsAreEqual)

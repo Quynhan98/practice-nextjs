@@ -12,12 +12,7 @@ import { RenderImage } from '@utils/renderImage'
 // Constants
 import { BREAKPOINTS } from '@constants/variables'
 
-interface CardProductProps {
-  product: IProduct
-}
-
-const CardProduct = ({ product }: CardProductProps) => {
-  const { imageUrl, status, name, price, id } = product
+const CardProduct = ({ imageUrl, status, name, price, id }: IProduct) => {
   const [isMobile] = useMediaQuery(BREAKPOINTS.MEDIUM)
 
   return (

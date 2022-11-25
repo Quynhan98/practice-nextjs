@@ -23,6 +23,7 @@ exports[`Products render should match data for Products component and call searc
             class="chakra-input css-b2ycb2"
             placeholder="Search..."
             type="text"
+            value=""
           />
           <button
             aria-label="Search database"
