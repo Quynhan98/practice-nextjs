@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 import { Box, BoxProps } from '@chakra-ui/react'
 
 // Components
-import ImageComponent from '@components/Image'
+import ImageBlur from '@components/ImageBlur'
 
 interface IconProps extends BoxProps {
   srcIcon: string
@@ -12,7 +12,7 @@ interface IconProps extends BoxProps {
 const Icon = ({ srcIcon, alt, ...rest }: IconProps) => {
   return (
     <Box position="relative" display="flex" alignItems="flex-end" {...rest}>
-      <ImageComponent src={srcIcon} alt={alt} data-testid="image" fill />
+      <ImageBlur src={srcIcon} alt={alt} data-testid="image" fill />
     </Box>
   )
 }

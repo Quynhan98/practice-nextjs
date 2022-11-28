@@ -12,7 +12,7 @@ import { currencyFormat } from '@utils/index'
 import { BREAKPOINTS } from '@constants/variables'
 
 // Components
-import ImageComponent from '@components/Image'
+import ImageBlur from '@components/ImageBlur'
 
 const CardProduct = ({ imageUrl, status, name, price, id }: IProduct) => {
   const [isMobile] = useMediaQuery(BREAKPOINTS.MEDIUM)
@@ -41,7 +41,7 @@ const CardProduct = ({ imageUrl, status, name, price, id }: IProduct) => {
         </Box>
       )}
       <Link href={`/products/${id}`} key={id}>
-        <ImageComponent
+        <ImageBlur
           width={isMobile ? 136 : 300}
           height={isMobile ? 136 : 300}
           src={imageUrl}

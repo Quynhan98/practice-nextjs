@@ -7,7 +7,7 @@ import imageLoader from '@services/imageLoader'
 import { shimmer, toBase64 } from '@utils/index'
 import { memo } from 'react'
 
-const ImageComponent = ({ width, height, ...rest }: ImageProps) => {
+const ImageBlur = ({ width, height, ...rest }: ImageProps) => {
   return (
     <Image
       width={width}
@@ -22,4 +22,4 @@ const ImageComponent = ({ width, height, ...rest }: ImageProps) => {
   )
 }
 
-export default memo(ImageComponent)
+export default memo(ImageBlur)
