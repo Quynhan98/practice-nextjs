@@ -17,5 +17,5 @@ const Template: ComponentStory<typeof CardProduct> = (args) => (
 
 export const Default = Template.bind({})
 Default.args = {
-  product: PRODUCT_ITEM,
+  ...PRODUCT_ITEM,
 }

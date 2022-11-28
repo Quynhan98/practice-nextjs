@@ -27,6 +27,6 @@ const handleAddProduct = (data: IProductDetail) => {
 
 export const Default = Template.bind({})
 Default.args = {
-  productDetail: PRODUCT_DETAIL,
+  ...PRODUCT_DETAIL,
   handleAddCart: handleAddProduct,
 }

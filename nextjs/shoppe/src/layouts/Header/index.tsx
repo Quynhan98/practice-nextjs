@@ -4,9 +4,7 @@ import { Box, Flex, Heading, Text } from '@chakra-ui/react'
 
 // Components
 import Icon from '@components/Icon'
-
-// Utils
-import { RenderImage } from '@utils/renderImage'
+import ImageComponent from '@components/Image'
 
 // Hooks
 import { useCartContext } from '@hooks/useCartContext'
@@ -32,7 +30,7 @@ const Header = () => {
     >
       <Heading as="h1">
         <Link href="/">
-          <RenderImage
+          <ImageComponent
             width={125}
             height={40}
             src="/images/logo.png"

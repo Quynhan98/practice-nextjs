@@ -11,7 +11,7 @@ import { IProductDetail } from '@self-types/index'
 import { fetcherApi } from '@services/index'
 
 // Constants
-import { SERVER_ERROR, SNACKBAR_ADD_CART_SUCCESS } from '@constants/index'
+import { SNACKBAR_ADD_CART_SUCCESS } from '@constants/index'
 
 // Hooks
 import { useCartContext } from '@hooks/useCartContext'
@@ -23,39 +23,27 @@ export interface DetailPageProps {
 }
 
 export const getStaticPaths = async () => {
-  try {
-    const data: IProductDetail[] = await fetcherApi(`/products`)
+  const data: IProductDetail[] = await fetcherApi(`/products`)
 
-    const paths = data.map((product) => {
-      return { params: { id: product.id.toString() } }
-    })
+  const paths = data.map((product) => {
+    return { params: { id: product.id.toString() } }
+  })
 
-    if (!paths) {
-      return { props: { error: SERVER_ERROR } }
-    }
-
-    return {
-      paths,
-      fallback: true,
-    }
-  } catch (error) {
-    return { props: error }
+  return {
+    paths,
+    fallback: false,
   }
 }
 
 export const getStaticProps = async (context: { params: { id: string } }) => {
   const { id } = context.params
 
-  try {
-    const product: IProductDetail = await fetcherApi(`/products/${id}`)
-    if (!product) {
-      return { props: { error: SERVER_ERROR } }
-    }
-
-    return { props: { product } }
-  } catch (error) {
-    return { props: error }
+  const data: IProductDetail = await fetcherApi(`/products/${id}`)
+  if (typeof data === 'string') {
+    return { props: { error: data } }
   }
+
+  return { props: { product: data } }
 }
 
 const DetailPage = ({ product, error }: DetailPageProps) => {

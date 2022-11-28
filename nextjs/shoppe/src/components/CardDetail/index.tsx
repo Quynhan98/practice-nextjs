@@ -11,13 +11,13 @@ import {
 
 // Utils
 import { currencyFormat } from '@utils/index'
-import { RenderImage } from '@utils/renderImage'
 
 // Types
 import { IProductDetail } from '@self-types/index'
 
 // Components
 import Quantity from '@components/Quantity'
+import ImageComponent from '@components/Image'
 
 // Constants
 import { BREAKPOINTS, STATUS } from '@constants/index'
@@ -99,7 +99,7 @@ const CardDetail = ({
               </Text>
             </Box>
           )}
-          <RenderImage
+          <ImageComponent
             width={isMobile ? 288 : 560}
             height={isMobile ? 374 : 600}
             src={imageUrl}

@@ -5,8 +5,9 @@ import imageLoader from '@services/imageLoader'
 
 // Utils
 import { shimmer, toBase64 } from '@utils/index'
+import { memo } from 'react'
 
-export const RenderImage = ({ width, height, ...rest }: ImageProps) => {
+const ImageComponent = ({ width, height, ...rest }: ImageProps) => {
   return (
     <Image
       width={width}
@@ -20,3 +21,5 @@ export const RenderImage = ({ width, height, ...rest }: ImageProps) => {
     />
   )
 }
+
+export default memo(ImageComponent)

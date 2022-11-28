@@ -1,6 +1,14 @@
 import { ChangeEvent, memo, useCallback, useMemo, useState } from 'react'
 import { useRouter } from 'next/router'
-import { Box, Heading, Flex, Button, Text, Spinner } from '@chakra-ui/react'
+import {
+  Box,
+  Heading,
+  Flex,
+  Button,
+  Text,
+  Spinner,
+  Grid,
+} from '@chakra-ui/react'
 
 // Components
 import Search from '@components/Search'
@@ -100,12 +108,16 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
     }
 
     return (
-      <>
-        <Flex flexWrap="wrap" gap="24px" paddingBottom="60px">
+      <Flex flexDirection="column" paddingBottom="50px">
+        <Grid
+          templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' }}
+          gap="24px"
+          paddingBottom="60px"
+        >
           {listProduct.map((product) => (
             <CardProduct key={`product-${product.id}`} {...product} />
           ))}
-        </Flex>
+        </Grid>
         {listProduct.length >= 6 && (
           <Button
             isDisabled={isReachingEnd}
@@ -118,7 +130,7 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
             Load More
           </Button>
         )}
-      </>
+      </Flex>
     )
   }, [error, isLoadingMore, isReachingEnd, listProduct, paginationError])
 
@@ -157,14 +169,7 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
             Shop
           </Heading>
         </Box>
-        <Flex
-          flexDirection="column"
-          justifyContent="center"
-          paddingBottom="50px"
-          margin="0 auto"
-        >
-          {renderContent}
-        </Flex>
+        {renderContent}
       </Flex>
     </Box>
   )
