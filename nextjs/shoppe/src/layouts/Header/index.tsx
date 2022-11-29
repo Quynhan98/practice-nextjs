@@ -11,26 +11,19 @@ import {
   DrawerOverlay,
   Flex,
   Heading,
-  IconButton,
   Text,
   useDisclosure,
   useToast,
 } from '@chakra-ui/react'
-import { CloseIcon } from '@chakra-ui/icons'
 
 // Components
 import Icon from '@components/Icon'
 import ImageBlur from '@components/ImageBlur'
+import CartItem from '@components/CartItem'
 
 // Hooks
 import { useCartContext } from '@hooks/useCartContext'
 import { useLoadingContext } from '@hooks/useLoadingContext'
-
-// Utils
-import { currencyFormat } from '@utils/index'
-
-// Types
-import { IProductDetail } from '@self-types/index'
 
 // Constants
 import { SNACKBAR_DELETE_CART_SUCCESS } from '@constants/index'
@@ -46,10 +39,10 @@ const Header = () => {
   }, [listCart.length])
 
   const handleDeleteCart = useCallback(
-    async (cart: IProductDetail) => {
+    async (id: number) => {
       setLoading(true)
 
-      const updateCarts = listCart.filter((cartItem) => cartItem !== cart)
+      const updateCarts = listCart.filter((cartItem) => cartItem.id !== id)
 
       const dataCart = await deleteCart(updateCarts)
 
@@ -80,31 +73,7 @@ const Header = () => {
     return (
       <>
         {listCart.map((cart) => (
-          <Flex
-            key={`cart-item-${cart.id}`}
-            alignItems="center"
-            borderRadius="8px"
-            backgroundColor="gray"
-            justifyContent="space-between"
-          >
-            <Flex padding="5px 10px" flexDirection="column">
-              <Heading as="h3" fontSize="base" fontWeight="medium" color="dark">
-                <Link href={`/products/${cart.id}`} prefetch={false}>
-                  {cart.name}
-                </Link>
-              </Heading>
-              <Text color="dark">Quantity: {cart.quantity}</Text>
-              <Text textColor="beaver">{currencyFormat(cart.price)}</Text>
-            </Flex>
-            <IconButton
-              color="secondary"
-              fontSize="x-small"
-              onClick={() => handleDeleteCart(cart)}
-              type="submit"
-              aria-label="delete"
-              icon={<CloseIcon />}
-            />
-          </Flex>
+          <CartItem onHandleDeleteCart={handleDeleteCart} {...cart} />
         ))}
       </>
     )

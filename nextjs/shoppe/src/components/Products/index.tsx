@@ -108,7 +108,7 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
     }
 
     return (
-      <Flex flexDirection="column" paddingBottom="50px">
+      <>
         <Grid
           templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' }}
           gap="24px"
@@ -130,7 +130,7 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
             Load More
           </Button>
         )}
-      </Flex>
+      </>
     )
   }, [error, isLoadingMore, isReachingEnd, listProduct, paginationError])
 
@@ -169,7 +169,9 @@ const Products = ({ products, error, paramSearch }: ProductsProps) => {
             Shop
           </Heading>
         </Box>
-        {renderContent}
+        <Flex flexDirection="column" paddingBottom="50px" margin="0 auto">
+          {renderContent}
+        </Flex>
       </Flex>
     </Box>
   )
