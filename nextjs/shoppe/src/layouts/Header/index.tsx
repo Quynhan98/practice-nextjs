@@ -74,7 +74,11 @@ const Header = () => {
     return (
       <>
         {listCart.map((cart) => (
-          <CartItem onHandleDeleteCart={handleDeleteCart} {...cart} />
+          <CartItem
+            key={`cart-item-${cart.id}`}
+            onHandleDeleteCart={handleDeleteCart}
+            {...cart}
+          />
         ))}
       </>
     )
@@ -98,10 +102,8 @@ const Header = () => {
             <ImageBlur
               width={125}
               height={40}
-              src="/images/logo.png"
+              src="/images/logo.webp"
               alt="Logo Shoppe"
-              priority
-              style={{ width: 'auto', height: 'auto' }}
             />
           </Link>
         </Heading>
@@ -116,7 +118,7 @@ const Header = () => {
           <Icon
             width="21px"
             height="20px"
-            srcIcon="/images/shoppingCart.svg"
+            srcIcon="/images/shoppingCart.webp"
             alt="Shopping Cart Icon"
           />
           <Center

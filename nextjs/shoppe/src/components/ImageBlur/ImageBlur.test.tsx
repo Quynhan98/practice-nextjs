@@ -8,7 +8,7 @@ import { render, screen } from '@utils/testUtils'
 
 describe('Image render', () => {
   const props = {
-    src: '/facebook.svg',
+    src: '/facebook.webp',
     alt: 'facebook',
     width: 200,
     height: 200,

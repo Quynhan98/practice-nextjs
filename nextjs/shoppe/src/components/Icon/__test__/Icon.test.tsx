@@ -9,7 +9,7 @@ import { render, screen } from '@utils/testUtils'
 describe('Icon render', () => {
   const props = {
     alt: 'facebook',
-    srcIcon: '/images/facebook.svg',
+    srcIcon: '/images/facebook.webp',
   }
 
   it('Should show match Icon DOM Snapshot', () => {
