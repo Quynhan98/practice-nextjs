@@ -104,7 +104,7 @@ const CardDetail = ({
             height={isMobile ? 374 : 600}
             src={imageUrl}
             alt={name}
-            style={{ width: 'auto', height: 'auto' }}
+            priority
           />
         </Box>
       </Center>

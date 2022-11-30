@@ -104,6 +104,7 @@ const Header = () => {
               height={40}
               src="/images/logo.webp"
               alt="Logo Shoppe"
+              priority
             />
           </Link>
         </Heading>

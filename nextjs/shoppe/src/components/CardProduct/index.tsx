@@ -46,6 +46,7 @@ const CardProduct = ({ imageUrl, status, name, price, id }: IProduct) => {
           height={isMobile ? 136 : 300}
           src={imageUrl}
           alt={name}
+          priority
         />
       </Link>
       <Box pt={{ base: '10px', md: '24px' }} color="dark" fontSize="medium">
