@@ -80,7 +80,7 @@ const CardDetail = ({
       maxW="1248px"
     >
       <Center>
-        <Box position="relative" width={{ base: '288px', md: '560px' }}>
+        <Box position="relative" width={{ base: '350px', md: '560px' }}>
           {status && (
             <Box
               position="absolute"
@@ -99,13 +99,22 @@ const CardDetail = ({
               </Text>
             </Box>
           )}
-          <ImageBlur
-            width={isMobile ? 288 : 560}
-            height={isMobile ? 374 : 600}
-            src={imageUrl}
-            alt={name}
-            priority
-          />
+          <Box
+            as="figure"
+            width={{ base: '350px', md: '560px' }}
+            height={{ base: '374px', md: '600px' }}
+            position="relative"
+          >
+            <ImageBlur
+              src={imageUrl}
+              alt={name}
+              priority
+              fill
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+            />
+          </Box>
         </Box>
       </Center>
       <Flex h="full" direction="column">

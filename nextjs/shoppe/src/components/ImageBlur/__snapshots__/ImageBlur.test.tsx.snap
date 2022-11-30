@@ -8,8 +8,7 @@ exports[`Image render Should show match Image DOM Snapshot 1`] = `
     decoding="async"
     height="200"
     loading="lazy"
-    src="http://localhost:3000//facebook.webp?w=640&q=75"
-    srcset="http://localhost:3000//facebook.webp?w=256&q=75 1x, http://localhost:3000//facebook.webp?w=640&q=75 2x"
+    src="/facebook.webp"
     style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
     width="200"
   />

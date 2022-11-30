@@ -90,7 +90,7 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
         >
           Give an email, get the newsletter.
         </p>
-        <div
+        <figure
           class="css-16dh40w"
         >
           <img
@@ -99,12 +99,12 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
             data-testid="image"
             decoding="async"
             loading="lazy"
-            sizes="100vw"
-            src="http://localhost:3000//images/iconRight.webp?w=3840&q=75"
-            srcset="http://localhost:3000//images/iconRight.webp?w=640&q=75 640w, http://localhost:3000//images/iconRight.webp?w=750&q=75 750w, http://localhost:3000//images/iconRight.webp?w=828&q=75 828w, http://localhost:3000//images/iconRight.webp?w=1080&q=75 1080w, http://localhost:3000//images/iconRight.webp?w=1200&q=75 1200w, http://localhost:3000//images/iconRight.webp?w=1920&q=75 1920w, http://localhost:3000//images/iconRight.webp?w=2048&q=75 2048w, http://localhost:3000//images/iconRight.webp?w=3840&q=75 3840w"
-            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            src="/_next/image?url=%2Fimages%2FiconRight.webp&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimages%2FiconRight.webp&w=256&q=75 256w, /_next/image?url=%2Fimages%2FiconRight.webp&w=384&q=75 384w, /_next/image?url=%2Fimages%2FiconRight.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2FiconRight.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2FiconRight.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2FiconRight.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2FiconRight.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2FiconRight.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2FiconRight.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2FiconRight.webp&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
           />
-        </div>
+        </figure>
       </div>
     </div>
     <div
@@ -144,7 +144,7 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
             class="css-13xadkr"
           />
         </div>
-        <div
+        <figure
           class="css-1dvkee8"
         >
           <img
@@ -153,13 +153,13 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
             data-testid="image"
             decoding="async"
             loading="lazy"
-            sizes="100vw"
-            src="http://localhost:3000//images/inIcon.webp?w=3840&q=75"
-            srcset="http://localhost:3000//images/inIcon.webp?w=640&q=75 640w, http://localhost:3000//images/inIcon.webp?w=750&q=75 750w, http://localhost:3000//images/inIcon.webp?w=828&q=75 828w, http://localhost:3000//images/inIcon.webp?w=1080&q=75 1080w, http://localhost:3000//images/inIcon.webp?w=1200&q=75 1200w, http://localhost:3000//images/inIcon.webp?w=1920&q=75 1920w, http://localhost:3000//images/inIcon.webp?w=2048&q=75 2048w, http://localhost:3000//images/inIcon.webp?w=3840&q=75 3840w"
-            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            src="/_next/image?url=%2Fimages%2FinIcon.webp&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimages%2FinIcon.webp&w=256&q=75 256w, /_next/image?url=%2Fimages%2FinIcon.webp&w=384&q=75 384w, /_next/image?url=%2Fimages%2FinIcon.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2FinIcon.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2FinIcon.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2FinIcon.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2FinIcon.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2FinIcon.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2FinIcon.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2FinIcon.webp&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
           />
-        </div>
-        <div
+        </figure>
+        <figure
           class="css-1dvkee8"
         >
           <img
@@ -168,13 +168,13 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
             data-testid="image"
             decoding="async"
             loading="lazy"
-            sizes="100vw"
-            src="http://localhost:3000//images/facebook.webp?w=3840&q=75"
-            srcset="http://localhost:3000//images/facebook.webp?w=640&q=75 640w, http://localhost:3000//images/facebook.webp?w=750&q=75 750w, http://localhost:3000//images/facebook.webp?w=828&q=75 828w, http://localhost:3000//images/facebook.webp?w=1080&q=75 1080w, http://localhost:3000//images/facebook.webp?w=1200&q=75 1200w, http://localhost:3000//images/facebook.webp?w=1920&q=75 1920w, http://localhost:3000//images/facebook.webp?w=2048&q=75 2048w, http://localhost:3000//images/facebook.webp?w=3840&q=75 3840w"
-            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            src="/_next/image?url=%2Fimages%2Ffacebook.webp&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimages%2Ffacebook.webp&w=256&q=75 256w, /_next/image?url=%2Fimages%2Ffacebook.webp&w=384&q=75 384w, /_next/image?url=%2Fimages%2Ffacebook.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2Ffacebook.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2Ffacebook.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2Ffacebook.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Ffacebook.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Ffacebook.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Ffacebook.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Ffacebook.webp&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
           />
-        </div>
-        <div
+        </figure>
+        <figure
           class="css-1dvkee8"
         >
           <img
@@ -183,13 +183,13 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
             data-testid="image"
             decoding="async"
             loading="lazy"
-            sizes="100vw"
-            src="http://localhost:3000//images/instagram.webp?w=3840&q=75"
-            srcset="http://localhost:3000//images/instagram.webp?w=640&q=75 640w, http://localhost:3000//images/instagram.webp?w=750&q=75 750w, http://localhost:3000//images/instagram.webp?w=828&q=75 828w, http://localhost:3000//images/instagram.webp?w=1080&q=75 1080w, http://localhost:3000//images/instagram.webp?w=1200&q=75 1200w, http://localhost:3000//images/instagram.webp?w=1920&q=75 1920w, http://localhost:3000//images/instagram.webp?w=2048&q=75 2048w, http://localhost:3000//images/instagram.webp?w=3840&q=75 3840w"
-            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            src="/_next/image?url=%2Fimages%2Finstagram.webp&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimages%2Finstagram.webp&w=256&q=75 256w, /_next/image?url=%2Fimages%2Finstagram.webp&w=384&q=75 384w, /_next/image?url=%2Fimages%2Finstagram.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2Finstagram.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2Finstagram.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2Finstagram.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Finstagram.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Finstagram.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Finstagram.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Finstagram.webp&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
           />
-        </div>
-        <div
+        </figure>
+        <figure
           class="css-1dvkee8"
         >
           <img
@@ -198,12 +198,12 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
             data-testid="image"
             decoding="async"
             loading="lazy"
-            sizes="100vw"
-            src="http://localhost:3000//images/twitter.webp?w=3840&q=75"
-            srcset="http://localhost:3000//images/twitter.webp?w=640&q=75 640w, http://localhost:3000//images/twitter.webp?w=750&q=75 750w, http://localhost:3000//images/twitter.webp?w=828&q=75 828w, http://localhost:3000//images/twitter.webp?w=1080&q=75 1080w, http://localhost:3000//images/twitter.webp?w=1200&q=75 1200w, http://localhost:3000//images/twitter.webp?w=1920&q=75 1920w, http://localhost:3000//images/twitter.webp?w=2048&q=75 2048w, http://localhost:3000//images/twitter.webp?w=3840&q=75 3840w"
-            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            src="/_next/image?url=%2Fimages%2Ftwitter.webp&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimages%2Ftwitter.webp&w=256&q=75 256w, /_next/image?url=%2Fimages%2Ftwitter.webp&w=384&q=75 384w, /_next/image?url=%2Fimages%2Ftwitter.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2Ftwitter.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2Ftwitter.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2Ftwitter.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Ftwitter.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Ftwitter.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Ftwitter.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Ftwitter.webp&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
           />
-        </div>
+        </figure>
       </div>
     </div>
   </footer>

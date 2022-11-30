@@ -12,7 +12,7 @@ exports[`Detail page render Should show match Detail page DOM Snapshot 1`] = `
         class="css-gmuwbf"
       >
         <div
-          class="css-uetzqw"
+          class="css-u95wpv"
         >
           <div
             class="css-18ju09y"
@@ -23,17 +23,17 @@ exports[`Detail page render Should show match Detail page DOM Snapshot 1`] = `
               -25%
             </p>
           </div>
-          <img
-            alt="Lira Earrings"
-            data-nimg="1"
-            decoding="async"
-            height="600"
-            loading="lazy"
-            src="http://localhost:3000/https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=1200&q=75"
-            srcset="http://localhost:3000/https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=640&q=75 1x, http://localhost:3000/https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042?w=1200&q=75 2x"
-            style="color: transparent; width: auto; height: auto; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
-            width="560"
-          />
+          <figure
+            class="css-1l1479b"
+          >
+            <img
+              alt="Lira Earrings"
+              data-nimg="fill"
+              decoding="async"
+              src="https://firebasestorage.googleapis.com/v0/b/test-1-50371.appspot.com/o/shoppe-products%2FImg-04.png?alt=media&token=641c3cfe-cab6-4498-8632-eb511434e042"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            />
+          </figure>
         </div>
       </div>
       <div
