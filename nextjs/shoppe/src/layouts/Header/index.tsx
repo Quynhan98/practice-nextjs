@@ -20,6 +20,7 @@ import {
 import Icon from '@components/Icon'
 import ImageBlur from '@components/ImageBlur'
 import CartItem from '@components/CartItem'
+import LoadingIndicator from '@components/LoadingIndicator'
 
 // Hooks
 import { useCartContext } from '@hooks/useCartContext'
@@ -29,7 +30,7 @@ import { useLoadingContext } from '@hooks/useLoadingContext'
 import { SNACKBAR_DELETE_CART_SUCCESS } from '@constants/index'
 
 const Header = () => {
-  const { setLoading } = useLoadingContext()
+  const { setLoading, loading } = useLoadingContext()
   const { listCart, deleteCart } = useCartContext()
   const { isOpen, onOpen, onClose } = useDisclosure()
   const toast = useToast()
@@ -145,6 +146,7 @@ const Header = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
+      {loading && <LoadingIndicator size="lg" />}
     </>
   )
 }

@@ -3,6 +3,7 @@ import { Box, Heading, Spinner, Text, useToast } from '@chakra-ui/react'
 
 // Components
 import CardDetail from '@components/CardDetail'
+import LoadingIndicator from '@components/LoadingIndicator'
 
 // Types
 import { IProductDetail } from '@self-types/index'
@@ -48,7 +49,7 @@ export const getStaticProps = async (context: { params: { id: string } }) => {
 
 const DetailPage = ({ product, error }: DetailPageProps) => {
   const toast = useToast()
-  const { setLoading } = useLoadingContext()
+  const { setLoading, loading } = useLoadingContext()
   const { listCart, addCart } = useCartContext()
 
   const isAdded = product && !!listCart.find((item) => item.id === product.id)
@@ -124,9 +125,12 @@ const DetailPage = ({ product, error }: DetailPageProps) => {
   }, [error, isAdded, product])
 
   return (
-    <Box pt={{ base: '10px', md: '128px' }} pb="100px">
-      {renderContent}
-    </Box>
+    <>
+      <Box pt={{ base: '10px', md: '128px' }} pb="100px">
+        {renderContent}
+      </Box>
+      {loading && <LoadingIndicator size="lg" />}
+    </>
   )
 }
 
