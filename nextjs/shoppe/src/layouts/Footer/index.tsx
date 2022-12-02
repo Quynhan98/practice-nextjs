@@ -60,7 +60,7 @@ const Footer = () => {
           <Icon
             alt="Right arrow"
             ml={{ base: 'unset', md: '128px' }}
-            srcIcon="/images/iconRight.svg"
+            srcIcon="/images/iconRight.webp"
             width="25px"
             height="9px"
           />

@@ -32,7 +32,7 @@ interface ProductsProps {
 const Products = ({ products, error, paramSearch }: ProductsProps) => {
   const router = useRouter()
   const [searchValue, setSearchValue] = useState<string>('')
-  const searchTerm = useDebounce(searchValue, 200)
+  const searchTerm = useDebounce(searchValue, 100)
 
   const {
     paginatedData,

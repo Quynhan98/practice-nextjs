@@ -1,6 +1,8 @@
 import { memo, useCallback, useMemo } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import {
+  Box,
   Button,
   Center,
   Drawer,
@@ -18,7 +20,6 @@ import {
 
 // Components
 import Icon from '@components/Icon'
-import ImageBlur from '@components/ImageBlur'
 import CartItem from '@components/CartItem'
 import LoadingIndicator from '@components/LoadingIndicator'
 
@@ -74,7 +75,11 @@ const Header = () => {
     return (
       <>
         {listCart.map((cart) => (
-          <CartItem onHandleDeleteCart={handleDeleteCart} {...cart} />
+          <CartItem
+            key={`cart-item-${cart.id}`}
+            onHandleDeleteCart={handleDeleteCart}
+            {...cart}
+          />
         ))}
       </>
     )
@@ -95,14 +100,17 @@ const Header = () => {
       >
         <Heading as="h1">
           <Link href="/">
-            <ImageBlur
-              width={125}
-              height={40}
-              src="/images/logo.png"
-              alt="Logo Shoppe"
-              priority
-              style={{ width: 'auto', height: 'auto' }}
-            />
+            <Box as="figure" width="130px" height="30px" position="relative">
+              <Image
+                src="/images/logo.webp"
+                alt="Logo Shoppe"
+                priority
+                fill
+                sizes="(max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw,
+                33vw"
+              />
+            </Box>
           </Link>
         </Heading>
         <Button
@@ -116,7 +124,7 @@ const Header = () => {
           <Icon
             width="21px"
             height="20px"
-            srcIcon="/images/shoppingCart.svg"
+            srcIcon="/images/shoppingCart.webp"
             alt="Shopping Cart Icon"
           />
           <Center

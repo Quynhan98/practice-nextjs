@@ -1,18 +1,30 @@
 import React, { memo } from 'react'
+import Image, { StaticImageData } from 'next/image'
 import { Box, BoxProps } from '@chakra-ui/react'
 
-// Components
-import ImageBlur from '@components/ImageBlur'
-
 interface IconProps extends BoxProps {
-  srcIcon: string
+  srcIcon: StaticImageData | string
   alt: string
 }
 
 const Icon = ({ srcIcon, alt, ...rest }: IconProps) => {
   return (
-    <Box position="relative" display="flex" alignItems="flex-end" {...rest}>
-      <ImageBlur src={srcIcon} alt={alt} data-testid="image" fill />
+    <Box
+      as="figure"
+      position="relative"
+      display="flex"
+      alignItems="flex-end"
+      {...rest}
+    >
+      <Image
+        src={srcIcon}
+        alt={alt}
+        data-testid="image"
+        fill
+        sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+      />
     </Box>
   )
 }

@@ -20,22 +20,22 @@ export const SOCIAL_ICONS = [
   {
     id: 1,
     alt: 'LinkIn Icon',
-    iconURL: '/images/inIcon.svg',
+    iconURL: '/images/inIcon.webp',
   },
   {
     id: 2,
     alt: 'Facebook icon',
-    iconURL: '/images/facebook.svg',
+    iconURL: '/images/facebook.webp',
   },
   {
     id: 3,
     alt: 'Instagram icon',
-    iconURL: '/images/instagram.svg',
+    iconURL: '/images/instagram.webp',
   },
   {
     id: 4,
     alt: 'Twitter icon',
-    iconURL: '/images/twitter.svg',
+    iconURL: '/images/twitter.webp',
   },
 ]
 

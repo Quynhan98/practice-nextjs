@@ -21,7 +21,7 @@ const PageLayout = ({ children }: PageLayoutProps) => {
       <Head>
         <title>Shoppe</title>
         <meta name="title" content="Shoppe" />
-        <link rel="icon" href="/images/logo.png" />
+        <link rel="icon" href="/images/logo.webp" />
       </Head>
       <LoadingProvider>
         <CartProvider>
