@@ -14,24 +14,24 @@ const Template: ComponentStory<typeof Icon> = (args) => (
 
 export const LinkIn = Template.bind({})
 LinkIn.args = {
-  srcIcon: './images/inIcon.svg',
+  srcIcon: './images/inIcon.webp',
   alt: 'LinkIn',
 }
 
 export const Facebook = Template.bind({})
 Facebook.args = {
-  srcIcon: './images/facebook.svg',
+  srcIcon: './images/facebook.webp',
   alt: 'Facebook',
 }
 
 export const Instagram = Template.bind({})
 Instagram.args = {
-  srcIcon: './images/instagram.svg',
+  srcIcon: './images/instagram.webp',
   alt: 'Instagram',
 }
 
 export const Twitter = Template.bind({})
 Twitter.args = {
-  srcIcon: './images/twitter.svg',
+  srcIcon: './images/twitter.webp',
   alt: 'Twitter',
 }
