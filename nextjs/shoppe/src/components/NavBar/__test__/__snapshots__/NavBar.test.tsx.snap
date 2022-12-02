@@ -3,23 +3,40 @@
 exports[`NavBar component Renders NavBar correctly 1`] = `
 <div>
   <nav
-    class="css-34qmr9"
+    class="css-0"
   >
-    <a
-      href="/"
+    <ul
+      class="css-js3rfl"
+      role="list"
     >
-      Contact
-    </a>
-    <a
-      href="/"
-    >
-      Terms of services
-    </a>
-    <a
-      href="/"
-    >
-      Shipping and Return
-    </a>
+      <li
+        class="css-tnjslz"
+      >
+        <a
+          href="/"
+        >
+          Contact
+        </a>
+      </li>
+      <li
+        class="css-tnjslz"
+      >
+        <a
+          href="/"
+        >
+          Terms of services
+        </a>
+      </li>
+      <li
+        class="css-tnjslz"
+      >
+        <a
+          href="/"
+        >
+          Shipping and Return
+        </a>
+      </li>
+    </ul>
   </nav>
   <span
     hidden=""

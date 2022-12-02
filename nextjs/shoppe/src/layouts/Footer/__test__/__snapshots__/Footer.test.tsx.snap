@@ -9,23 +9,40 @@ exports[`Footer render Should Footer match Snapshot 1`] = `
       class="css-15g748d"
     >
       <nav
-        class="css-15pl4p6"
+        class="css-5mlst9"
       >
-        <a
-          href="/"
+        <ul
+          class="css-js3rfl"
+          role="list"
         >
-          Contact
-        </a>
-        <a
-          href="/"
-        >
-          Terms of services
-        </a>
-        <a
-          href="/"
-        >
-          Shipping and Return
-        </a>
+          <li
+            class="css-tnjslz"
+          >
+            <a
+              href="/"
+            >
+              Contact
+            </a>
+          </li>
+          <li
+            class="css-tnjslz"
+          >
+            <a
+              href="/"
+            >
+              Terms of services
+            </a>
+          </li>
+          <li
+            class="css-tnjslz"
+          >
+            <a
+              href="/"
+            >
+              Shipping and Return
+            </a>
+          </li>
+        </ul>
       </nav>
       <label
         class="chakra-checkbox css-a1ldsk"

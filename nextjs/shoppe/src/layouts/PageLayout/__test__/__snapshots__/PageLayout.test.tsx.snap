@@ -19,11 +19,12 @@ exports[`PageLayout render Should PageLayout match Snapshot 1`] = `
         width="125"
       />
     </h1>
-    <div
-      class="css-79elbk"
+    <button
+      class="chakra-button css-87nahy"
+      type="button"
     >
       <div
-        class="css-c3i4bm"
+        class="css-hym1hk"
       >
         <img
           alt="Shopping Cart Icon"
@@ -38,7 +39,7 @@ exports[`PageLayout render Should PageLayout match Snapshot 1`] = `
         />
       </div>
       <div
-        class="css-2jnr0l"
+        class="css-16xhn0c"
       >
         <p
           class="chakra-text css-1xb8dar"
@@ -46,7 +47,7 @@ exports[`PageLayout render Should PageLayout match Snapshot 1`] = `
           0
         </p>
       </div>
-    </div>
+    </button>
   </header>
   <main
     class="css-7iu33a"

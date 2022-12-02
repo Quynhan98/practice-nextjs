@@ -9,9 +9,9 @@ import CardDetail from '@components/CardDetail'
 
 describe('CardDetail render', () => {
   const mockProps = {
-    productDetail: PRODUCT_DETAIL,
     handleAddCart: jest.fn(),
     isAdded: false,
+    ...PRODUCT_DETAIL,
   }
   it('Should match data for card component', () => {
     const { container } = render(<CardDetail {...mockProps} />)

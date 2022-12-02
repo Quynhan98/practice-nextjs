@@ -11,30 +11,38 @@ import {
 
 // Utils
 import { currencyFormat } from '@utils/index'
-import { RenderImage } from '@utils/renderImage'
 
 // Types
 import { IProductDetail } from '@self-types/index'
 
 // Components
 import Quantity from '@components/Quantity'
+import ImageBlur from '@components/ImageBlur'
 
 // Constants
 import { BREAKPOINTS, STATUS } from '@constants/index'
 
 interface CardDetailProps {
   isAdded?: boolean
-  productDetail: IProductDetail
+  name: string
+  price: number
+  imageUrl: string
+  id: number
+  introduction: string
+  status?: string
   handleAddCart: (data: IProductDetail) => void
 }
 
 const CardDetail = ({
+  name,
+  price,
+  imageUrl,
+  id,
+  introduction,
+  status,
   isAdded,
-  productDetail,
   handleAddCart,
 }: CardDetailProps) => {
-  const { name, price, imageUrl, id, introduction, status } = productDetail
-
   const [quantityProduct, setQuantityProduct] = useState<number>(1)
   const [isMobile] = useMediaQuery(BREAKPOINTS.MEDIUM)
 
@@ -53,7 +61,12 @@ const CardDetail = ({
   // Handle Click button Add to cart
   const handleClickAddCart = () => {
     const newCart: IProductDetail = {
-      ...productDetail,
+      name,
+      price,
+      imageUrl,
+      id,
+      introduction,
+      status,
       quantity: quantityProduct,
     }
 
@@ -86,7 +99,7 @@ const CardDetail = ({
               </Text>
             </Box>
           )}
-          <RenderImage
+          <ImageBlur
             width={isMobile ? 288 : 560}
             height={isMobile ? 374 : 600}
             src={imageUrl}

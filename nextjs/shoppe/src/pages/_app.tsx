@@ -14,10 +14,6 @@ import { fetcherApi } from '@services/index'
 // Components
 import { ErrorBoundary } from '@components/ErrorBoundary'
 
-// Contexts
-import { CartProvider } from '@contexts/CartProvider'
-import { LoadingProvider } from '@contexts/LoadingProvider'
-
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <SWRConfig
@@ -27,13 +23,9 @@ export default function App({ Component, pageProps }: AppProps) {
     >
       <ChakraProvider theme={customTheme}>
         <ErrorBoundary>
-          <CartProvider>
-            <LoadingProvider>
-              <PageLayout>
-                <Component {...pageProps} />
-              </PageLayout>
-            </LoadingProvider>
-          </CartProvider>
+          <PageLayout>
+            <Component {...pageProps} />
+          </PageLayout>
         </ErrorBoundary>
       </ChakraProvider>
     </SWRConfig>

@@ -9,13 +9,13 @@ import CardProduct from '@components/CardProduct'
 
 describe('CardProduct render', () => {
   it('Should match data for card component', () => {
-    const { container } = render(<CardProduct product={PRODUCT_ITEM} />)
+    const { container } = render(<CardProduct {...PRODUCT_ITEM} />)
 
     expect(container).toMatchSnapshot()
   })
 
   it('Should navigate to product details page', () => {
-    render(<CardProduct product={PRODUCT_ITEM} />)
+    render(<CardProduct {...PRODUCT_ITEM} />)
 
     const link = screen.getByRole('link')
 

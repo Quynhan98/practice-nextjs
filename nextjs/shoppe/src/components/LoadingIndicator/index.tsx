@@ -11,7 +11,7 @@ const LoadingIndicator = ({ ...props }: SpinnerProps) => {
       position="fixed"
       backdropFilter="blur(3px)"
       inset={0}
-      zIndex={4}
+      zIndex={1500}
       paddingTop="150px"
     >
       <Spinner {...props} />

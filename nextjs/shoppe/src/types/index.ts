@@ -7,8 +7,8 @@ export interface IProduct {
 }
 
 export interface IProductDetail extends IProduct {
-  quantity: number
-  introduction?: string
+  quantity?: number
+  introduction: string
   description?: string
 }
 

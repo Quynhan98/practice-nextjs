@@ -25,6 +25,7 @@ it('use cart context hook return correct name', () => {
   const cartContextProps: ICartContext = {
     listCart: CARTS_MOCK,
     addCart: jest.fn(),
+    deleteCart: jest.fn(),
   }
 
   render(

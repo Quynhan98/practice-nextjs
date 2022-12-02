@@ -7,6 +7,7 @@ export interface ISearchProps {
   onKeyDown: (e: React.KeyboardEvent<HTMLInputElement>) => void
   onClick: (e: React.MouseEvent<HTMLButtonElement>) => void
   placeholder: string
+  defaultValue?: string
 }
 
 const Search = ({
@@ -14,6 +15,7 @@ const Search = ({
   onKeyDown,
   onClick,
   placeholder,
+  defaultValue,
 }: ISearchProps) => {
   return (
     <Box
@@ -35,6 +37,7 @@ const Search = ({
         placeholder={placeholder}
         onChange={onChange}
         onKeyDown={onKeyDown}
+        defaultValue={defaultValue}
       />
       <IconButton
         size="small"

@@ -23,6 +23,7 @@ exports[`Products render should match data for Products component and call searc
             class="chakra-input css-b2ycb2"
             placeholder="Search..."
             type="text"
+            value=""
           />
           <button
             aria-label="Search database"
@@ -49,13 +50,13 @@ exports[`Products render should match data for Products component and call searc
         </h2>
       </div>
       <div
-        class="css-aozu9f"
+        class="css-1t0pur5"
       >
         <div
-          class="css-ub1tjl"
+          class="css-42arw8"
         >
           <div
-            class="css-vjcztt"
+            class="css-1xcdsqd"
           >
             <div
               class="css-ervdjc"
@@ -97,7 +98,7 @@ exports[`Products render should match data for Products component and call searc
             </div>
           </div>
           <div
-            class="css-vjcztt"
+            class="css-1xcdsqd"
           >
             <img
               alt="Lira Earrings"
@@ -130,7 +131,7 @@ exports[`Products render should match data for Products component and call searc
             </div>
           </div>
           <div
-            class="css-vjcztt"
+            class="css-1xcdsqd"
           >
             <img
               alt="Kaede Hair Pin Set Of 3"
@@ -163,7 +164,7 @@ exports[`Products render should match data for Products component and call searc
             </div>
           </div>
           <div
-            class="css-vjcztt"
+            class="css-1xcdsqd"
           >
             <img
               alt="Hair Pin Set of 3"
@@ -196,7 +197,7 @@ exports[`Products render should match data for Products component and call searc
             </div>
           </div>
           <div
-            class="css-vjcztt"
+            class="css-1xcdsqd"
           >
             <div
               class="css-ervdjc"
@@ -238,7 +239,7 @@ exports[`Products render should match data for Products component and call searc
             </div>
           </div>
           <div
-            class="css-vjcztt"
+            class="css-1xcdsqd"
           >
             <img
               alt="Yuki Hair Pin Set of 3"

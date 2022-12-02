@@ -7,17 +7,14 @@ import { IProduct } from '@self-types/index'
 
 // Utils
 import { currencyFormat } from '@utils/index'
-import { RenderImage } from '@utils/renderImage'
 
 // Constants
 import { BREAKPOINTS } from '@constants/variables'
 
-interface CardProductProps {
-  product: IProduct
-}
+// Components
+import ImageBlur from '@components/ImageBlur'
 
-const CardProduct = ({ product }: CardProductProps) => {
-  const { imageUrl, status, name, price, id } = product
+const CardProduct = ({ imageUrl, status, name, price, id }: IProduct) => {
   const [isMobile] = useMediaQuery(BREAKPOINTS.MEDIUM)
 
   return (
@@ -26,7 +23,7 @@ const CardProduct = ({ product }: CardProductProps) => {
       borderRadius="lg"
       overflow="hidden"
       position="relative"
-      margin="0 auto"
+      margin={{ base: '0 auto', md: 'unset' }}
     >
       {status && (
         <Box
@@ -44,7 +41,7 @@ const CardProduct = ({ product }: CardProductProps) => {
         </Box>
       )}
       <Link href={`/products/${id}`} key={id}>
-        <RenderImage
+        <ImageBlur
           width={isMobile ? 136 : 300}
           height={isMobile ? 136 : 300}
           src={imageUrl}
